@@ -1,0 +1,182 @@
+<?php
+/**
+ * Template Name: Roles & Industries
+ * Template Post Type: page
+ *
+ * Generated from src/partials/roles.html by build.py — edit the partial,
+ * not this file, then re-run `python3 build.py`.
+ *
+ * @package Cloudstaff
+ */
+
+get_header();
+?>
+<main class="lander" id="main-content">
+<section class="lander-hero">
+  <div class="lander-content">
+    <span class="eyebrow">One partner &mdash; hundreds of roles</span>
+    <h1>600+ roles across every function that matters</h1>
+    <p>From specialist support to complex, business-critical expertise, Cloudstaff helps you find high-quality talent across customer service, accounting, finance, technology, sales, marketing, real estate, administration, and professional services. Every position is tailored to your required skills, experience level, and business needs.</p>
+    <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-lg">Find your first role</a>
+  </div>
+</section>
+
+<section class="lander-tile-row-section">
+  <div class="lander-content">
+    <div class="grid-3">
+      <div class="feature-tile">
+        <div class="feature-tile-icon"><i class="fa-light fa-bolt" aria-hidden="true"></i></div>
+        <h3>Speed of hire</h3>
+        <p>Access broader talent pools and fill critical roles faster than many local hiring markets allow.</p>
+      </div>
+      <div class="feature-tile">
+        <div class="feature-tile-icon"><i class="fa-light fa-arrow-up-right-dots" aria-hidden="true"></i></div>
+        <h3>Scale without overhead</h3>
+        <p>Add capacity across departments without the long-term cost burden of traditional local hiring.</p>
+      </div>
+      <div class="feature-tile">
+        <div class="feature-tile-icon"><i class="fa-light fa-microchip-ai" aria-hidden="true"></i></div>
+        <h3>AI-ready workforce</h3>
+        <p>Teams trained to use approved AI tools to improve productivity, quality, and consistency &mdash; and future-proof your capability.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="lander-section">
+  <div class="lander-content">
+    <div>
+      <span class="eyebrow">Example high-value roles</span>
+      <h2>These aren't just support roles</h2>
+      <p>Modern remote staffing is much broader than the outdated view of offshore work. Cloudstaff supports both operational and high-value professional roles &mdash; experienced professionals who contribute to core business operations, improve delivery capacity, and help teams scale without adding unnecessary fixed overhead.</p>
+      <div class="grid-2">
+        <div class="card">
+          <h3><i class="fa-light fa-code" aria-hidden="true"></i> Technology &amp; Engineering</h3>
+          <p>Software engineers, cybersecurity specialists, cloud engineers, data engineers, QA testers.</p>
+        </div>
+        <div class="card">
+          <h3><i class="fa-light fa-chart-pie" aria-hidden="true"></i> Finance &amp; Analytics</h3>
+          <p>Accountants, financial analysts, tax specialists, BI analysts, risk and compliance specialists.</p>
+        </div>
+        <div class="card">
+          <h3><i class="fa-light fa-palette" aria-hidden="true"></i> Creative &amp; Marketing</h3>
+          <p>Digital marketers, UI/UX designers, content strategists, graphic designers, SEO specialists.</p>
+        </div>
+        <div class="card">
+          <h3><i class="fa-light fa-clipboard-list-check" aria-hidden="true"></i> Leadership &amp; Operations</h3>
+          <p>Project managers, sales leaders, executive assistants, operations specialists, compliance managers.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="lander-section lander-section-tinted">
+  <div class="lander-content">
+    <div>
+      <span class="eyebrow">Full breadth of capability</span>
+      <h2>Talent for every department</h2>
+      <div class="grid-4 collapse-2">
+        <div class="card"><h3>Accounting &amp; Finance</h3><p>Accountants, bookkeepers, AP/AR, payroll, FP&amp;A, controllers, tax, audit support.</p></div>
+        <div class="card"><h3>Customer Service</h3><p>Voice, chat, and email agents, team leaders, QA analysts, technical support.</p></div>
+        <div class="card"><h3>Software Development</h3><p>Full-stack, front-end, back-end, mobile, ERP/CRM, and 70+ specialist stacks.</p></div>
+        <div class="card"><h3>Admin &amp; Virtual Assistance</h3><p>Executive assistants, data entry, back office, research, order processing.</p></div>
+        <div class="card"><h3>Sales &amp; Business Development</h3><p>SDRs, inside sales, appointment setters, account managers, sales ops.</p></div>
+        <div class="card"><h3>Marketing &amp; Content</h3><p>Digital marketing, SEO/SEM, social media, copywriting, campaign management.</p></div>
+        <div class="card"><h3>Real Estate &amp; Property</h3><p>Transaction coordination, listings, property management, trust accounting.</p></div>
+        <div class="card"><h3>Healthcare Support</h3><p>Medical coding, billing and revenue cycle, patient services, credentialing.</p></div>
+        <div class="card"><h3>Legal &amp; Compliance</h3><p>Paralegals, legal assistants, document review, contract administration.</p></div>
+        <div class="card"><h3>IT Support &amp; Networks</h3><p>Helpdesk, network engineers, sysadmins, solutions architects, 24x7 support.</p></div>
+        <div class="card"><h3>Artificial Intelligence</h3><p>AI prompt engineers, ML engineers, data annotators, AI product managers.</p></div>
+        <div class="card"><h3>Logistics &amp; Supply Chain</h3><p>Procurement, demand planning, order fulfillment, 3PL specialists.</p></div>
+      </div>
+      <p>&hellip;plus architecture &amp; design, banking &amp; financial services, construction &amp; estimating, creative &amp; multimedia, cybersecurity, data &amp; analytics, e-commerce, engineering, events, HR, recruitment, travel &amp; hospitality, and more. <strong>If you can define the role, we can staff it.</strong></p>
+    </div>
+  </div>
+</section>
+
+<section class="lander-section">
+  <div class="lander-content">
+    <div>
+      <span class="eyebrow">Global capability hubs</span>
+      <h2>The right talent, in the right place, on your hours</h2>
+      <p>Cloudstaff's global capability hubs give you access to highly skilled talent across finance, technology, AI, customer experience, and business operations. Our diversified global footprint lets you balance capability, cost, time-zone coverage, and scalability while reducing operational risk.</p>
+    </div>
+    <div class="lander-section-image">
+      <div class="grid-2">
+        <div class="card">
+          <h3>Philippines</h3>
+          <p>Accounting, customer &amp; technical support, executive assistance, shared services. High English proficiency and neutral accents, strong service culture, deep BPO experience.</p>
+        </div>
+        <div class="card">
+          <h3>Colombia</h3>
+          <p>Bilingual customer service, legal, sales, executive assistance, back-office ops. Near-shore time zones with EST/CST overlap and a strong Spanish-English talent pool.</p>
+        </div>
+        <div class="card">
+          <h3>India</h3>
+          <p>Software development, AI/ML engineering, complex back office, accounting. A large, technically skilled talent pool and strong STEM ecosystem.</p>
+        </div>
+        <div class="card">
+          <h3>Other locations</h3>
+          <p>Kenya, South Africa, Nicaragua, Malaysia, Singapore, Vietnam, Japan, Sri Lanka &mdash; broader time-zone coverage, multilingual talent, and flexible specialist pools.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="lander-section lander-section-tinted lander-section-image-left">
+  <div class="lander-content">
+    <div>
+      <span class="eyebrow">People + intelligent technology</span>
+      <h2>The AI-ready workforce</h2>
+      <p>Technology alone doesn't create business outcomes, and people alone can't deliver unlimited scale. The businesses that will lead the next decade combine skilled talent with intelligent systems. Cloudstaff delivers the people; Cloudstaff.ai delivers the technology.</p>
+      <p><strong>You don't need to become an AI expert. But the people you hire should be AI-ready.</strong> Cloudstaff AI is not about replacing people &mdash; it's about helping great people do their best work.</p>
+    </div>
+    <div class="lander-section-image">
+      <div class="stack-lg">
+        <div class="stat-tile stat-tile-illustrated is-brand">
+          <div class="stat-tile-icon"><i class="fa-light fa-user" aria-hidden="true"></i></div>
+          <div class="stat-tile-body">
+            <div class="stat-tile-label">Cloudstaffer &mdash; experience, training, domain knowledge</div>
+            <div class="stat-tile-value">1x productivity</div>
+          </div>
+        </div>
+        <div class="stat-tile stat-tile-illustrated is-info">
+          <div class="stat-tile-icon"><i class="fa-light fa-wand-magic-sparkles" aria-hidden="true"></i></div>
+          <div class="stat-tile-body">
+            <div class="stat-tile-label">Augmented skills &amp; embedded AI tools</div>
+            <div class="stat-tile-value">1.5&ndash;3x productivity</div>
+          </div>
+        </div>
+        <div class="stat-tile stat-tile-illustrated is-success">
+          <div class="stat-tile-icon"><i class="fa-light fa-robot" aria-hidden="true"></i></div>
+          <div class="stat-tile-body">
+            <div class="stat-tile-label">Digital twins &mdash; AI performs defined tasks under supervision</div>
+            <div class="stat-tile-value">2&ndash;5x productivity</div>
+          </div>
+        </div>
+        <div class="stat-tile stat-tile-illustrated is-warning">
+          <div class="stat-tile-icon"><i class="fa-light fa-network-wired" aria-hidden="true"></i></div>
+          <div class="stat-tile-body">
+            <div class="stat-tile-label">Autonomous agents with Cloudstaffer oversight</div>
+            <div class="stat-tile-value">5&ndash;20x productivity</div>
+          </div>
+        </div>
+        <p><small>Productivity multipliers are illustrative, based on common tasks; actual results vary by role, workflow, and implementation.</small></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="lander-cta lander-cta-brand">
+  <div class="lander-content">
+    <h2>Which role would move the needle first?</h2>
+    <p>Start with one hard-to-fill or expensive role. Prove the return. Scale what works.</p>
+    <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-inverse button-lg">Find your first role</a>
+  </div>
+</section>
+
+</main>
+<?php
+get_footer();

@@ -1,0 +1,162 @@
+<?php
+/**
+ * Template Name: Pricing & Savings
+ * Template Post Type: page
+ *
+ * Generated from src/partials/pricing.html by build.py — edit the partial,
+ * not this file, then re-run `python3 build.py`.
+ *
+ * @package Cloudstaff
+ */
+
+get_header();
+?>
+<main class="lander" id="main-content">
+<section class="lander-hero">
+  <div class="lander-content">
+    <span class="eyebrow">No hidden fees. No surprises.</span>
+    <h1>Transparent pricing, real savings</h1>
+    <p>Cloudstaff's pricing separates your workforce costs into three clear components, giving you greater visibility, more predictable budgeting, and clearer control over your workforce investment. Here's exactly what remote staffing costs &mdash; and what it saves.</p>
+    <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-lg">Get a tailored quote</a>
+  </div>
+</section>
+
+<section class="lander-tile-row-section">
+  <div class="lander-content">
+    <div class="grid-3">
+      <div class="feature-tile">
+        <div class="feature-tile-icon"><i class="fa-light fa-building" aria-hidden="true"></i></div>
+        <h3>1. Cloudstaff Fee</h3>
+        <p>The infrastructure, support services, and workplace programs that keep your team productive, secure, and engaged: facilities, systems and tools, business continuity, support services, and culture.</p>
+      </div>
+      <div class="feature-tile">
+        <div class="feature-tile-icon"><i class="fa-light fa-user-dollar" aria-hidden="true"></i></div>
+        <h3>2. Employee Direct Cost</h3>
+        <p>Salary, taxes, statutory contributions, medical insurance, and other direct employment costs for each team member &mdash; passed through transparently, including retention programs.</p>
+      </div>
+      <div class="feature-tile">
+        <div class="feature-tile-icon"><i class="fa-light fa-laptop-code" aria-hidden="true"></i></div>
+        <h3>3. Technology Fee</h3>
+        <p>Managed hardware, essential peripherals, core software subscriptions, security and updates, equipment insurance, and 24x7 technical support for reliable daily operations.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="lander-section">
+  <div class="lander-content">
+    <div>
+      <span class="eyebrow">A worked example</span>
+      <h2>Senior Accountant: US hire vs. Cloudstaff hire</h2>
+      <p>Depending on the role and location, businesses may reduce fully loaded employment costs by up to 80%. The value extends beyond salary differences &mdash; benefits, technology, infrastructure, and overheads are all substantially reduced through a global staffing model. Even a single role can create meaningful savings and improve EBITDA without disrupting day-to-day operations.</p>
+      <p class="cost-bar-savings">Hiring a Senior Accountant through Cloudstaff can save up to 80% compared with hiring onshore &mdash; up to US$157,536 per staff member per year, without sacrificing quality.</p>
+    </div>
+    <div class="lander-section-image">
+      <div class="grid-2">
+        <div class="card">
+          <h3>Fully loaded US-based hire</h3>
+          <div class="table-scroll">
+            <table class="table table-compact">
+              <tbody>
+                <tr><td>Salary</td><td><strong>$11,250</strong></td></tr>
+                <tr><td>Benefits</td><td><strong>$3,375</strong></td></tr>
+                <tr><td>IT &amp; overheads</td><td><strong>$1,688</strong></td></tr>
+                <tr><td><strong>Total per month</strong></td><td><strong>US$16,313</strong></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="card card-brand">
+          <h3>Fully loaded Cloudstaff hire</h3>
+          <div class="table-scroll">
+            <table class="table table-compact">
+              <tbody>
+                <tr><td>Employee Direct Cost</td><td><strong>$2,425</strong></td></tr>
+                <tr><td>Cloudstaff fee</td><td><strong>$699</strong></td></tr>
+                <tr><td>Technology fee</td><td><strong>$61</strong></td></tr>
+                <tr><td><strong>Total per month</strong></td><td><strong>US$3,185</strong></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="lander-section lander-section-tinted">
+  <div class="lander-content">
+    <div>
+      <span class="eyebrow">Quality staff at a fraction of the cost</span>
+      <h2>Typical monthly cost by role: US vs. Cloudstaff</h2>
+      <p>A small team of 5&ndash;10 Cloudstaffers can generate up to <strong>US$450,000 in annual labor savings</strong> compared with equivalent US hires, with high-cost roles delivering the greatest savings per employee. Operational roles show strong ROI with up to 75% savings and stable talent availability.</p>
+      <div class="table-scroll">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Role</th>
+              <th scope="col">Traditional US-based hiring</th>
+              <th scope="col">Engaged through Cloudstaff</th>
+              <th scope="col">Typical saving</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Software Engineer</td><td>$10,379/mo</td><td><strong>$1,958/mo</strong></td><td><span class="badge badge-success">81%</span></td></tr>
+            <tr><td>Accountant</td><td>$8,251/mo</td><td><strong>$1,738/mo</strong></td><td><span class="badge badge-success">79%</span></td></tr>
+            <tr><td>Customer Service</td><td>$5,588/mo</td><td><strong>$1,471/mo</strong></td><td><span class="badge badge-success">74%</span></td></tr>
+            <tr><td>Sales</td><td>$10,115/mo</td><td><strong>$3,049/mo</strong></td><td><span class="badge badge-success">70%</span></td></tr>
+            <tr><td>Digital Marketer</td><td>$5,791/mo</td><td><strong>$1,628/mo</strong></td><td><span class="badge badge-success">72%</span></td></tr>
+            <tr><td>AI Prompt Engineer</td><td>$6,483/mo</td><td><strong>$1,848/mo</strong></td><td><span class="badge badge-success">71%</span></td></tr>
+            <tr><td>Data Entry Specialist</td><td>$4,072/mo</td><td><strong>$1,628/mo</strong></td><td><span class="badge badge-success">60%</span></td></tr>
+            <tr><td>Virtual Assistant</td><td>$3,871/mo</td><td><strong>$1,628/mo</strong></td><td><span class="badge badge-success">58%</span></td></tr>
+            <tr><td>Recruitment Specialist</td><td>$14,167/mo</td><td><strong>$6,375/mo</strong></td><td><span class="badge badge-success">55%</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p><small>US salary estimates based on available market data including Deel and Glassdoor. Cloudstaff costs include applicable technology and service fees; one-time activation fees excluded. Figures current as of July 2026 and indicative only &mdash; your quote is tailored to role, seniority, and location.</small></p>
+    </div>
+  </div>
+</section>
+
+<section class="lander-section">
+  <div class="lander-content">
+    <div>
+      <span class="eyebrow">Beyond the savings</span>
+      <h2>Clients come for the cost. They stay for the capability.</h2>
+      <p>While clients often start with cost savings in mind, they consistently find the biggest long-term benefit is the ability to access and retain high-quality, reliable staff. A well-structured remote team extends the capacity of existing departments, fills hard-to-hire roles, reduces pressure on local teams, and improves continuity across critical functions.</p>
+      <p>Headcount becomes elastic: capacity scales up or down in line with demand cycles, and SG&amp;A becomes more predictable.</p>
+    </div>
+    <div class="lander-section-image">
+      <div class="grid-2">
+        <div class="stat-tile">
+          <div class="stat-tile-label">Savings on a single senior role</div>
+          <div class="stat-tile-value">Up to $157K/yr</div>
+        </div>
+        <div class="stat-tile">
+          <div class="stat-tile-label">Savings on a 5&ndash;10 person team</div>
+          <div class="stat-tile-value">Up to $450K/yr</div>
+        </div>
+        <div class="stat-tile">
+          <div class="stat-tile-label">Fully loaded cost reduction</div>
+          <div class="stat-tile-value">Up to 80%</div>
+        </div>
+        <div class="stat-tile">
+          <div class="stat-tile-label">Typical time to start date</div>
+          <div class="stat-tile-value">15&ndash;25 days</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="lander-cta lander-cta-brand">
+  <div class="lander-content">
+    <h2>Get your tailored cost comparison</h2>
+    <p>Tell us the roles you're hiring for and we'll show you the fully loaded numbers, side by side.</p>
+    <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-inverse button-lg">Get a tailored quote</a>
+  </div>
+</section>
+
+</main>
+<?php
+get_footer();

@@ -1,0 +1,232 @@
+<?php
+/**
+ * Template Name: What Is Remote Staffing?
+ * Template Post Type: page
+ *
+ * Generated from src/partials/what-is-remote-staffing.html by build.py — edit the partial,
+ * not this file, then re-run `python3 build.py`.
+ *
+ * @package Cloudstaff
+ */
+
+get_header();
+?>
+<main class="lander" id="main-content">
+<section class="lander-hero">
+  <div class="lander-content">
+    <span class="eyebrow">Plain-English guide</span>
+    <h1>What is remote staffing?</h1>
+    <p>If you've never outsourced before, the terminology alone can be a barrier. This page explains what remote staffing actually is, how it's different from the models you may have heard of, and what the facts say about the most common concerns.</p>
+    <a href="<?php echo esc_url( home_url( '/how-it-works/' ) ); ?>" class="button button-lg">See how it works in practice</a>
+  </div>
+</section>
+
+<section class="lander-tile-row-section">
+  <div class="lander-content">
+    <div class="grid-3">
+      <div class="feature-tile">
+        <div class="feature-tile-icon"><i class="fa-light fa-user-check" aria-hidden="true"></i></div>
+        <h3>Your team, our payroll</h3>
+        <p>Full-time professionals who work only for you. Cloudstaff is the legal employer and handles HR, IT, and compliance.</p>
+      </div>
+      <div class="feature-tile">
+        <div class="feature-tile-icon"><i class="fa-light fa-arrows-left-right" aria-hidden="true"></i></div>
+        <h3>Not freelancers, not a BPO</h3>
+        <p>Dedicated staff embedded in your workflows &mdash; not gig workers, and not an outsourced black box.</p>
+      </div>
+      <div class="feature-tile">
+        <div class="feature-tile-icon"><i class="fa-light fa-chart-line-up" aria-hidden="true"></i></div>
+        <h3>A financial strategy</h3>
+        <p>Reduce fully loaded labor costs by up to 80% and convert fixed overhead into scalable operating expense.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="lander-section">
+  <div class="lander-content">
+    <div>
+      <span class="eyebrow">The basics</span>
+      <h2>Full-time global talent, working as part of your team</h2>
+      <p>Remote staffing combines global talent access with significant cost arbitrage. You hire full-time roles sourced globally &mdash; for example from the Philippines, Latin America, and India &mdash; through a partner like Cloudstaff. Your team members work seamlessly as part of your organization, aligned to your hours, your tools, and your workflows.</p>
+      <p>It solves four problems at once: it reduces fully loaded labor costs by up to 80%, addresses talent shortages by opening deep global talent pools, improves scalability with flexible ramp-up and ramp-down, and frees your onshore team to focus on higher-value, billable work.</p>
+    </div>
+    <div class="lander-section-image">
+      <div class="stack-lg">
+        <div class="card card-brand">
+          <h3>Who employs the staff?</h3>
+          <p>Cloudstaff does. We handle contracts, payroll, benefits, statutory compliance, and HR in-country &mdash; you carry no offshore employment liability.</p>
+        </div>
+        <div class="card">
+          <h3>Who manages their work?</h3>
+          <p>You do. You set the priorities, KPIs, and day-to-day tasks, exactly as you would with any in-house employee.</p>
+        </div>
+        <div class="card">
+          <h3>How do you pay?</h3>
+          <p>A simple monthly structure: a seat fee plus the employee's direct cost. Transparent, predictable, and easy to budget.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="lander-section lander-section-tinted">
+  <div class="lander-content">
+    <div>
+      <span class="eyebrow">Know your options</span>
+      <h2>How remote staffing compares to the alternatives</h2>
+      <p>Outsourcing isn't one thing &mdash; it's four distinct models, each with a different balance of cost, control, and effort. For small and mid-size businesses, the remote staffing team model delivers the best cost-to-value ratio: your own dedicated team, fully recruited, employed, supported, and secured by a provider, while you keep complete ownership of workflows and performance.</p>
+    </div>
+    <div class="table-scroll">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">&nbsp;</th>
+            <th scope="col">Freelancers / marketplaces</th>
+            <th scope="col">PEO (virtual employees)</th>
+            <th scope="col">Managed services / BPO</th>
+            <th scope="col"><strong>Remote staffing (Cloudstaff model)</strong></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Who employs the staff</th>
+            <td>The contractor themselves</td>
+            <td>The PEO provider</td>
+            <td>The provider</td>
+            <td><strong>The staffing provider</strong></td>
+          </tr>
+          <tr>
+            <th scope="row">Who manages the work</th>
+            <td>You</td>
+            <td>You &mdash; and you recruit</td>
+            <td>The provider</td>
+            <td><strong>You, supported by our HR &amp; IT</strong></td>
+          </tr>
+          <tr>
+            <th scope="row">How you pay</th>
+            <td>Recruiting fee + contractor rate</td>
+            <td>Salary + benefits + PEO fee</td>
+            <td>Per outcome, transaction, or SLA</td>
+            <td><strong>Seat fee + employee direct cost</strong></td>
+          </tr>
+          <tr>
+            <th scope="row">Core strengths</th>
+            <td>Fast, flexible, niche skills</td>
+            <td>Compliant employment</td>
+            <td>Turnkey delivery, predictable SLAs</td>
+            <td><strong>Best cost-to-value; recruiting, HR, IT, security included; high retention; scalable</strong></td>
+          </tr>
+          <tr>
+            <th scope="row">Limitations</th>
+            <td>Security, inconsistent availability, HR liability</td>
+            <td>Higher cost; you still manage and recruit everything</td>
+            <td>Expensive; low customization; high churn, low brand affinity</td>
+            <td><strong>Requires your direction and KPIs</strong></td>
+          </tr>
+          <tr>
+            <th scope="row">Best fit</th>
+            <td>Early experiments, micro-projects</td>
+            <td>1&ndash;5 specialty roles in new markets</td>
+            <td>High-volume standardized processes</td>
+            <td><strong>Mid-size businesses building 5&ndash;100+ person virtual teams</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="lander-section">
+  <div class="lander-content">
+    <div>
+      <span class="eyebrow">Addressing the misconceptions</span>
+      <h2>What the evidence actually shows</h2>
+      <p>Much of the hesitation around remote staffing is driven by outdated assumptions rather than current reality. Quality offshore providers reliably meet US-market expectations: strong English, full US hours, high-skill roles, and robust security. Here are the five most common misconceptions &mdash; and the facts.</p>
+      <div class="grid-2">
+        <div class="card myth-card">
+          <span class="badge badge-draft">Misconception</span>
+          <p>&ldquo;English skills aren't strong enough.&rdquo;</p>
+          <span class="badge badge-success">Reality</span>
+          <p>The Philippines consistently ranks at the top of Asia for English fluency, enabling professionals to perform effectively in client-facing and stakeholder-driven roles.</p>
+        </div>
+        <div class="card myth-card">
+          <span class="badge badge-draft">Misconception</span>
+          <p>&ldquo;Staff won't work US business hours.&rdquo;</p>
+          <span class="badge badge-success">Reality</span>
+          <p>Teams routinely operate on EST and PST schedules &mdash; over 70% of Cloudstaff professionals already work US-aligned shifts.</p>
+        </div>
+        <div class="card myth-card">
+          <span class="badge badge-draft">Misconception</span>
+          <p>&ldquo;Outsourcing is only for basic tasks.&rdquo;</p>
+          <span class="badge badge-success">Reality</span>
+          <p>High-skill roles are well established: project managers, executive assistants, accountants, data analysts, software engineers, and sales support professionals.</p>
+        </div>
+        <div class="card myth-card">
+          <span class="badge badge-draft">Misconception</span>
+          <p>&ldquo;Data and IP aren't kept safe.&rdquo;</p>
+          <span class="badge badge-success">Reality</span>
+          <p>Enterprise-grade governance supported by SOC 2 and ISO standards, secure managed devices, and centrally controlled IT environments.</p>
+        </div>
+        <div class="card myth-card">
+          <span class="badge badge-draft">Misconception</span>
+          <p>&ldquo;Retention and rehiring is a problem.&rdquo;</p>
+          <span class="badge badge-success">Reality</span>
+          <p>Cloudstaff maintains an exceptional staff retention rate of over 98%, with many team members building long-term careers within your organization.</p>
+        </div>
+        <div class="card card-brand myth-card">
+          <span class="badge">The takeaway</span>
+          <p>Remote staffing is a fast, cost-efficient way to increase capacity and unlock growth.</p>
+          <p>For CFOs, the question is not whether remote staffing works &mdash; it's how to structure it properly, manage risk, and ensure measurable return.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="lander-section lander-section-tinted">
+  <div class="lander-content">
+    <div>
+      <span class="eyebrow">Common questions</span>
+      <h2>Frequently asked questions</h2>
+      <div class="faq">
+        <details>
+          <summary>Do I need to set up a foreign company or deal with foreign employment law?</summary>
+          <p>No. Cloudstaff is the legal employer in-country. We handle all payroll, contracts, statutory contributions, benefits, and compliance. You get a simple monthly invoice in US dollars.</p>
+        </details>
+        <details>
+          <summary>Do I get to choose who I hire?</summary>
+          <p>Yes &mdash; always. We source, screen, and shortlist candidates against your role definition; you interview your preferred candidates and make the final decision. As one client put it: &ldquo;The thing that I loved about Cloudstaff is I was able to interview and select our people.&rdquo;</p>
+        </details>
+        <details>
+          <summary>How fast can someone start?</summary>
+          <p>The typical timeline from initial call to start date is 15&ndash;25 days, including sourcing, interviews, offers, equipment provisioning, and onboarding.</p>
+        </details>
+        <details>
+          <summary>What if it doesn't work out?</summary>
+          <p>You can scale down as well as up. Most clients start with a single role, define clear 30/60/90-day success criteria, and expand only once the return is proven. Our 98% retention rate means replacement is rare &mdash; but if a role isn't right, we re-recruit.</p>
+        </details>
+        <details>
+          <summary>Where do Cloudstaff professionals work from?</summary>
+          <p>Either from Cloudstaff's world-class secure offices or from managed work-from-home setups with company-issued, encrypted, monitored devices &mdash; your choice, based on your security requirements.</p>
+        </details>
+        <details>
+          <summary>What does it cost?</summary>
+          <p>Depending on the role, typical fully loaded monthly costs run 60&ndash;80% below equivalent US hires. See the <a href="<?php echo esc_url( home_url( '/pricing/' ) ); ?>">pricing &amp; savings page</a> for a transparent breakdown by role.</p>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="lander-cta lander-cta-brand">
+  <div class="lander-content">
+    <h2>See the model in action</h2>
+    <p>Next step: a step-by-step look at how a Cloudstaff engagement actually runs &mdash; who does what, and when.</p>
+    <a href="<?php echo esc_url( home_url( '/how-it-works/' ) ); ?>" class="button button-inverse button-lg">How it works</a>
+  </div>
+</section>
+
+</main>
+<?php
+get_footer();

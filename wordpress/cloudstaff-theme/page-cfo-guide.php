@@ -1,0 +1,215 @@
+<?php
+/**
+ * Template Name: The CFO Guide
+ * Template Post Type: page
+ *
+ * Generated from src/partials/cfo-guide.html by build.py — edit the partial,
+ * not this file, then re-run `python3 build.py`.
+ *
+ * @package Cloudstaff
+ */
+
+get_header();
+?>
+<main class="lander" id="main-content">
+<section class="lander-hero">
+  <div class="lander-content">
+    <span class="eyebrow">For finance leaders</span>
+    <h1>The CFO's guide to remote staffing</h1>
+    <p>Remote staffing is not just a cost decision. It is a strategic workforce model designed to improve financial performance, increase resilience, and expand operational capacity without increasing fixed overhead. The question is not whether it works &mdash; it's how to structure it properly, manage risk, and ensure measurable return.</p>
+    <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-lg">Discuss your business case</a>
+  </div>
+</section>
+
+<section class="lander-tile-row-section">
+  <div class="lander-content">
+    <div class="grid-3">
+      <div class="feature-tile">
+        <div class="feature-tile-icon"><i class="fa-light fa-route" aria-hidden="true"></i></div>
+        <h3>Six scaling archetypes</h3>
+        <p>Companies rarely adopt remote staffing randomly &mdash; adoption follows predictable patterns you can plan around.</p>
+      </div>
+      <div class="feature-tile">
+        <div class="feature-tile-icon"><i class="fa-light fa-grid-2" aria-hidden="true"></i></div>
+        <h3>A role-fit framework</h3>
+        <p>Map roles by standardization and operational complexity to know how fast each will ramp &mdash; and what oversight it needs.</p>
+      </div>
+      <div class="feature-tile">
+        <div class="feature-tile-icon"><i class="fa-light fa-chess" aria-hidden="true"></i></div>
+        <h3>A capital-allocation lens</h3>
+        <p>Evaluate outsourcing as a phased strategy, not a binary decision: start where risk is lowest, prove return, expand.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="lander-section">
+  <div class="lander-content">
+    <div>
+      <span class="eyebrow">Outsourcing for scale</span>
+      <h2>Six proven archetypes for scaling</h2>
+      <p>Understanding these patterns allows CFOs to scale deliberately, manage risk, and optimize financial impact at each stage. Most organizations begin with a single specialist, expand into department teams as confidence grows, then build portfolios of offshore capability across business units.</p>
+      <div class="grid-3 collapse-2">
+        <div class="card">
+          <span class="badge">01</span>
+          <h3>Specialized talent augmentation</h3>
+          <p>Individual specialists that are hard or expensive to hire in the US: project managers, senior EAs, Salesforce administrators, QA analysts. Access scarce skills faster while keeping existing workflows.</p>
+        </div>
+        <div class="card">
+          <span class="badge">02</span>
+          <h3>Department-specific teams</h3>
+          <p>A single function scales offshore &mdash; accounts payable, customer support, sales development. Retain in-house leadership, streamline repeatable work, reduce delivery risk.</p>
+        </div>
+        <div class="card">
+          <span class="badge">03</span>
+          <h3>Multi-role support</h3>
+          <p>A portfolio of support roles across functions: EAs, AP clerks, proposal writers, marketing assistants. Fill capability gaps and add roles as needed across departments.</p>
+        </div>
+        <div class="card">
+          <span class="badge">04</span>
+          <h3>Flexible capacity</h3>
+          <p>Growth-stage or seasonal companies needing headcount elasticity. Scale with demand, match labor to workload, test before expanding.</p>
+        </div>
+        <div class="card">
+          <span class="badge">05</span>
+          <h3>Semi-managed services</h3>
+          <p>End-to-end functions with measurable outputs and integrated US oversight: finance operations, IT help desk, HR operations. Lower operating costs with proven processes.</p>
+        </div>
+        <div class="card">
+          <span class="badge">06</span>
+          <h3>Captive incubation</h3>
+          <p>Building foundations for your own captive operation: accountants, collections, logistics coordinators, back-office support. Reduce investment risk and create transferable processes.</p>
+        </div>
+      </div>
+      <p><strong>The key is sequencing.</strong> Start where risk is lowest. Establish performance benchmarks. Expand where financial return and operational maturity justify it.</p>
+    </div>
+  </div>
+</section>
+
+<section class="lander-section lander-section-tinted">
+  <div class="lander-content">
+    <div>
+      <span class="eyebrow">Not every position scales the same way</span>
+      <h2>The role-fit framework: standardization vs. complexity</h2>
+      <p>Success depends on two factors: how standardized the role is, and how operationally complex the function becomes once integrated. The clearer the role definition, the faster the ramp-up and the lower the operational exposure.</p>
+      <div class="grid-2">
+        <div class="card card-success">
+          <h3>Clear workflow, fast ramp-up <span class="badge badge-success">1&ndash;2 weeks</span></h3>
+          <p>Well-defined tasks, easy to document and hand off, minimal cross-functional coordination, low risk.</p>
+          <p><small>Examples: accounting, HR &amp; recruitment, customer support L1/2, payroll support, admin and back office.</small></p>
+        </div>
+        <div class="card">
+          <h3>Structured onboarding required <span class="badge">2&ndash;3 weeks of SME time</span></h3>
+          <p>Needs deeper process mapping and has more dependencies (finance cycle, sales ops tools).</p>
+          <p><small>Examples: financial analysts, sales ops, IT helpdesk L1/2, QA/testers, collections, procurement, scheduling.</small></p>
+        </div>
+        <div class="card">
+          <h3>Expertise-driven, extended ramp-up <span class="badge">1&ndash;3 months</span></h3>
+          <p>Longer onboarding, possible onsite training, multiple sign-offs, cross-functional collaboration, deep systems knowledge.</p>
+          <p><small>Examples: software engineers, paralegals, SEO specialists.</small></p>
+        </div>
+        <div class="card">
+          <h3>High local knowledge &amp; oversight <span class="badge badge-pending">Ongoing senior oversight</span></h3>
+          <p>High context-specific decision-making and deep regulatory or industry knowledge required.</p>
+          <p><small>Examples: financial advisors, FP&amp;A leadership, senior compliance officers, regulated roles, corporate strategy, IT architects.</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="lander-section">
+  <div class="lander-content">
+    <div>
+      <span class="eyebrow">The journey starts here</span>
+      <h2>From hundreds of roles to one clear business case</h2>
+      <p>Start with one or two roles where the financial return is clear, performance can be measured, and operational risk can be controlled. A focused pilot lets you quickly demonstrate savings, quality, and productivity. Once the model is proven, scale into adjacent roles and functions with greater confidence.</p>
+      <div class="grid-3">
+        <div class="card">
+          <div class="step-number">1</div>
+          <h3>Identify the opportunity</h3>
+          <ul>
+            <li>Difficult or expensive to hire locally</li>
+            <li>Clear, repeatable responsibilities</li>
+            <li>Existing capacity bottleneck</li>
+            <li>Measurable output or service level</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="step-number">2</div>
+          <h3>Calculate the return</h3>
+          <ul>
+            <li>Fully loaded local cost</li>
+            <li>Cloudstaff monthly cost</li>
+            <li>Annual cost reduction</li>
+            <li>Recruitment and replacement savings</li>
+            <li>Additional capacity created</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="step-number">3</div>
+          <h3>Define the controls</h3>
+          <ul>
+            <li>Named internal owner</li>
+            <li>Documented workflows</li>
+            <li>Clear access permissions</li>
+            <li>Measurable KPIs</li>
+            <li>Regular performance reviews</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="lander-section lander-section-tinted lander-section-image-left">
+  <div class="lander-content">
+    <div>
+      <span class="eyebrow">Best practices from 1,200+ engagements</span>
+      <h2>The first 30&ndash;60 days determine long-term success</h2>
+      <p>Clear ownership, disciplined communication routines, measurable KPIs, and structured feedback reduce risk and accelerate productivity. These practices help finance leaders build stable, accountable, high-performing remote teams.</p>
+      <div class="faq">
+        <details>
+          <summary>Establish clear roles and expectations</summary>
+          <p>Define responsibilities, ownership, and decision rights. Set measurable KPIs and quality standards (accuracy, throughput, SLA). Document workflows and handoff points. Clarify escalation paths and approval rules.</p>
+        </details>
+        <details>
+          <summary>Build strong communication routines</summary>
+          <p>Hold daily or twice-weekly 5&ndash;10 minute standups. Use one primary channel (Teams/Slack). Confirm shared working hours and response windows. Encourage over-communication early in the relationship.</p>
+        </details>
+        <details>
+          <summary>Create a consistent operating rhythm</summary>
+          <p>Weekly KPI reviews; monthly performance calibration. Structured agendas (updates, blockers, priorities). Task-tracking tools and a reinforced &ldquo;definition of done&rdquo; for each deliverable.</p>
+        </details>
+        <details>
+          <summary>Invest in knowledge transfer</summary>
+          <p>Record onboarding calls, demos, and recurring training. Build a simple knowledge base of SOPs, videos, and examples. Use micro-training and update documentation as workflows evolve.</p>
+        </details>
+        <details>
+          <summary>Foster engagement and trust</summary>
+          <p>Include remote team members in team meetings and company rituals. Celebrate successes. Assign a buddy or mentor during the first 30&ndash;60 days.</p>
+        </details>
+        <details>
+          <summary>Keep security and access simple and controlled</summary>
+          <p>Provide least-privilege access, centralize with SSO and MFA where possible, and use audit trails to monitor system activity.</p>
+        </details>
+        <details>
+          <summary>Give feedback early and frequently</summary>
+          <p>Weekly feedback loops for the first 8 weeks. Correct issues quickly. Use structured frameworks: Start/Stop/Continue, 3-2-1 feedback, and similar.</p>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="lander-cta lander-cta-brand">
+  <div class="lander-content">
+    <h2>Build your business case with us</h2>
+    <p>Bring one role. We'll bring the fully loaded numbers, the controls framework, and a 12-month deployment plan.</p>
+    <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-inverse button-lg">Discuss your business case</a>
+  </div>
+</section>
+
+</main>
+<?php
+get_footer();

@@ -1,0 +1,147 @@
+/* ==========================================================================
+   Cloudstaff marketing site — custom layer on top of the design system.
+   Tokens only — no raw hex, no raw px where a token exists.
+   ========================================================================== */
+
+/* --- Accessibility ----------------------------------------------------- */
+.skip-link {
+  position: absolute;
+  left: var(--space-md);
+  top: calc(-1 * var(--space-5xl));
+  z-index: var(--z-index-toast);
+  background: var(--color-surface-page);
+  color: var(--color-foreground-primary);
+  padding: var(--space-sm) var(--space-lg);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-md);
+  transition: top var(--duration-fast);
+}
+.skip-link:focus { top: var(--space-md); }
+
+/* --- Topbar tweaks for a marketing site -------------------------------- */
+.topbar-website { position: sticky; top: 0; z-index: var(--z-index-topbar); }
+.topbar-nav a[aria-current="page"] {
+  color: var(--color-brand-primary-strong);
+  font-weight: var(--font-weight-semibold);
+}
+
+/* Fallback text logo in case the sprite is unavailable */
+.logo-text-fallback {
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-xl);
+  color: var(--color-brand-primary-strong);
+  letter-spacing: -0.02em;
+}
+.logo-text-fallback sup { font-size: var(--font-size-xs); }
+
+/* --- Eyebrow labels ----------------------------------------------------- */
+.eyebrow {
+  display: inline-block;
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-brand-primary-strong);
+  margin-block-end: var(--space-sm);
+}
+.lander-cta .eyebrow, .lander-hero-dark .eyebrow { color: inherit; opacity: 0.85; }
+
+/* --- Cost comparison bar chart ------------------------------------------ */
+.cost-compare { display: grid; gap: var(--space-xl); }
+.cost-bar-row { display: grid; gap: var(--space-xs); }
+.cost-bar-label {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-lg);
+  font-size: var(--font-size-sm);
+  color: var(--color-foreground-muted);
+}
+.cost-bar-label strong {
+  color: var(--color-foreground-primary);
+  font-family: var(--font-family-mono);
+}
+.cost-bar-track {
+  background: var(--color-surface-secondary);
+  border-radius: var(--radius-pill);
+  overflow: hidden;
+}
+.cost-bar-fill {
+  height: var(--space-xl);
+  border-radius: var(--radius-pill);
+  width: var(--bar, 50%);
+  background: var(--color-utility-muted);
+  transition: width var(--duration-slow) var(--ease-emphasis);
+}
+.cost-bar-fill.is-cloudstaff { background: var(--color-brand-primary); }
+.cost-bar-fill.is-local { background: var(--color-utility-muted); }
+.cost-bar-savings {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-feedback-success);
+}
+
+/* --- Misconception / reality pairs -------------------------------------- */
+.myth-card .badge { margin-block-end: var(--space-sm); }
+.myth-card p:first-of-type {
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-semibold);
+}
+
+/* --- Numbered journey steps --------------------------------------------- */
+.step-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  inline-size: var(--space-4xl);
+  block-size: var(--space-4xl);
+  border-radius: var(--radius-pill);
+  background: color-mix(in oklch, var(--color-brand-primary), white 85%);
+  color: var(--color-brand-primary-strong);
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-lg);
+  margin-block-end: var(--space-md);
+}
+html[data-theme="dark"] .step-number {
+  background: color-mix(in oklch, var(--color-brand-primary), black 60%);
+  color: var(--color-surface-page);
+}
+
+/* --- Simple FAQ styling on native <details> ------------------------------ */
+.faq { display: grid; gap: var(--space-sm); }
+.faq details {
+  background: var(--color-surface-canvas);
+  border: 1px solid var(--color-border-muted, var(--color-surface-secondary));
+  border-radius: var(--radius-lg);
+  padding: var(--component-card-padding, var(--space-xl));
+}
+.faq summary {
+  cursor: pointer;
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-lg);
+}
+.faq details[open] summary { margin-block-end: var(--space-md); }
+.faq details p + p { margin-block-start: var(--space-sm); }
+
+/* --- Quote attribution --------------------------------------------------- */
+.testimonial blockquote {
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-normal);
+}
+.testimonial figcaption {
+  margin-block-start: var(--space-md);
+  font-size: var(--font-size-sm);
+  color: var(--color-foreground-muted);
+}
+.testimonial figcaption strong { color: var(--color-foreground-primary); }
+
+/* --- Section spacing safety net (if lander classes evolve) --------------- */
+.lander-section, .lander-tile-row-section { scroll-margin-top: var(--space-5xl); }
+
+/* --- Print -------------------------------------------------------------- */
+@media print {
+  .topbar-website, .lander-cta, .footer-certs { display: none; }
+}

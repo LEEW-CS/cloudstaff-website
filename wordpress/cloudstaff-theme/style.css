@@ -1,0 +1,16 @@
+/*
+Theme Name: Cloudstaff 2026
+Theme URI: https://www.cloudstaff.com
+Author: Cloudstaff
+Description: Custom marketing theme for cloudstaff.com built on the official Cloudstaff Design System (v2.38.0). Content templates are generated from shared partials — see the repository README.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.7
+Requires PHP: 8.0
+License: Proprietary
+Text Domain: cloudstaff
+*/
+
+/* All styling comes from the Cloudstaff Design System CDN plus site.css,
+   both enqueued in functions.php. This file intentionally holds only the
+   theme header. */
