@@ -19,9 +19,14 @@
   <nav class="site-nav" aria-label="Main navigation">
     <a href="<?php echo esc_url( home_url( '/what-is-remote-staffing/' ) ); ?>" <?php if ( is_page( 'what-is-remote-staffing' ) ) echo 'aria-current="page"'; ?>>What Is Remote Staffing?</a>
     <a href="<?php echo esc_url( home_url( '/how-it-works/' ) ); ?>" <?php if ( is_page( 'how-it-works' ) ) echo 'aria-current="page"'; ?>>How It Works</a>
-    <a href="<?php echo esc_url( home_url( '/pricing/' ) ); ?>" <?php if ( is_page( 'pricing' ) ) echo 'aria-current="page"'; ?>>Pricing &amp; Savings</a>
-    <a href="<?php echo esc_url( home_url( '/team-builder/' ) ); ?>" <?php if ( is_page( 'team-builder' ) ) echo 'aria-current="page"'; ?>>Team Builder</a>
-    <a href="<?php echo esc_url( home_url( '/roles/' ) ); ?>" <?php if ( is_page( 'roles' ) ) echo 'aria-current="page"'; ?>>Roles &amp; Industries</a>
+    <div class="site-nav-item">
+      <a href="<?php echo esc_url( home_url( '/roles/' ) ); ?>" <?php if ( is_page( 'roles' ) ) echo 'aria-current="page"'; ?> class="site-nav-parent">Roles &amp; Industries<span class="site-nav-caret" aria-hidden="true"></span></a>
+      <div class="site-nav-dropdown">
+        <a href="<?php echo esc_url( home_url( '/roles/' ) ); ?>" <?php if ( is_page( 'roles' ) ) echo 'aria-current="page"'; ?>>All roles &amp; industries</a>
+        <a href="<?php echo esc_url( home_url( '/team-builder/' ) ); ?>" <?php if ( is_page( 'team-builder' ) ) echo 'aria-current="page"'; ?>>Team Builder</a>
+        <a href="<?php echo esc_url( home_url( '/pricing/' ) ); ?>" <?php if ( is_page( 'pricing' ) ) echo 'aria-current="page"'; ?>>Pricing &amp; Savings</a>
+      </div>
+    </div>
     <a href="<?php echo esc_url( home_url( '/security/' ) ); ?>" <?php if ( is_page( 'security' ) ) echo 'aria-current="page"'; ?>>Security</a>
     <a href="<?php echo esc_url( home_url( '/why-cloudstaff/' ) ); ?>" <?php if ( is_page( 'why-cloudstaff' ) ) echo 'aria-current="page"'; ?>>Why Cloudstaff</a>
     <a href="<?php echo esc_url( home_url( '/cfo-guide/' ) ); ?>" <?php if ( is_page( 'cfo-guide' ) ) echo 'aria-current="page"'; ?>>CFO Guide</a>

@@ -19,6 +19,10 @@
         <span class="tb-control-label">Service country</span>
         <div class="tb-seg" id="tb-country" role="group" aria-label="Service country"></div>
       </div>
+      <div class="tb-control">
+        <label class="tb-control-label" for="tb-currency">Currency</label>
+        <select class="select tb-currency" id="tb-currency" aria-label="Display currency"></select>
+      </div>
       <div class="tb-control tb-control-search">
         <label class="tb-control-label" for="tb-search">Find a role</label>
         <input class="input" id="tb-search" type="search" placeholder="Search 600+ roles&hellip; e.g. accountant, React, paralegal">
@@ -45,7 +49,13 @@
               <strong id="tb-total-saved">$0/mo</strong>
             </div>
             <a href="{{URL:contact}}" class="button tb-cta">Get my real quote</a>
-            <p class="tb-disclaimer">Proof of concept. All prices are placeholders for illustration &mdash; your actual quote depends on role, seniority, and location.</p>
+            <ul class="tb-disclaimer">
+              <li>Proof of concept &mdash; all prices are placeholders for illustration. Your actual quote depends on role, seniority, and location.</li>
+              <li>Assumes a U7 managed PC for each person.</li>
+              <li>All-in costs include Employee Direct Costs, Cloudstaff Service Fee, and PC costs.</li>
+              <li>Hourly rates are the monthly all-in cost divided by 173.33 hours.</li>
+              <li>Non-USD amounts use indicative exchange rates; billing is in USD.</li>
+            </ul>
           </div>
         </div>
       </aside>

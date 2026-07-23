@@ -4,9 +4,14 @@
   <nav class="site-nav" aria-label="Main navigation">
     <a href="{{URL:what-is-remote-staffing}}" {{ACTIVE:what-is-remote-staffing}}>What Is Remote Staffing?</a>
     <a href="{{URL:how-it-works}}" {{ACTIVE:how-it-works}}>How It Works</a>
-    <a href="{{URL:pricing}}" {{ACTIVE:pricing}}>Pricing &amp; Savings</a>
-    <a href="{{URL:team-builder}}" {{ACTIVE:team-builder}}>Team Builder</a>
-    <a href="{{URL:roles}}" {{ACTIVE:roles}}>Roles &amp; Industries</a>
+    <div class="site-nav-item">
+      <a href="{{URL:roles}}" {{ACTIVE:roles}} class="site-nav-parent">Roles &amp; Industries<span class="site-nav-caret" aria-hidden="true"></span></a>
+      <div class="site-nav-dropdown">
+        <a href="{{URL:roles}}" {{ACTIVE:roles}}>All roles &amp; industries</a>
+        <a href="{{URL:team-builder}}" {{ACTIVE:team-builder}}>Team Builder</a>
+        <a href="{{URL:pricing}}" {{ACTIVE:pricing}}>Pricing &amp; Savings</a>
+      </div>
+    </div>
     <a href="{{URL:security}}" {{ACTIVE:security}}>Security</a>
     <a href="{{URL:why-cloudstaff}}" {{ACTIVE:why-cloudstaff}}>Why Cloudstaff</a>
     <a href="{{URL:cfo-guide}}" {{ACTIVE:cfo-guide}}>CFO Guide</a>

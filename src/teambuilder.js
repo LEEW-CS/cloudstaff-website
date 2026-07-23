@@ -94,6 +94,19 @@
   var COUNTRIES = { ph: { label: "Philippines", mult: 1.0 },
                     co: { label: "Colombia", mult: 1.18 },
                     in: { label: "India", mult: 1.05 } };
+  var LEVELS = { junior: { label: "Junior", mult: 0.85 },
+                 mid: { label: "Mid", mult: 1.0 },
+                 senior: { label: "Senior", mult: 1.3 } };
+  /* Placeholder FX rates, USD base */
+  var CURRENCIES = { USD: { sym: "$", rate: 1.0 },
+                     AUD: { sym: "A$", rate: 1.52 },
+                     GBP: { sym: "\u00a3", rate: 0.79 },
+                     HKD: { sym: "HK$", rate: 7.8 },
+                     SGD: { sym: "S$", rate: 1.34 },
+                     EUR: { sym: "\u20ac", rate: 0.92 },
+                     NZD: { sym: "NZ$", rate: 1.66 },
+                     CAD: { sym: "C$", rate: 1.37 } };
+  var HOURS_PER_MONTH = 173.33;
 
   /* Deterministic per-role variation so prices look organic */
   function hash(s) {
@@ -108,7 +121,14 @@
     return { cs: p[0] * v * senior, us: p[1] * v * senior };
   }
   function round10(n) { return Math.round(n / 10) * 10; }
-  function money(n) { return "$" + round10(n).toLocaleString("en-US"); }
+  function fx(n) { return n * CURRENCIES[state.currency].rate; }
+  function money(n) {
+    return CURRENCIES[state.currency].sym + round10(fx(n)).toLocaleString("en-US");
+  }
+  function moneyHr(n) {
+    return CURRENCIES[state.currency].sym +
+      fx(n).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  }
 
   /* Templated 10-line job description */
   function jd(role, cat) {
@@ -132,7 +152,7 @@
   /* ------------------------------------------------------------------ */
   /* State                                                               */
   /* ------------------------------------------------------------------ */
-  var state = { mode: "office", country: "ph", team: {} };  /* team: role -> {cat, qty} */
+  var state = { mode: "office", country: "ph", currency: "USD", team: {} };  /* team: role -> {cat, qty, level} */
 
   /* ------------------------------------------------------------------ */
   /* DOM                                                                 */
@@ -167,6 +187,20 @@
   }
   buildSegmented("#tb-mode", MODES, "mode");
   buildSegmented("#tb-country", COUNTRIES, "country");
+  var curEl = $("#tb-currency");
+  if (curEl) {
+    Object.keys(CURRENCIES).forEach(function (c) {
+      var o = document.createElement("option");
+      o.value = c;
+      o.textContent = c;
+      if (c === state.currency) o.selected = true;
+      curEl.appendChild(o);
+    });
+    curEl.addEventListener("change", function () {
+      state.currency = curEl.value;
+      renderTeam();
+    });
+  }
 
   /* Build catalog */
   Object.keys(CATALOG).forEach(function (cat, idx) {
@@ -235,7 +269,7 @@
   /* Team management */
   function addRole(role, cat) {
     if (state.team[role]) state.team[role].qty += 1;
-    else state.team[role] = { cat: cat, qty: 1 };
+    else state.team[role] = { cat: cat, qty: 1, level: "mid" };
     renderTeam();
   }
   function renderTeam() {
@@ -246,10 +280,19 @@
     var totalCs = 0, totalUs = 0;
     roles.forEach(function (role) {
       var item = state.team[role];
+      if (!item.level) item.level = "mid";
       var p = basePrices(role, item.cat);
-      var allIn = p.cs * mMult * cMult;
+      var lMult = LEVELS[item.level].mult;
+      var allIn = p.cs * mMult * cMult * lMult;
+      var hourly = allIn / HOURS_PER_MONTH;
       totalCs += allIn * item.qty;
-      totalUs += p.us * item.qty;
+      totalUs += p.us * lMult * item.qty;
+
+      var levelBtns = Object.keys(LEVELS).map(function (k) {
+        return '<button type="button" class="tb-lvl-btn' +
+          (item.level === k ? " is-active" : "") + '" data-lvl="' + k + '">' +
+          LEVELS[k].label + "</button>";
+      }).join("");
 
       var li = document.createElement("div");
       li.className = "tb-team-item";
@@ -257,6 +300,7 @@
         '<div class="tb-team-info"><strong>' + role + "</strong>" +
         '<span class="tb-team-cat">' + item.cat + "</span></div>" +
         '<div class="tb-team-controls">' +
+        '<div class="tb-lvl" role="group" aria-label="Experience level for ' + role + '">' + levelBtns + "</div>" +
         '<div class="tb-qty" aria-label="Quantity for ' + role + '">' +
         '<button type="button" class="tb-qty-btn" data-d="-1" aria-label="Decrease">&minus;</button>' +
         '<span class="tb-qty-n">' + item.qty + "</span>" +
@@ -264,7 +308,14 @@
         "</div>" +
         '<span class="tb-price">' + money(allIn * item.qty) + '/mo</span>' +
         '<button type="button" class="tb-remove" aria-label="Remove ' + role + '">&times;</button>' +
-        "</div>";
+        "</div>" +
+        '<div class="tb-hourly">All-in hourly rate: <strong>' + moneyHr(hourly) + '/hr</strong> per person</div>';
+      li.querySelectorAll(".tb-lvl-btn").forEach(function (b) {
+        b.addEventListener("click", function () {
+          item.level = b.getAttribute("data-lvl");
+          renderTeam();
+        });
+      });
       li.querySelectorAll(".tb-qty-btn").forEach(function (b) {
         b.addEventListener("click", function () {
           item.qty += parseInt(b.getAttribute("data-d"), 10);
