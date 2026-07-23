@@ -39,6 +39,7 @@
   min-height: 3.75rem;
 }
 .site-header-brand { text-decoration: none; }
+.site-header-cta { display: inline-flex; gap: var(--space-sm, 0.5rem); align-items: center; }
 .site-nav {
   display: flex;
   flex-wrap: wrap;
@@ -397,6 +398,18 @@ h3 > .icon {
 .button-lg {
   padding: 0.85rem 1.7rem;
   font-size: var(--font-size-lg, 1.125rem);
+}
+/* Deprioritized header action */
+.button-quiet {
+  background: var(--color-surface-canvas, #f0f4f9);
+  color: var(--color-foreground-muted, #5b6576);
+  border-color: transparent;
+  font-weight: var(--font-weight-medium, 500);
+}
+.button-quiet:hover {
+  background: var(--color-surface-secondary, #e2e8f0);
+  color: var(--color-foreground-primary, #16233b);
+  box-shadow: none;
 }
 .button-link {
   display: inline;

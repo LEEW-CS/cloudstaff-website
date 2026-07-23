@@ -32,6 +32,7 @@
     <a href="<?php echo esc_url( home_url( '/cfo-guide/' ) ); ?>" <?php if ( is_page( 'cfo-guide' ) ) echo 'aria-current="page"'; ?>>CFO Guide</a>
   </nav>
   <div class="site-header-cta">
+    <a href="https://www.cloudstaff.com/careers/" class="button button-quiet" target="_blank" rel="noopener">Jobs at Cloudstaff</a>
     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button">Talk to an Expert</a>
   </div>
 </header>
