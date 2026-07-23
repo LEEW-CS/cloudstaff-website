@@ -190,6 +190,30 @@ h3 > .icon {
   padding-block: clamp(3rem, 8vw, 5.5rem);
   background: var(--color-surface-canvas, #f6f8fb);
 }
+/* Full-bleed photographic hero: photo + dark overlay for guaranteed contrast.
+   If the photo fails to load, the navy gradient base keeps the band styled. */
+.site-hero-photo {
+  display: flex;
+  align-items: center;
+  min-height: clamp(24rem, 44vh, 32rem);
+  background-color: #0b1c38;
+  background-image:
+    linear-gradient(100deg,
+      rgba(7, 17, 35, 0.90) 0%,
+      rgba(7, 17, 35, 0.74) 45%,
+      rgba(7, 17, 35, 0.42) 100%),
+    var(--hero-image, linear-gradient(135deg, #0b1c38, #17427c));
+  background-size: cover, cover;
+  background-position: center, center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  width: 100%;
+}
+.site-hero-photo .site-band-inner { width: 100%; }
+.site-hero-photo h1,
+.site-hero-photo p { color: #ffffff; }
+.site-hero-photo .eyebrow { color: #ffffff; opacity: 0.85; }
+.site-hero-photo a.button-link { color: #ffffff; text-decoration: underline; }
 .site-hero h1 {
   max-width: 46rem;
   margin-block: var(--space-sm, 0.5rem) var(--space-lg, 1rem);
@@ -260,12 +284,71 @@ h3 > .icon {
   color: #ffffff;
   text-align: center;
 }
-.site-cta h2 { margin-block: 0 var(--space-md, 0.75rem); }
+.site-cta h2 { margin-block: 0 var(--space-md, 0.75rem); color: #ffffff; }
 .site-cta p {
   max-width: 40rem;
   margin: 0 auto var(--space-xl, 1.5rem);
   font-size: var(--font-size-lg, 1.125rem);
+  color: #ffffff;
 }
+
+/* --- Buttons (owned: DS button styling proved unreliable on links) -------- */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.35rem;
+  border: 1px solid transparent;
+  border-radius: var(--radius-pill, 999px);
+  background: var(--color-brand-primary, #007aff);
+  color: #ffffff;
+  font-family: var(--font-family-body, inherit);
+  font-size: var(--font-size-md, 1rem);
+  font-weight: var(--font-weight-semibold, 600);
+  line-height: 1.2;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background var(--duration-fast, 150ms), color var(--duration-fast, 150ms), box-shadow var(--duration-fast, 150ms);
+}
+.button:hover {
+  background: color-mix(in oklch, var(--color-brand-primary, #007aff), black 15%);
+  color: #ffffff;
+  box-shadow: var(--shadow-sm, 0 2px 8px rgba(0, 0, 0, 0.12));
+}
+.button-secondary {
+  background: transparent;
+  border-color: var(--color-brand-primary, #007aff);
+  color: var(--color-brand-primary-strong, var(--color-brand-primary, #007aff));
+}
+.button-secondary:hover {
+  background: color-mix(in oklch, var(--color-brand-primary, #007aff), white 90%);
+  color: var(--color-brand-primary-strong, var(--color-brand-primary, #007aff));
+  box-shadow: none;
+}
+.button-inverse {
+  background: #ffffff;
+  color: var(--color-brand-primary-strong, var(--color-brand-primary, #007aff));
+}
+.button-inverse:hover {
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--color-brand-primary-strong, var(--color-brand-primary, #007aff));
+}
+.button-lg {
+  padding: 0.85rem 1.7rem;
+  font-size: var(--font-size-lg, 1.125rem);
+}
+.button-link {
+  display: inline;
+  padding: 0;
+  border: none;
+  background: none;
+  color: var(--color-brand-primary-strong, var(--color-brand-primary, #007aff));
+  font-weight: var(--font-weight-semibold, 600);
+  text-decoration: none;
+  cursor: pointer;
+}
+.button-link:hover { text-decoration: underline; background: none; box-shadow: none; }
 
 /* --- Grids (owned here so column behavior is deterministic) ------------- */
 .grid-2, .grid-3, .grid-4 {
@@ -426,6 +509,9 @@ html[data-theme="dark"] .step-number {
 }
 .site-footer a { color: #ffffff; text-decoration: none; }
 .site-footer a:hover { text-decoration: underline; }
+.site-footer p,
+.site-footer li { color: rgba(255, 255, 255, 0.85); }
+.site-footer h3 { color: #ffffff; }
 .site-footer-main {
   max-width: 72rem;
   margin-inline: auto;

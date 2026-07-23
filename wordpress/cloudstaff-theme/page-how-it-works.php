@@ -12,7 +12,7 @@
 get_header();
 ?>
 <main class="site-main" id="main-content">
-<section class="site-hero">
+<section class="site-hero site-hero-photo" style="--hero-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=2000&q=70')" title="Team planning around a table">
   <div class="site-band-inner">
     <div class="site-hero-copy">
     <span class="eyebrow">A structured program, not a leap of faith</span>
@@ -20,19 +20,6 @@ get_header();
     <p>Bringing offshore professionals into your team should feel controlled, not complicated. Define the roles. Clarify expectations. Assign an owner. We take care of everything else &mdash; and your dedicated Success Manager partners with you at every stage.</p>
     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-lg">Start with a kickoff call</a>
 </div>
-    <div class="site-hero-art-wrap" aria-hidden="true"><svg class="hero-art" viewBox="0 0 440 400" fill="none" aria-hidden="true" focusable="false" role="img">
-  <defs>
-    <linearGradient id="art-bg-route" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" class="art-grad-a"/>
-      <stop offset="1" class="art-grad-b"/>
-    </linearGradient>
-  </defs>
-  <rect x="8" y="8" width="424" height="384" rx="36" fill="url(#art-bg-route)"/>
-  <circle cx="220" cy="200" r="128" class="art-ring" stroke-width="2"/>
-  <circle cx="220" cy="200" r="168" class="art-ring art-ring-faint" stroke-width="1.5"/>
-  <circle cx="52" cy="84" r="5" class="art-dot"/><circle cx="108" cy="40" r="3.5" class="art-dot"/><circle cx="356" cy="62" r="4.5" class="art-dot"/><circle cx="396" cy="150" r="3" class="art-dot"/><circle cx="60" cy="300" r="4" class="art-dot"/><circle cx="150" cy="352" r="3" class="art-dot"/><circle cx="330" cy="330" r="5" class="art-dot"/><circle cx="398" cy="262" r="3.5" class="art-dot"/><circle cx="30" cy="190" r="3" class="art-dot"/><circle cx="218" cy="30" r="3" class="art-dot"/>
-  <g transform="translate(136 116) scale(7)" class="art-glyph" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"><circle cx="6" cy="19" r="2"/><circle cx="18" cy="5" r="2"/><path d="M8 19h6.5a3.5 3.5 0 0 0 0-7h-5a3.5 3.5 0 0 1 0-7H16"/></g>
-</svg></div>
   </div>
 </section>
 

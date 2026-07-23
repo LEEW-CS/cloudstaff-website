@@ -11,7 +11,7 @@
 get_header();
 ?>
 <main class="site-main" id="main-content">
-<section class="site-hero site-hero-dark">
+<section class="site-hero site-hero-photo" style="--hero-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=2000&q=70')" title="Diverse professional team collaborating on laptops">
   <div class="site-band-inner">
     <div class="site-hero-copy">
     <span class="eyebrow">Remote staffing for US businesses</span>
@@ -20,19 +20,6 @@ get_header();
     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-lg">Talk to an Expert</a>
     <p><a href="<?php echo esc_url( home_url( '/what-is-remote-staffing/' ) ); ?>" class="button-link">New to outsourcing? Start with the plain-English guide &rarr;</a></p>
 </div>
-    <div class="site-hero-art-wrap" aria-hidden="true"><svg class="hero-art" viewBox="0 0 440 400" fill="none" aria-hidden="true" focusable="false" role="img">
-  <defs>
-    <linearGradient id="art-bg-globe" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" class="art-grad-a"/>
-      <stop offset="1" class="art-grad-b"/>
-    </linearGradient>
-  </defs>
-  <rect x="8" y="8" width="424" height="384" rx="36" fill="url(#art-bg-globe)"/>
-  <circle cx="220" cy="200" r="128" class="art-ring" stroke-width="2"/>
-  <circle cx="220" cy="200" r="168" class="art-ring art-ring-faint" stroke-width="1.5"/>
-  <circle cx="52" cy="84" r="5" class="art-dot"/><circle cx="108" cy="40" r="3.5" class="art-dot"/><circle cx="356" cy="62" r="4.5" class="art-dot"/><circle cx="396" cy="150" r="3" class="art-dot"/><circle cx="60" cy="300" r="4" class="art-dot"/><circle cx="150" cy="352" r="3" class="art-dot"/><circle cx="330" cy="330" r="5" class="art-dot"/><circle cx="398" cy="262" r="3.5" class="art-dot"/><circle cx="30" cy="190" r="3" class="art-dot"/><circle cx="218" cy="30" r="3" class="art-dot"/>
-  <g transform="translate(136 116) scale(7)" class="art-glyph" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c3 3.5 3 14.5 0 18"/><path d="M12 3c-3 3.5-3 14.5 0 18"/></g>
-</svg></div>
   </div>
 </section>
 

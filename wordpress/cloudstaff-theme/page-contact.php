@@ -12,7 +12,7 @@
 get_header();
 ?>
 <main class="site-main" id="main-content">
-<section class="site-hero">
+<section class="site-hero site-hero-photo" style="--hero-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2000&q=70')" title="Modern corporate office">
   <div class="site-band-inner">
     <div class="site-hero-copy">
     <span class="eyebrow">We're here to help</span>
@@ -20,19 +20,6 @@ get_header();
     <p>Whether you're exploring outsourcing for the first time or scaling an existing program, we'll give you straight answers on roles, costs, security, and timelines. No pressure, no jargon.</p>
     <a href="tel:+18007308615" class="button button-lg">Call US +1 800 730 8615</a>
 </div>
-    <div class="site-hero-art-wrap" aria-hidden="true"><svg class="hero-art" viewBox="0 0 440 400" fill="none" aria-hidden="true" focusable="false" role="img">
-  <defs>
-    <linearGradient id="art-bg-headphones" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" class="art-grad-a"/>
-      <stop offset="1" class="art-grad-b"/>
-    </linearGradient>
-  </defs>
-  <rect x="8" y="8" width="424" height="384" rx="36" fill="url(#art-bg-headphones)"/>
-  <circle cx="220" cy="200" r="128" class="art-ring" stroke-width="2"/>
-  <circle cx="220" cy="200" r="168" class="art-ring art-ring-faint" stroke-width="1.5"/>
-  <circle cx="52" cy="84" r="5" class="art-dot"/><circle cx="108" cy="40" r="3.5" class="art-dot"/><circle cx="356" cy="62" r="4.5" class="art-dot"/><circle cx="396" cy="150" r="3" class="art-dot"/><circle cx="60" cy="300" r="4" class="art-dot"/><circle cx="150" cy="352" r="3" class="art-dot"/><circle cx="330" cy="330" r="5" class="art-dot"/><circle cx="398" cy="262" r="3.5" class="art-dot"/><circle cx="30" cy="190" r="3" class="art-dot"/><circle cx="218" cy="30" r="3" class="art-dot"/>
-  <g transform="translate(136 116) scale(7)" class="art-glyph" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M3 14v-3a9 9 0 0 1 18 0v3"/><rect x="3" y="14" width="4" height="6" rx="2"/><rect x="17" y="14" width="4" height="6" rx="2"/></g>
-</svg></div>
   </div>
 </section>
 

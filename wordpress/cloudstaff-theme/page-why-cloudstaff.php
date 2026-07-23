@@ -12,7 +12,7 @@
 get_header();
 ?>
 <main class="site-main" id="main-content">
-<section class="site-hero site-hero-dark">
+<section class="site-hero site-hero-photo" style="--hero-image: url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=2000&q=70')" title="Business presentation to a team">
   <div class="site-band-inner">
     <div class="site-hero-copy">
     <span class="eyebrow">Experience counts</span>
@@ -20,19 +20,6 @@ get_header();
     <p>For more than 20 years, Cloudstaff has helped global businesses build reliable, high-performing offshore teams that operate as a true extension of their organization. When margin, compliance, and accountability are critical, experience is not optional &mdash; it's essential.</p>
     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-lg">Meet the team</a>
 </div>
-    <div class="site-hero-art-wrap" aria-hidden="true"><svg class="hero-art" viewBox="0 0 440 400" fill="none" aria-hidden="true" focusable="false" role="img">
-  <defs>
-    <linearGradient id="art-bg-award" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" class="art-grad-a"/>
-      <stop offset="1" class="art-grad-b"/>
-    </linearGradient>
-  </defs>
-  <rect x="8" y="8" width="424" height="384" rx="36" fill="url(#art-bg-award)"/>
-  <circle cx="220" cy="200" r="128" class="art-ring" stroke-width="2"/>
-  <circle cx="220" cy="200" r="168" class="art-ring art-ring-faint" stroke-width="1.5"/>
-  <circle cx="52" cy="84" r="5" class="art-dot"/><circle cx="108" cy="40" r="3.5" class="art-dot"/><circle cx="356" cy="62" r="4.5" class="art-dot"/><circle cx="396" cy="150" r="3" class="art-dot"/><circle cx="60" cy="300" r="4" class="art-dot"/><circle cx="150" cy="352" r="3" class="art-dot"/><circle cx="330" cy="330" r="5" class="art-dot"/><circle cx="398" cy="262" r="3.5" class="art-dot"/><circle cx="30" cy="190" r="3" class="art-dot"/><circle cx="218" cy="30" r="3" class="art-dot"/>
-  <g transform="translate(136 116) scale(7)" class="art-glyph" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"><circle cx="12" cy="9" r="6"/><path d="m9 14.2-1 7.8 4-2.5 4 2.5-1-7.8"/></g>
-</svg></div>
   </div>
 </section>
 
