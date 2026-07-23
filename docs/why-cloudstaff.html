@@ -12,13 +12,9 @@
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to content</a>
-<header class="topbar topbar-website">
-  <div class="topbar-logo">
-    <a href="index.html" aria-label="Cloudstaff — home">
-      <svg class="brand-logo logo-size-header" role="img" aria-label="Cloudstaff"><use href="#sym-logo-landscape"></use></svg>
-    </a>
-  </div>
-  <nav class="topbar-nav" aria-label="Main navigation">
+<header class="site-header">
+  <a href="index.html" class="site-header-brand" aria-label="Cloudstaff — home"><span class="site-logo"><svg class="site-logo-cloud" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M7.2 18.5a4.7 4.7 0 0 1-.6-9.36 6.2 6.2 0 0 1 11.9 1.6A4.15 4.15 0 0 1 17.9 18.5z"/></svg><span class="site-logo-word">cloudstaff<sup>&reg;</sup></span></span></a>
+  <nav class="site-nav" aria-label="Main navigation">
     <a href="what-is-remote-staffing.html" >What Is Remote Staffing?</a>
     <a href="how-it-works.html" >How It Works</a>
     <a href="pricing.html" >Pricing &amp; Savings</a>
@@ -27,7 +23,7 @@
     <a href="why-cloudstaff.html" aria-current="page">Why Cloudstaff</a>
     <a href="cfo-guide.html" >CFO Guide</a>
   </nav>
-  <div class="topbar-auth">
+  <div class="site-header-cta">
     <a href="contact.html" class="button">Talk to an Expert</a>
   </div>
 </header>
@@ -35,10 +31,25 @@
 <main class="site-main" id="main-content">
 <section class="site-hero site-hero-dark">
   <div class="site-band-inner">
+    <div class="site-hero-copy">
     <span class="eyebrow">Experience counts</span>
     <h1>Two decades of building teams that stay</h1>
     <p>For more than 20 years, Cloudstaff has helped global businesses build reliable, high-performing offshore teams that operate as a true extension of their organization. When margin, compliance, and accountability are critical, experience is not optional &mdash; it's essential.</p>
     <a href="contact.html" class="button button-lg">Meet the team</a>
+</div>
+    <div class="site-hero-art-wrap" aria-hidden="true"><svg class="hero-art" viewBox="0 0 440 400" fill="none" aria-hidden="true" focusable="false" role="img">
+  <defs>
+    <linearGradient id="art-bg-award" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" class="art-grad-a"/>
+      <stop offset="1" class="art-grad-b"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="424" height="384" rx="36" fill="url(#art-bg-award)"/>
+  <circle cx="220" cy="200" r="128" class="art-ring" stroke-width="2"/>
+  <circle cx="220" cy="200" r="168" class="art-ring art-ring-faint" stroke-width="1.5"/>
+  <circle cx="52" cy="84" r="5" class="art-dot"/><circle cx="108" cy="40" r="3.5" class="art-dot"/><circle cx="356" cy="62" r="4.5" class="art-dot"/><circle cx="396" cy="150" r="3" class="art-dot"/><circle cx="60" cy="300" r="4" class="art-dot"/><circle cx="150" cy="352" r="3" class="art-dot"/><circle cx="330" cy="330" r="5" class="art-dot"/><circle cx="398" cy="262" r="3.5" class="art-dot"/><circle cx="30" cy="190" r="3" class="art-dot"/><circle cx="218" cy="30" r="3" class="art-dot"/>
+  <g transform="translate(136 116) scale(7)" class="art-glyph" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"><circle cx="12" cy="9" r="6"/><path d="m9 14.2-1 7.8 4-2.5 4 2.5-1-7.8"/></g>
+</svg></div>
   </div>
 </section>
 
@@ -46,17 +57,17 @@
   <div class="site-band-inner">
     <div class="grid-3">
       <div class="feature-tile">
-        <div class="feature-tile-icon"><i class="fa-light fa-award" aria-hidden="true"></i></div>
+        <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="9" r="6"/><path d="m9 14.2-1 7.8 4-2.5 4 2.5-1-7.8"/></svg></div>
         <h3>A proven operator</h3>
         <p>Founded in 2005. More than 1,200 clients worldwide, 8,000 Cloudstaffers, and clients in 34 countries.</p>
       </div>
       <div class="feature-tile">
-        <div class="feature-tile-icon"><i class="fa-light fa-heart" aria-hidden="true"></i></div>
+        <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19.5 13.5 12 21l-7.5-7.5a5 5 0 1 1 7.5-6.6 5 5 0 1 1 7.5 6.6z"/></svg></div>
         <h3>A people-first culture</h3>
         <p>98% staff retention and a 4.8 Glassdoor rating &mdash; because retention is the foundation of quality.</p>
       </div>
       <div class="feature-tile">
-        <div class="feature-tile-icon"><i class="fa-light fa-layer-group" aria-hidden="true"></i></div>
+        <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 2 10 5-10 5L2 7z"/><path d="m2 12 10 5 10-5"/><path d="m2 17 10 5 10-5"/></svg></div>
         <h3>A complete ecosystem</h3>
         <p>Recruitment, HR, IT, payroll, facilities, security, and client success &mdash; all in-house, all accountable.</p>
       </div>
@@ -119,15 +130,15 @@
     <div class="site-visual">
       <div class="stack-lg">
         <div class="card">
-          <h3><i class="fa-light fa-trophy" aria-hidden="true"></i> Recognized workplace</h3>
+          <h3><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 21h8"/><path d="M12 17v4"/><path d="M7 4h10v6a5 5 0 0 1-10 0z"/><path d="M7 6H4a2 2 0 0 0 2 5h1"/><path d="M17 6h3a2 2 0 0 1-2 5h-1"/></svg> Recognized workplace</h3>
           <p>HR Asia Best Places to Work (three-time winner), Best BPO in Asia, and a 4.8 Glassdoor score &mdash; the #1 workplace everywhere we operate.</p>
         </div>
         <div class="card">
-          <h3><i class="fa-light fa-graduation-cap" aria-hidden="true"></i> Professional growth &amp; AI readiness</h3>
+          <h3><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m22 9-10-5L2 9l10 5 10-5z"/><path d="M6 11.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-4.5"/><path d="M22 9v6"/></svg> Professional growth &amp; AI readiness</h3>
           <p>Structured development programs, specialist certifications, and practical AI training that helps staff deliver greater value to clients.</p>
         </div>
         <div class="card">
-          <h3><i class="fa-light fa-users" aria-hidden="true"></i> Community &amp; collaboration</h3>
+          <h3><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg> Community &amp; collaboration</h3>
           <p>Funded clubs, mentoring programs, and collaborative events that build expertise beyond the day-to-day role.</p>
         </div>
       </div>
@@ -142,15 +153,15 @@
       <h2>Everything your team needs, under one roof</h2>
       <p>It takes more than great people to make great teams. Nine in-house functions work behind every Cloudstaffer &mdash; this is not just staffing; it's a complete, secure, and scalable operating model.</p>
       <div class="grid-3 collapse-2">
-        <div class="card"><h3><i class="fa-light fa-magnifying-glass-user" aria-hidden="true"></i> Talent</h3><p>Sourcing, role design, AI-assisted matching, screening, background and reference checks, hiring support.</p></div>
-        <div class="card"><h3><i class="fa-light fa-hand-holding-heart" aria-hidden="true"></i> HR</h3><p>Onboarding, employee relations, performance care, compensation support, career development.</p></div>
-        <div class="card"><h3><i class="fa-light fa-chart-mixed" aria-hidden="true"></i> Workforce</h3><p>HRIS, time and attendance, workforce planning, productivity reporting, engagement surveys.</p></div>
-        <div class="card"><h3><i class="fa-light fa-money-check-dollar" aria-hidden="true"></i> Payroll</h3><p>Managed payroll, tax administration, benefits deductions, compliance, invoice coordination.</p></div>
-        <div class="card"><h3><i class="fa-light fa-heart-pulse" aria-hidden="true"></i> Wellbeing</h3><p>Benefits administration, health support, employee assistance, family support, wellness programs.</p></div>
-        <div class="card"><h3><i class="fa-light fa-champagne-glasses" aria-hidden="true"></i> Culture</h3><p>Rewards, recognition, staff and family events, training, leadership programs, belonging and inclusion.</p></div>
-        <div class="card"><h3><i class="fa-light fa-building-shield" aria-hidden="true"></i> Infrastructure</h3><p>Office spaces, secure networks, backup connectivity, redundant systems, disaster recovery.</p></div>
-        <div class="card"><h3><i class="fa-light fa-laptop-mobile" aria-hidden="true"></i> IT</h3><p>Hardware procurement, identity and SSO, endpoint protection, security monitoring, 24x7 support.</p></div>
-        <div class="card"><h3><i class="fa-light fa-scale-balanced" aria-hidden="true"></i> Governance</h3><p>Employment compliance, data privacy, information security, risk management, internal audits.</p></div>
+        <div class="card"><h3><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="10" cy="7" r="4"/><path d="M10.3 15H7a4 4 0 0 0-4 4v2"/><circle cx="17" cy="17" r="3"/><path d="m21 21-1.9-1.9"/></svg> Talent</h3><p>Sourcing, role design, AI-assisted matching, screening, background and reference checks, hiring support.</p></div>
+        <div class="card"><h3><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19.5 13.5 12 21l-7.5-7.5a5 5 0 1 1 7.5-6.6 5 5 0 1 1 7.5 6.6z"/></svg> HR</h3><p>Onboarding, employee relations, performance care, compensation support, career development.</p></div>
+        <div class="card"><h3><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 3v18h18"/><path d="M7 15v-4"/><path d="M12 15V7"/><path d="M17 15v-6"/></svg> Workforce</h3><p>HRIS, time and attendance, workforce planning, productivity reporting, engagement surveys.</p></div>
+        <div class="card"><h3><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/><path d="M6 12h.01"/><path d="M18 12h.01"/></svg> Payroll</h3><p>Managed payroll, tax administration, benefits deductions, compliance, invoice coordination.</p></div>
+        <div class="card"><h3><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19.5 13.5 12 21l-7.5-7.5a5 5 0 1 1 7.5-6.6 5 5 0 1 1 7.5 6.6z"/><path d="M7 12h2.5l1.5-2.5 2 5 1.5-2.5H17"/></svg> Wellbeing</h3><p>Benefits administration, health support, employee assistance, family support, wellness programs.</p></div>
+        <div class="card"><h3><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5.5 11 2 22l11-3.5z"/><path d="M14 10 22 2"/><path d="M9.5 14.5 12 12"/><path d="M17 6h.01"/><path d="M21 12h.01"/><path d="M15 2h.01"/><path d="M20 17h.01"/></svg> Culture</h3><p>Rewards, recognition, staff and family events, training, leadership programs, belonging and inclusion.</p></div>
+        <div class="card"><h3><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="2" width="16" height="20" rx="1"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M12 6h.01"/><path d="M16 6h.01"/><path d="M8 10h.01"/><path d="M12 10h.01"/><path d="M16 10h.01"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/></svg> Infrastructure</h3><p>Office spaces, secure networks, backup connectivity, redundant systems, disaster recovery.</p></div>
+        <div class="card"><h3><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 19h18"/><rect x="4" y="5" width="16" height="11" rx="2"/><path d="m10 9-1.5 1.5L10 12"/><path d="m14 9 1.5 1.5L14 12"/></svg> IT</h3><p>Hardware procurement, identity and SSO, endpoint protection, security monitoring, 24x7 support.</p></div>
+        <div class="card"><h3><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3v18"/><path d="M8 21h8"/><path d="M4 7h16"/><path d="m5 7-3 6a3.3 3.3 0 0 0 6 0z"/><path d="m19 7-3 6a3.3 3.3 0 0 0 6 0z"/></svg> Governance</h3><p>Employment compliance, data privacy, information security, risk management, internal audits.</p></div>
       </div>
       <p>And wrapping it all together: a dedicated <strong>Client Success</strong> team for onboarding, account management, workforce planning, performance reporting, business reviews, and team expansion.</p>
     </div>
@@ -204,7 +215,7 @@
 <footer class="site-footer">
   <div class="site-footer-main">
     <div class="site-footer-brand">
-      <svg class="brand-logo logo-size-footer" role="img" aria-label="Cloudstaff"><use href="#sym-logo-landscape"></use></svg>
+      <span class="site-logo site-logo-light"><svg class="site-logo-cloud" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M7.2 18.5a4.7 4.7 0 0 1-.6-9.36 6.2 6.2 0 0 1 11.9 1.6A4.15 4.15 0 0 1 17.9 18.5z"/></svg><span class="site-logo-word">cloudstaff<sup>&reg;</sup></span></span>
       <p>Since 2005, Cloudstaff has helped more than 1,200 businesses worldwide build reliable, high-performing offshore teams that operate as a true extension of their organization.</p>
     </div>
     <div>

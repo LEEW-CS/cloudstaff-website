@@ -1,7 +1,7 @@
 <footer class="site-footer">
   <div class="site-footer-main">
     <div class="site-footer-brand">
-      <svg class="brand-logo logo-size-footer" role="img" aria-label="Cloudstaff"><use href="#sym-logo-landscape"></use></svg>
+      <span class="site-logo site-logo-light"><svg class="site-logo-cloud" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M7.2 18.5a4.7 4.7 0 0 1-.6-9.36 6.2 6.2 0 0 1 11.9 1.6A4.15 4.15 0 0 1 17.9 18.5z"/></svg><span class="site-logo-word">cloudstaff<sup>&reg;</sup></span></span>
       <p>Since 2005, Cloudstaff has helped more than 1,200 businesses worldwide build reliable, high-performing offshore teams that operate as a true extension of their organization.</p>
     </div>
     <div>

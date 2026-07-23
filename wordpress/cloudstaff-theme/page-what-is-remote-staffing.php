@@ -14,10 +14,25 @@ get_header();
 <main class="site-main" id="main-content">
 <section class="site-hero">
   <div class="site-band-inner">
+    <div class="site-hero-copy">
     <span class="eyebrow">Plain-English guide</span>
     <h1>What is remote staffing?</h1>
     <p>If you've never outsourced before, the terminology alone can be a barrier. This page explains what remote staffing actually is, how it's different from the models you may have heard of, and what the facts say about the most common concerns.</p>
     <a href="<?php echo esc_url( home_url( '/how-it-works/' ) ); ?>" class="button button-lg">See how it works in practice</a>
+</div>
+    <div class="site-hero-art-wrap" aria-hidden="true"><svg class="hero-art" viewBox="0 0 440 400" fill="none" aria-hidden="true" focusable="false" role="img">
+  <defs>
+    <linearGradient id="art-bg-users" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" class="art-grad-a"/>
+      <stop offset="1" class="art-grad-b"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="424" height="384" rx="36" fill="url(#art-bg-users)"/>
+  <circle cx="220" cy="200" r="128" class="art-ring" stroke-width="2"/>
+  <circle cx="220" cy="200" r="168" class="art-ring art-ring-faint" stroke-width="1.5"/>
+  <circle cx="52" cy="84" r="5" class="art-dot"/><circle cx="108" cy="40" r="3.5" class="art-dot"/><circle cx="356" cy="62" r="4.5" class="art-dot"/><circle cx="396" cy="150" r="3" class="art-dot"/><circle cx="60" cy="300" r="4" class="art-dot"/><circle cx="150" cy="352" r="3" class="art-dot"/><circle cx="330" cy="330" r="5" class="art-dot"/><circle cx="398" cy="262" r="3.5" class="art-dot"/><circle cx="30" cy="190" r="3" class="art-dot"/><circle cx="218" cy="30" r="3" class="art-dot"/>
+  <g transform="translate(136 116) scale(7)" class="art-glyph" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></g>
+</svg></div>
   </div>
 </section>
 
@@ -25,17 +40,17 @@ get_header();
   <div class="site-band-inner">
     <div class="grid-3">
       <div class="feature-tile">
-        <div class="feature-tile-icon"><i class="fa-light fa-user-check" aria-hidden="true"></i></div>
+        <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="m16 11 2 2 4-4"/></svg></div>
         <h3>Your team, our payroll</h3>
         <p>Full-time professionals who work only for you. Cloudstaff is the legal employer and handles HR, IT, and compliance.</p>
       </div>
       <div class="feature-tile">
-        <div class="feature-tile-icon"><i class="fa-light fa-arrows-left-right" aria-hidden="true"></i></div>
+        <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m17 11 4-4-4-4"/><path d="M21 7H9"/><path d="m7 13-4 4 4 4"/><path d="M3 17h12"/></svg></div>
         <h3>Not freelancers, not a BPO</h3>
         <p>Dedicated staff embedded in your workflows &mdash; not gig workers, and not an outsourced black box.</p>
       </div>
       <div class="feature-tile">
-        <div class="feature-tile-icon"><i class="fa-light fa-chart-line-up" aria-hidden="true"></i></div>
+        <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m22 7-8.5 8.5-5-5L2 17"/><path d="M16 7h6v6"/></svg></div>
         <h3>A financial strategy</h3>
         <p>Reduce fully loaded labor costs by up to 80% and convert fixed overhead into scalable operating expense.</p>
       </div>

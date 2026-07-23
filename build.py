@@ -17,9 +17,11 @@ Placeholders understood inside partials/header/footer:
   {{ACTIVE:<slug>}}  -> aria-current="page" when building that page (static)
                         php conditional (wordpress)
 """
-import json, os, re, shutil, html
+import json, os, re, shutil, html, sys
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, os.path.join(ROOT, "tools"))
+from icons import FA_MAP, icon_svg, hero_art, logo  # noqa: E402
 SRC = os.path.join(ROOT, "src")
 DOCS = os.path.join(ROOT, "docs")
 THEME = os.path.join(ROOT, "wordpress", "cloudstaff-theme")
@@ -33,7 +35,21 @@ header_tpl = read(SRC, "header.html")
 footer_tpl = read(SRC, "footer.html")
 
 
+def sub_common(text):
+    """Shared substitutions: inline SVG icons, hero art, logo."""
+    def icon(m):
+        name = "fa-" + m.group(1)
+        if name not in FA_MAP:
+            raise KeyError(f"No glyph mapped for {name}")
+        return icon_svg(FA_MAP[name])
+    text = re.sub(r'<i class="fa-light fa-([a-z0-9-]+)"[^>]*></i>', icon, text)
+    text = re.sub(r"\{\{ART:([a-z0-9-]+)\}\}", lambda m: hero_art(m.group(1)), text)
+    text = text.replace("{{LOGO:light}}", logo("light")).replace("{{LOGO}}", logo())
+    return text
+
+
 def sub_static(text, current_slug):
+    text = sub_common(text)
     def url(m):
         slug = m.group(1)
         return "index.html" if slug == "index" else f"{slug}.html"
@@ -45,6 +61,7 @@ def sub_static(text, current_slug):
 
 
 def sub_wp(text):
+    text = sub_common(text)
     def url(m):
         slug = m.group(1)
         path = "/" if slug == "index" else f"/{slug}/"

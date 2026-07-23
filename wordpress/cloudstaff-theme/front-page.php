@@ -13,11 +13,26 @@ get_header();
 <main class="site-main" id="main-content">
 <section class="site-hero site-hero-dark">
   <div class="site-band-inner">
+    <div class="site-hero-copy">
     <span class="eyebrow">Remote staffing for US businesses</span>
     <h1>Build a world-class team without world-class overhead</h1>
     <p>Cloudstaff helps US businesses hire full-time, dedicated professionals offshore &mdash; fully recruited, employed, equipped, and secured by us, managed day-to-day by you. Cut fully loaded labor costs by up to 80% while adding capacity your local market can't supply.</p>
     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-lg">Talk to an Expert</a>
     <p><a href="<?php echo esc_url( home_url( '/what-is-remote-staffing/' ) ); ?>" class="button-link">New to outsourcing? Start with the plain-English guide &rarr;</a></p>
+</div>
+    <div class="site-hero-art-wrap" aria-hidden="true"><svg class="hero-art" viewBox="0 0 440 400" fill="none" aria-hidden="true" focusable="false" role="img">
+  <defs>
+    <linearGradient id="art-bg-globe" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" class="art-grad-a"/>
+      <stop offset="1" class="art-grad-b"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="424" height="384" rx="36" fill="url(#art-bg-globe)"/>
+  <circle cx="220" cy="200" r="128" class="art-ring" stroke-width="2"/>
+  <circle cx="220" cy="200" r="168" class="art-ring art-ring-faint" stroke-width="1.5"/>
+  <circle cx="52" cy="84" r="5" class="art-dot"/><circle cx="108" cy="40" r="3.5" class="art-dot"/><circle cx="356" cy="62" r="4.5" class="art-dot"/><circle cx="396" cy="150" r="3" class="art-dot"/><circle cx="60" cy="300" r="4" class="art-dot"/><circle cx="150" cy="352" r="3" class="art-dot"/><circle cx="330" cy="330" r="5" class="art-dot"/><circle cx="398" cy="262" r="3.5" class="art-dot"/><circle cx="30" cy="190" r="3" class="art-dot"/><circle cx="218" cy="30" r="3" class="art-dot"/>
+  <g transform="translate(136 116) scale(7)" class="art-glyph" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c3 3.5 3 14.5 0 18"/><path d="M12 3c-3 3.5-3 14.5 0 18"/></g>
+</svg></div>
   </div>
 </section>
 
@@ -25,19 +40,19 @@ get_header();
   <div class="site-band-inner">
     <div class="grid-3">
       <div class="feature-tile">
-        <div class="feature-tile-icon"><i class="fa-light fa-graduation-cap" aria-hidden="true"></i></div>
+        <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m22 9-10-5L2 9l10 5 10-5z"/><path d="M6 11.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-4.5"/><path d="M22 9v6"/></svg></div>
         <h3>Learn the model</h3>
         <p>Remote staffing isn't freelancers and it isn't a call center. See exactly how it works, in plain English.</p>
         <a href="<?php echo esc_url( home_url( '/what-is-remote-staffing/' ) ); ?>" class="button-link">What is remote staffing? &rarr;</a>
       </div>
       <div class="feature-tile">
-        <div class="feature-tile-icon"><i class="fa-light fa-calculator" aria-hidden="true"></i></div>
+        <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M8 6h8"/><path d="M8 11h.01"/><path d="M12 11h.01"/><path d="M16 11h.01"/><path d="M8 15h.01"/><path d="M12 15h.01"/><path d="M16 15h.01"/><path d="M8 19h8"/></svg></div>
         <h3>Check the numbers</h3>
         <p>Transparent, three-part pricing and real monthly costs by role. No surprises, no hidden fees.</p>
         <a href="<?php echo esc_url( home_url( '/pricing/' ) ); ?>" class="button-link">See pricing &amp; savings &rarr;</a>
       </div>
       <div class="feature-tile">
-        <div class="feature-tile-icon"><i class="fa-light fa-people-group" aria-hidden="true"></i></div>
+        <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
         <h3>Meet your team</h3>
         <p>600+ roles across accounting, technology, customer service, and more &mdash; typically hired in 15&ndash;25 days.</p>
         <a href="<?php echo esc_url( home_url( '/roles/' ) ); ?>" class="button-link">Explore roles &rarr;</a>
@@ -152,22 +167,22 @@ get_header();
       <p>Modern remote staffing is much broader than the outdated view of offshore work. Cloudstaff delivers experienced professionals &mdash; accountants, software engineers, financial analysts, project managers, digital marketers &mdash; who work your hours, in your systems, as part of your team.</p>
       <div class="grid-2">
         <div class="feature-tile">
-          <div class="feature-tile-icon"><i class="fa-light fa-clock" aria-hidden="true"></i></div>
+          <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
           <h3>US-aligned schedules</h3>
           <p>Over 70% of Cloudstaff professionals already work US-aligned shifts, including EST and PST.</p>
         </div>
         <div class="feature-tile">
-          <div class="feature-tile-icon"><i class="fa-light fa-shield-check" aria-hidden="true"></i></div>
+          <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
           <h3>Enterprise-grade security</h3>
           <p>ISO 27001:2022 certified, SOC 2-aligned controls, managed devices, and a 99.9 SecurityScorecard rating.</p>
         </div>
         <div class="feature-tile">
-          <div class="feature-tile-icon"><i class="fa-light fa-user-tie" aria-hidden="true"></i></div>
+          <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
           <h3>High-skill roles</h3>
           <p>600+ roles including CPAs, engineers, analysts, and executive assistants &mdash; not just basic tasks.</p>
         </div>
         <div class="feature-tile">
-          <div class="feature-tile-icon"><i class="fa-light fa-microchip-ai" aria-hidden="true"></i></div>
+          <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4"/><path d="M15 2v4"/><path d="M9 18v4"/><path d="M15 18v4"/><path d="M2 9h4"/><path d="M2 15h4"/><path d="M18 9h4"/><path d="M18 15h4"/></svg></div>
           <h3>AI-ready workforce</h3>
           <p>Teams trained to use approved AI tools to work faster and deliver more &mdash; 1.5&ndash;2x productivity and rising.</p>
         </div>

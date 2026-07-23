@@ -14,10 +14,25 @@ get_header();
 <main class="site-main" id="main-content">
 <section class="site-hero">
   <div class="site-band-inner">
+    <div class="site-hero-copy">
     <span class="eyebrow">For finance leaders</span>
     <h1>The CFO's guide to remote staffing</h1>
     <p>Remote staffing is not just a cost decision. It is a strategic workforce model designed to improve financial performance, increase resilience, and expand operational capacity without increasing fixed overhead. The question is not whether it works &mdash; it's how to structure it properly, manage risk, and ensure measurable return.</p>
     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-lg">Discuss your business case</a>
+</div>
+    <div class="site-hero-art-wrap" aria-hidden="true"><svg class="hero-art" viewBox="0 0 440 400" fill="none" aria-hidden="true" focusable="false" role="img">
+  <defs>
+    <linearGradient id="art-bg-compass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" class="art-grad-a"/>
+      <stop offset="1" class="art-grad-b"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="424" height="384" rx="36" fill="url(#art-bg-compass)"/>
+  <circle cx="220" cy="200" r="128" class="art-ring" stroke-width="2"/>
+  <circle cx="220" cy="200" r="168" class="art-ring art-ring-faint" stroke-width="1.5"/>
+  <circle cx="52" cy="84" r="5" class="art-dot"/><circle cx="108" cy="40" r="3.5" class="art-dot"/><circle cx="356" cy="62" r="4.5" class="art-dot"/><circle cx="396" cy="150" r="3" class="art-dot"/><circle cx="60" cy="300" r="4" class="art-dot"/><circle cx="150" cy="352" r="3" class="art-dot"/><circle cx="330" cy="330" r="5" class="art-dot"/><circle cx="398" cy="262" r="3.5" class="art-dot"/><circle cx="30" cy="190" r="3" class="art-dot"/><circle cx="218" cy="30" r="3" class="art-dot"/>
+  <g transform="translate(136 116) scale(7)" class="art-glyph" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5z"/></g>
+</svg></div>
   </div>
 </section>
 
@@ -25,17 +40,17 @@ get_header();
   <div class="site-band-inner">
     <div class="grid-3">
       <div class="feature-tile">
-        <div class="feature-tile-icon"><i class="fa-light fa-route" aria-hidden="true"></i></div>
+        <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="6" cy="19" r="2"/><circle cx="18" cy="5" r="2"/><path d="M8 19h6.5a3.5 3.5 0 0 0 0-7h-5a3.5 3.5 0 0 1 0-7H16"/></svg></div>
         <h3>Six scaling archetypes</h3>
         <p>Companies rarely adopt remote staffing randomly &mdash; adoption follows predictable patterns you can plan around.</p>
       </div>
       <div class="feature-tile">
-        <div class="feature-tile-icon"><i class="fa-light fa-grid-2" aria-hidden="true"></i></div>
+        <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></div>
         <h3>A role-fit framework</h3>
         <p>Map roles by standardization and operational complexity to know how fast each will ramp &mdash; and what oversight it needs.</p>
       </div>
       <div class="feature-tile">
-        <div class="feature-tile-icon"><i class="fa-light fa-chess" aria-hidden="true"></i></div>
+        <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5z"/></svg></div>
         <h3>A capital-allocation lens</h3>
         <p>Evaluate outsourcing as a phased strategy, not a binary decision: start where risk is lowest, prove return, expand.</p>
       </div>

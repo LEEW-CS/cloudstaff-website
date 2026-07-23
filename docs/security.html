@@ -12,13 +12,9 @@
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to content</a>
-<header class="topbar topbar-website">
-  <div class="topbar-logo">
-    <a href="index.html" aria-label="Cloudstaff — home">
-      <svg class="brand-logo logo-size-header" role="img" aria-label="Cloudstaff"><use href="#sym-logo-landscape"></use></svg>
-    </a>
-  </div>
-  <nav class="topbar-nav" aria-label="Main navigation">
+<header class="site-header">
+  <a href="index.html" class="site-header-brand" aria-label="Cloudstaff — home"><span class="site-logo"><svg class="site-logo-cloud" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M7.2 18.5a4.7 4.7 0 0 1-.6-9.36 6.2 6.2 0 0 1 11.9 1.6A4.15 4.15 0 0 1 17.9 18.5z"/></svg><span class="site-logo-word">cloudstaff<sup>&reg;</sup></span></span></a>
+  <nav class="site-nav" aria-label="Main navigation">
     <a href="what-is-remote-staffing.html" >What Is Remote Staffing?</a>
     <a href="how-it-works.html" >How It Works</a>
     <a href="pricing.html" >Pricing &amp; Savings</a>
@@ -27,7 +23,7 @@
     <a href="why-cloudstaff.html" >Why Cloudstaff</a>
     <a href="cfo-guide.html" >CFO Guide</a>
   </nav>
-  <div class="topbar-auth">
+  <div class="site-header-cta">
     <a href="contact.html" class="button">Talk to an Expert</a>
   </div>
 </header>
@@ -35,10 +31,25 @@
 <main class="site-main" id="main-content">
 <section class="site-hero">
   <div class="site-band-inner">
+    <div class="site-hero-copy">
     <span class="eyebrow">Secure by design</span>
     <h1>Enterprise-grade security and compliance</h1>
     <p>Remote staffing must meet the same security and governance standards as any internal operation. Cloudstaff has built security into every layer of its operating model &mdash; from recruitment and background screening through hardware, network infrastructure, and physical site controls. Oversight remains with you; infrastructure and safeguards are managed by us.</p>
     <a href="contact.html" class="button button-lg">Talk security with our team</a>
+</div>
+    <div class="site-hero-art-wrap" aria-hidden="true"><svg class="hero-art" viewBox="0 0 440 400" fill="none" aria-hidden="true" focusable="false" role="img">
+  <defs>
+    <linearGradient id="art-bg-shield-check" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" class="art-grad-a"/>
+      <stop offset="1" class="art-grad-b"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="424" height="384" rx="36" fill="url(#art-bg-shield-check)"/>
+  <circle cx="220" cy="200" r="128" class="art-ring" stroke-width="2"/>
+  <circle cx="220" cy="200" r="168" class="art-ring art-ring-faint" stroke-width="1.5"/>
+  <circle cx="52" cy="84" r="5" class="art-dot"/><circle cx="108" cy="40" r="3.5" class="art-dot"/><circle cx="356" cy="62" r="4.5" class="art-dot"/><circle cx="396" cy="150" r="3" class="art-dot"/><circle cx="60" cy="300" r="4" class="art-dot"/><circle cx="150" cy="352" r="3" class="art-dot"/><circle cx="330" cy="330" r="5" class="art-dot"/><circle cx="398" cy="262" r="3.5" class="art-dot"/><circle cx="30" cy="190" r="3" class="art-dot"/><circle cx="218" cy="30" r="3" class="art-dot"/>
+  <g transform="translate(136 116) scale(7)" class="art-glyph" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></g>
+</svg></div>
   </div>
 </section>
 
@@ -46,17 +57,17 @@
   <div class="site-band-inner">
     <div class="grid-3">
       <div class="feature-tile">
-        <div class="feature-tile-icon"><i class="fa-light fa-certificate" aria-hidden="true"></i></div>
+        <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="9" r="6"/><path d="m9 14.2-1 7.8 4-2.5 4 2.5-1-7.8"/></svg></div>
         <h3>Certified &amp; audited</h3>
         <p>ISO/IEC 27001:2022 and ISO 9001:2015 certified, with controls designed to support SOC 2, GDPR, HIPAA, and PCI DSS requirements.</p>
       </div>
       <div class="feature-tile">
-        <div class="feature-tile-icon"><i class="fa-light fa-shield-halved" aria-hidden="true"></i></div>
+        <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
         <h3>99.9 SecurityScorecard</h3>
         <p>Near-perfect security performance, independently rated &mdash; a SecurityScorecard score of 99.9 and an &ldquo;A&rdquo; rating.</p>
       </div>
       <div class="feature-tile">
-        <div class="feature-tile-icon"><i class="fa-light fa-key" aria-hidden="true"></i></div>
+        <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="7.5" cy="15.5" r="4.5"/><path d="m21 2-9.6 9.6"/><path d="m15.5 7.5 3 3L22 7l-3-3"/></svg></div>
         <h3>You control access</h3>
         <p>Role-based permissions, least-privilege access, and MFA/SSO defined by you. Your systems, your rules.</p>
       </div>
@@ -71,19 +82,19 @@
       <h2>The four questions finance leaders ask first</h2>
       <div class="grid-2">
         <div class="card">
-          <h3><i class="fa-light fa-database" aria-hidden="true"></i> &ldquo;Who can see my data and systems?&rdquo;</h3>
+          <h3><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></svg> &ldquo;Who can see my data and systems?&rdquo;</h3>
           <p>Access permissions are defined and controlled by you. Cloudstaffers log into your systems using role-based permissions, least-privilege access, and MFA/SSO defined by you. Cloudstaff devices are monitored and encrypted.</p>
         </div>
         <div class="card">
-          <h3><i class="fa-light fa-clipboard-check" aria-hidden="true"></i> &ldquo;Will this create compliance or audit exposure?&rdquo;</h3>
+          <h3><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></svg> &ldquo;Will this create compliance or audit exposure?&rdquo;</h3>
           <p>Cloudstaff operates under a documented security and compliance program aligned with recognized international standards, regulatory requirements, and industry best practices &mdash; and supports client audits with documentation as needed.</p>
         </div>
         <div class="card">
-          <h3><i class="fa-light fa-plug-circle-bolt" aria-hidden="true"></i> &ldquo;What if something fails &mdash; power, network, vendor?&rdquo;</h3>
+          <h3><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></svg> &ldquo;What if something fails &mdash; power, network, vendor?&rdquo;</h3>
           <p>Facilities include redundant connectivity, backup power, and onsite IT support. Business continuity and disaster recovery plans are tested monthly, with replacement equipment on hand and the ability to relocate staff if needed.</p>
         </div>
         <div class="card">
-          <h3><i class="fa-light fa-user-shield" aria-hidden="true"></i> &ldquo;How is misuse of data prevented?&rdquo;</h3>
+          <h3><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg> &ldquo;How is misuse of data prevented?&rdquo;</h3>
           <p>Multiple layers of protection: background checks, access-controlled workplaces, restricted workstations, removable-storage restrictions, screen monitoring, role-based access, and configurable approval workflows.</p>
         </div>
       </div>
@@ -135,21 +146,21 @@
     <div class="site-visual">
       <div class="stack-lg">
         <div class="stat-tile stat-tile-illustrated is-success">
-          <div class="stat-tile-icon"><i class="fa-light fa-laptop-binary" aria-hidden="true"></i></div>
+          <div class="stat-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 19h18"/><rect x="4" y="5" width="16" height="11" rx="2"/><path d="m10 9-1.5 1.5L10 12"/><path d="m14 9 1.5 1.5L14 12"/></svg></div>
           <div class="stat-tile-body">
             <div class="stat-tile-label">Managed, encrypted, monitored</div>
             <div class="stat-tile-value">Every device</div>
           </div>
         </div>
         <div class="stat-tile stat-tile-illustrated is-brand">
-          <div class="stat-tile-icon"><i class="fa-light fa-headset" aria-hidden="true"></i></div>
+          <div class="stat-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 14v-3a9 9 0 0 1 18 0v3"/><rect x="3" y="14" width="4" height="6" rx="2"/><rect x="17" y="14" width="4" height="6" rx="2"/></svg></div>
           <div class="stat-tile-body">
             <div class="stat-tile-label">Technical support coverage</div>
             <div class="stat-tile-value">24x7</div>
           </div>
         </div>
         <div class="stat-tile stat-tile-illustrated is-info">
-          <div class="stat-tile-icon"><i class="fa-light fa-arrows-rotate" aria-hidden="true"></i></div>
+          <div class="stat-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M3 21v-5h5"/></svg></div>
           <div class="stat-tile-body">
             <div class="stat-tile-label">BCP &amp; disaster recovery testing</div>
             <div class="stat-tile-value">Monthly</div>
@@ -199,7 +210,7 @@
 <footer class="site-footer">
   <div class="site-footer-main">
     <div class="site-footer-brand">
-      <svg class="brand-logo logo-size-footer" role="img" aria-label="Cloudstaff"><use href="#sym-logo-landscape"></use></svg>
+      <span class="site-logo site-logo-light"><svg class="site-logo-cloud" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M7.2 18.5a4.7 4.7 0 0 1-.6-9.36 6.2 6.2 0 0 1 11.9 1.6A4.15 4.15 0 0 1 17.9 18.5z"/></svg><span class="site-logo-word">cloudstaff<sup>&reg;</sup></span></span>
       <p>Since 2005, Cloudstaff has helped more than 1,200 businesses worldwide build reliable, high-performing offshore teams that operate as a true extension of their organization.</p>
     </div>
     <div>

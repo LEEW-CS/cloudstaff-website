@@ -22,35 +22,143 @@
 }
 .skip-link:focus { top: var(--space-md, 0.75rem); }
 
-/* --- Topbar ------------------------------------------------------------- */
-.topbar-website {
+/* --- Header / navigation ------------------------------------------------- */
+.site-header {
   position: sticky;
   top: 0;
   z-index: var(--z-index-topbar, 200);
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: var(--space-lg, 1rem);
+  padding: var(--space-sm, 0.5rem) var(--space-xl, 1.5rem);
+  background: color-mix(in srgb, var(--color-surface-page, #fff), transparent 8%);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--color-surface-secondary, #e8edf4);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  min-height: 3.75rem;
 }
-.topbar-website .topbar-nav {
+.site-header-brand { text-decoration: none; }
+.site-nav {
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: var(--space-2xs, 0.125rem);
 }
-.topbar-nav a[aria-current="page"] {
-  color: var(--color-brand-primary-strong, var(--color-brand-primary));
+.site-nav a {
+  display: inline-block;
+  padding: 0.5rem 0.85rem;
+  border-radius: var(--radius-pill, 999px);
+  color: var(--color-foreground-primary, #16233b);
+  font-size: var(--font-size-sm, 0.875rem);
+  font-weight: var(--font-weight-medium, 500);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background var(--duration-fast, 150ms), color var(--duration-fast, 150ms);
+}
+.site-nav a:hover {
+  background: var(--color-surface-canvas, #f0f4f9);
+  color: var(--color-brand-primary-strong, var(--color-brand-primary, #007aff));
+}
+.site-nav a[aria-current="page"] {
+  background: color-mix(in oklch, var(--color-brand-primary, #007aff), white 88%);
+  color: var(--color-brand-primary-strong, var(--color-brand-primary, #007aff));
   font-weight: var(--font-weight-semibold, 600);
 }
-@media (max-width: 1024px) {
-  .topbar-website { position: static; }
-}
-@media (max-width: 900px) {
-  .topbar-website {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-sm, 0.5rem);
-    align-items: center;
+@media (max-width: 1100px) {
+  .site-header {
+    position: static;
+    grid-template-columns: auto auto;
+    grid-template-areas: "brand cta" "nav nav";
+    row-gap: var(--space-sm, 0.5rem);
+    justify-content: space-between;
     padding-block: var(--space-md, 0.75rem);
   }
-  .topbar-website .topbar-nav {
-    justify-content: center;
-    row-gap: var(--space-xs, 0.25rem);
+  .site-header-brand { grid-area: brand; }
+  .site-header-cta { grid-area: cta; justify-self: end; }
+  .site-nav { grid-area: nav; }
+}
+
+/* --- Logo ----------------------------------------------------------------- */
+.site-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: var(--color-brand-primary, #007aff);
+}
+.site-logo-cloud { width: 2rem; height: 2rem; flex: none; }
+.site-logo-word {
+  font-family: var(--font-family-heading, inherit);
+  font-weight: var(--font-weight-bold, 700);
+  font-size: 1.35rem;
+  letter-spacing: -0.02em;
+  color: var(--color-foreground-primary, #16233b);
+}
+.site-logo-word sup { font-size: 0.55em; font-weight: var(--font-weight-regular, 400); }
+.site-logo-light { color: #ffffff; }
+.site-logo-light .site-logo-word { color: #ffffff; }
+
+/* --- Inline SVG icons ------------------------------------------------------ */
+.icon {
+  width: 1.2em;
+  height: 1.2em;
+  vertical-align: -0.22em;
+  flex: none;
+}
+h3 > .icon {
+  color: var(--color-brand-primary-strong, var(--color-brand-primary, #007aff));
+  margin-inline-end: 0.35rem;
+}
+.feature-tile-icon,
+.stat-tile-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  inline-size: 3rem;
+  block-size: 3rem;
+  border-radius: var(--radius-lg, 0.75rem);
+  background: color-mix(in oklch, var(--color-brand-primary, #007aff), white 88%);
+  color: var(--color-brand-primary-strong, var(--color-brand-primary, #007aff));
+  margin-block-end: var(--space-md, 0.75rem);
+}
+.feature-tile-icon .icon,
+.stat-tile-icon .icon { width: 1.5rem; height: 1.5rem; vertical-align: 0; }
+.stat-tile-illustrated { display: flex; gap: var(--space-md, 0.75rem); align-items: center; }
+.stat-tile-illustrated .stat-tile-icon { margin-block-end: 0; }
+.stat-tile-illustrated.is-success .stat-tile-icon {
+  background: color-mix(in oklch, var(--color-feedback-success, #00ab9c), white 85%);
+  color: var(--color-feedback-success, #00ab9c);
+}
+.stat-tile-illustrated.is-warning .stat-tile-icon {
+  background: color-mix(in oklch, var(--color-utility-warning, #ffc426), white 80%);
+  color: color-mix(in oklch, var(--color-utility-warning, #ffc426), black 35%);
+}
+
+/* --- Hero artwork ----------------------------------------------------------- */
+.site-hero .site-band-inner:has(> .site-hero-art-wrap) {
+  display: grid;
+  grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+  gap: clamp(1.5rem, 4vw, 4rem);
+  align-items: center;
+}
+.site-hero-art-wrap { display: flex; justify-content: center; }
+.hero-art { width: 100%; max-width: 26rem; height: auto; }
+.hero-art .art-grad-a { stop-color: color-mix(in oklch, var(--color-brand-primary, #007aff), white 86%); }
+.hero-art .art-grad-b { stop-color: color-mix(in oklch, var(--color-brand-primary, #007aff), white 62%); }
+.hero-art .art-ring { stroke: color-mix(in oklch, var(--color-brand-primary, #007aff), white 40%); fill: none; }
+.hero-art .art-ring-faint { opacity: 0.5; }
+.hero-art .art-dot { fill: color-mix(in oklch, var(--color-brand-primary, #007aff), white 25%); }
+.hero-art .art-glyph { stroke: var(--color-brand-primary-strong, var(--color-brand-primary, #007aff)); }
+.site-hero-dark .hero-art .art-grad-a { stop-color: rgba(255, 255, 255, 0.12); }
+.site-hero-dark .hero-art .art-grad-b { stop-color: rgba(255, 255, 255, 0.03); }
+.site-hero-dark .hero-art .art-ring { stroke: rgba(255, 255, 255, 0.28); }
+.site-hero-dark .hero-art .art-dot { fill: rgba(255, 255, 255, 0.4); }
+.site-hero-dark .hero-art .art-glyph { stroke: #ffffff; }
+@media (max-width: 860px) {
+  .site-hero .site-band-inner:has(> .site-hero-art-wrap) {
+    grid-template-columns: minmax(0, 1fr);
   }
+  .hero-art { max-width: 17rem; }
 }
 
 /* --- Page scaffolding ---------------------------------------------------

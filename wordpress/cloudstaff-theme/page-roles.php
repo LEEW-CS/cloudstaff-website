@@ -14,10 +14,25 @@ get_header();
 <main class="site-main" id="main-content">
 <section class="site-hero">
   <div class="site-band-inner">
+    <div class="site-hero-copy">
     <span class="eyebrow">One partner &mdash; hundreds of roles</span>
     <h1>600+ roles across every function that matters</h1>
     <p>From specialist support to complex, business-critical expertise, Cloudstaff helps you find high-quality talent across customer service, accounting, finance, technology, sales, marketing, real estate, administration, and professional services. Every position is tailored to your required skills, experience level, and business needs.</p>
     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-lg">Find your first role</a>
+</div>
+    <div class="site-hero-art-wrap" aria-hidden="true"><svg class="hero-art" viewBox="0 0 440 400" fill="none" aria-hidden="true" focusable="false" role="img">
+  <defs>
+    <linearGradient id="art-bg-grid" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" class="art-grad-a"/>
+      <stop offset="1" class="art-grad-b"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="424" height="384" rx="36" fill="url(#art-bg-grid)"/>
+  <circle cx="220" cy="200" r="128" class="art-ring" stroke-width="2"/>
+  <circle cx="220" cy="200" r="168" class="art-ring art-ring-faint" stroke-width="1.5"/>
+  <circle cx="52" cy="84" r="5" class="art-dot"/><circle cx="108" cy="40" r="3.5" class="art-dot"/><circle cx="356" cy="62" r="4.5" class="art-dot"/><circle cx="396" cy="150" r="3" class="art-dot"/><circle cx="60" cy="300" r="4" class="art-dot"/><circle cx="150" cy="352" r="3" class="art-dot"/><circle cx="330" cy="330" r="5" class="art-dot"/><circle cx="398" cy="262" r="3.5" class="art-dot"/><circle cx="30" cy="190" r="3" class="art-dot"/><circle cx="218" cy="30" r="3" class="art-dot"/>
+  <g transform="translate(136 116) scale(7)" class="art-glyph" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></g>
+</svg></div>
   </div>
 </section>
 
@@ -25,17 +40,17 @@ get_header();
   <div class="site-band-inner">
     <div class="grid-3">
       <div class="feature-tile">
-        <div class="feature-tile-icon"><i class="fa-light fa-bolt" aria-hidden="true"></i></div>
+        <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></svg></div>
         <h3>Speed of hire</h3>
         <p>Access broader talent pools and fill critical roles faster than many local hiring markets allow.</p>
       </div>
       <div class="feature-tile">
-        <div class="feature-tile-icon"><i class="fa-light fa-arrow-up-right-dots" aria-hidden="true"></i></div>
+        <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m22 7-8.5 8.5-5-5L2 17"/><path d="M16 7h6v6"/></svg></div>
         <h3>Scale without overhead</h3>
         <p>Add capacity across departments without the long-term cost burden of traditional local hiring.</p>
       </div>
       <div class="feature-tile">
-        <div class="feature-tile-icon"><i class="fa-light fa-microchip-ai" aria-hidden="true"></i></div>
+        <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4"/><path d="M15 2v4"/><path d="M9 18v4"/><path d="M15 18v4"/><path d="M2 9h4"/><path d="M2 15h4"/><path d="M18 9h4"/><path d="M18 15h4"/></svg></div>
         <h3>AI-ready workforce</h3>
         <p>Teams trained to use approved AI tools to improve productivity, quality, and consistency &mdash; and future-proof your capability.</p>
       </div>
@@ -51,19 +66,19 @@ get_header();
       <p>Modern remote staffing is much broader than the outdated view of offshore work. Cloudstaff supports both operational and high-value professional roles &mdash; experienced professionals who contribute to core business operations, improve delivery capacity, and help teams scale without adding unnecessary fixed overhead.</p>
       <div class="grid-2">
         <div class="card">
-          <h3><i class="fa-light fa-code" aria-hidden="true"></i> Technology &amp; Engineering</h3>
+          <h3><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg> Technology &amp; Engineering</h3>
           <p>Software engineers, cybersecurity specialists, cloud engineers, data engineers, QA testers.</p>
         </div>
         <div class="card">
-          <h3><i class="fa-light fa-chart-pie" aria-hidden="true"></i> Finance &amp; Analytics</h3>
+          <h3><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg> Finance &amp; Analytics</h3>
           <p>Accountants, financial analysts, tax specialists, BI analysts, risk and compliance specialists.</p>
         </div>
         <div class="card">
-          <h3><i class="fa-light fa-palette" aria-hidden="true"></i> Creative &amp; Marketing</h3>
+          <h3><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 22a10 10 0 1 1 10-10c0 2-1.5 3.5-3.5 3.5H16a2 2 0 0 0-2 2c0 1.5.5 4.5-2 4.5z"/><circle cx="7.5" cy="10.5" r="1"/><circle cx="12" cy="7.5" r="1"/><circle cx="16.5" cy="10.5" r="1"/></svg> Creative &amp; Marketing</h3>
           <p>Digital marketers, UI/UX designers, content strategists, graphic designers, SEO specialists.</p>
         </div>
         <div class="card">
-          <h3><i class="fa-light fa-clipboard-list-check" aria-hidden="true"></i> Leadership &amp; Operations</h3>
+          <h3><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></svg> Leadership &amp; Operations</h3>
           <p>Project managers, sales leaders, executive assistants, operations specialists, compliance managers.</p>
         </div>
       </div>
@@ -136,28 +151,28 @@ get_header();
     <div class="site-visual">
       <div class="stack-lg">
         <div class="stat-tile stat-tile-illustrated is-brand">
-          <div class="stat-tile-icon"><i class="fa-light fa-user" aria-hidden="true"></i></div>
+          <div class="stat-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
           <div class="stat-tile-body">
             <div class="stat-tile-label">Cloudstaffer &mdash; experience, training, domain knowledge</div>
             <div class="stat-tile-value">1x productivity</div>
           </div>
         </div>
         <div class="stat-tile stat-tile-illustrated is-info">
-          <div class="stat-tile-icon"><i class="fa-light fa-wand-magic-sparkles" aria-hidden="true"></i></div>
+          <div class="stat-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8z"/></svg></div>
           <div class="stat-tile-body">
             <div class="stat-tile-label">Augmented skills &amp; embedded AI tools</div>
             <div class="stat-tile-value">1.5&ndash;3x productivity</div>
           </div>
         </div>
         <div class="stat-tile stat-tile-illustrated is-success">
-          <div class="stat-tile-icon"><i class="fa-light fa-robot" aria-hidden="true"></i></div>
+          <div class="stat-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M12 4v4"/><circle cx="12" cy="3" r="1"/><circle cx="9" cy="13" r="1"/><circle cx="15" cy="13" r="1"/><path d="M2 14h2"/><path d="M20 14h2"/></svg></div>
           <div class="stat-tile-body">
             <div class="stat-tile-label">Digital twins &mdash; AI performs defined tasks under supervision</div>
             <div class="stat-tile-value">2&ndash;5x productivity</div>
           </div>
         </div>
         <div class="stat-tile stat-tile-illustrated is-warning">
-          <div class="stat-tile-icon"><i class="fa-light fa-network-wired" aria-hidden="true"></i></div>
+          <div class="stat-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="9" y="2" width="6" height="6" rx="1"/><rect x="2" y="16" width="6" height="6" rx="1"/><rect x="16" y="16" width="6" height="6" rx="1"/><path d="M12 8v3"/><path d="M5 16v-3h14v3"/></svg></div>
           <div class="stat-tile-body">
             <div class="stat-tile-label">Autonomous agents with Cloudstaffer oversight</div>
             <div class="stat-tile-value">5&ndash;20x productivity</div>
