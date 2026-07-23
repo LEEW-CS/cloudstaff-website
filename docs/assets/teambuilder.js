@@ -221,8 +221,9 @@
       name.textContent = role;
       var add = document.createElement("button");
       add.type = "button";
-      add.className = "button tb-add";
-      add.textContent = "Add";
+      add.className = "tb-add";
+      add.innerHTML = "+";
+      add.title = "Add " + role;
       add.setAttribute("aria-label", "Add " + role + " to your team");
       add.addEventListener("click", function () { addRole(role, cat); });
       row.appendChild(name);
@@ -232,6 +233,14 @@
       list.appendChild(row);
     });
     det.appendChild(list);
+    /* Accordion: opening one category closes the others */
+    det.addEventListener("toggle", function () {
+      if (det.open) {
+        catalogEl.querySelectorAll(".tb-cat[open]").forEach(function (other) {
+          if (other !== det) other.open = false;
+        });
+      }
+    });
     catalogEl.appendChild(det);
   });
 

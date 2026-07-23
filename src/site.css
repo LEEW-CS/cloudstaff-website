@@ -802,10 +802,25 @@ html[data-theme="dark"] .step-number {
 .tb-role-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .tb-role:hover { background: var(--color-surface-canvas, #f6f8fb); }
 .tb-role-name { font-size: var(--font-size-sm, 0.875rem); }
-.button.tb-add {
-  padding: 0.25rem 0.9rem;
-  font-size: var(--font-size-xs, 0.75rem);
-  margin: 0;
+.tb-add {
+  inline-size: 1.5rem;
+  block-size: 1.5rem;
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid var(--color-brand-primary, #007aff);
+  border-radius: var(--radius-pill, 999px);
+  background: transparent;
+  color: var(--color-brand-primary-strong, #0062cc);
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background var(--duration-fast, 150ms), color var(--duration-fast, 150ms);
+}
+.tb-add:hover {
+  background: var(--color-brand-primary, #007aff);
+  color: #ffffff;
 }
 
 /* Hover job description */
@@ -830,6 +845,18 @@ html[data-theme="dark"] .step-number {
 .tb-panel { position: sticky; top: 4.5rem; }
 .tb-panel-card { padding: var(--space-xl, 1.5rem); }
 .tb-panel-card h3 { margin-block: 0 var(--space-md, 0.75rem); }
+.tb-panel-title { font-size: 1.15rem; line-height: 1.35; text-wrap: balance; }
+.tb-notice {
+  margin-block-start: var(--space-md, 0.75rem);
+  padding: var(--space-md, 0.75rem);
+  border-radius: var(--radius-sm, 0.5rem);
+  background: color-mix(in oklch, var(--color-utility-warning, #ffc426), white 85%);
+  border: 1px solid color-mix(in oklch, var(--color-utility-warning, #ffc426), white 50%);
+  font-size: var(--font-size-xs, 0.76rem);
+  line-height: 1.5;
+  color: var(--color-foreground-primary, #16233b);
+}
+.tb-notice a { color: var(--color-brand-primary-strong, #0062cc); font-weight: var(--font-weight-semibold, 600); }
 #tb-empty { color: var(--color-foreground-muted, #5b6576); font-size: var(--font-size-sm, 0.875rem); }
 .tb-team-item {
   display: flex;

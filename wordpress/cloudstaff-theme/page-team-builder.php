@@ -48,7 +48,7 @@ get_header();
 
       <aside class="tb-panel" aria-label="Your team">
         <div class="card tb-panel-card">
-          <h3>Your team</h3>
+          <h3 class="tb-panel-title">Estimate the all-in costs of your remote staffing team</h3>
           <p id="tb-empty">No roles yet &mdash; hit <strong>Add</strong> next to any role to start building.</p>
           <div id="tb-team"></div>
           <div id="tb-totals" hidden>
@@ -70,6 +70,13 @@ get_header();
               <li>Hourly rates are the monthly all-in cost divided by 173.33 hours.</li>
               <li>Non-USD amounts use indicative exchange rates; billing is in USD.</li>
             </ul>
+            <div class="tb-notice" role="note">
+              <strong>Please note:</strong> this calculator is an online tool that makes
+              assumptions. It should not be relied upon as an official quote. It is not
+              aware of your specific needs &mdash; time frames, hardware requirements,
+              experience levels, or specific circumstances.
+              <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>">Contact us for a detailed quote</a>.
+            </div>
           </div>
         </div>
       </aside>
