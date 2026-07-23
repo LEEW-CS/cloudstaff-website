@@ -974,3 +974,43 @@ ul.tb-disclaimer {
   display: grid;
   gap: 0.25rem;
 }
+
+/* --- Certification seals (recreated from the CFO Kit marks) ---------------- */
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(7.5rem, 1fr));
+  gap: var(--space-lg, 1rem);
+  margin-block-start: var(--space-lg, 1rem);
+}
+.cert-item {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-sm, 0.5rem);
+}
+.cert-item figcaption {
+  font-size: var(--font-size-xs, 0.72rem);
+  font-weight: var(--font-weight-semibold, 600);
+  color: var(--color-foreground-muted, #5b6576);
+  line-height: 1.3;
+}
+.cert-seal-svg { width: 5.5rem; height: 5.5rem; }
+.cert-item-feature .cert-seal-svg { filter: drop-shadow(0 4px 10px rgba(0, 122, 255, 0.25)); }
+.seal-face { fill: var(--color-surface-page, #fff); }
+.seal-ring { stroke: var(--color-brand-primary, #007aff); }
+.seal-dots { stroke: color-mix(in oklch, var(--color-brand-primary, #007aff), white 45%); }
+.seal-glyph { stroke: var(--color-brand-primary, #007aff); }
+.seal-mono {
+  fill: var(--color-foreground-primary, #16233b);
+  font-family: var(--font-family-heading, sans-serif);
+  font-weight: 700;
+}
+.seal-top, .seal-sub {
+  fill: var(--color-foreground-muted, #5b6576);
+  font-family: var(--font-family-body, sans-serif);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+.cert-item-feature .seal-mono { fill: var(--color-feedback-success, #00ab9c); }

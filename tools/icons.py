@@ -172,3 +172,36 @@ def logo(variant="default"):
             f'<svg class="site-logo-emblem" viewBox="0 0 48 48" aria-hidden="true" '
             f'focusable="false">{_CLOUD_EMBLEM}</svg>'
             f'<span class="site-logo-word">Cloudstaff<sup>&reg;</sup></span></span>')
+
+
+# --- Certification seals (recreated from the CFO Kit's stylised marks) ------
+# Uniform seal: outer ring, dotted inner ring, small glyph, monogram, subline.
+CERT_SEALS = {
+    "iso27001":  {"glyph": "shield-check", "mono": "27001", "top": "ISO/IEC", "sub": "2022"},
+    "iso9001":   {"glyph": "award",        "mono": "9001",  "top": "ISO",     "sub": "2015"},
+    "soc2":      {"glyph": "clipboard-check", "mono": "SOC 2", "top": "ALIGNED", "sub": "CONTROLS"},
+    "gdpr":      {"glyph": "star",         "mono": "GDPR",  "top": "EU",      "sub": "ALIGNED"},
+    "hipaa":     {"glyph": "heart-pulse",  "mono": "HIPAA", "top": "US",      "sub": "ALIGNED"},
+    "pcidss":    {"glyph": "banknote",     "mono": "PCI DSS", "top": "PAYMENTS", "sub": "ALIGNED"},
+    "e8":        {"glyph": "shield",       "mono": "E8",    "top": "ESSENTIAL", "sub": "EIGHT"},
+    "cssecure":  {"glyph": "key",          "mono": "SECURE", "top": "CLOUDSTAFF", "sub": "FRAMEWORK"},
+    "scorecard": {"glyph": "gauge",        "mono": "A",     "top": "SECURITYSCORECARD", "sub": "99.9"},
+    "years20":   {"glyph": "trophy",       "mono": "20",    "top": "YEARS OF", "sub": "EXCELLENCE"},
+}
+
+
+def cert_seal(key):
+    s = CERT_SEALS[key]
+    glyph = GLYPHS[s["glyph"]]
+    mono = s["mono"]
+    size = 30 if len(mono) <= 2 else (20 if len(mono) <= 4 else 14)
+    top_size = 6 if len(s["top"]) > 10 else 7.5
+    return f'''<svg class="cert-seal-svg" viewBox="0 0 96 96" aria-hidden="true" focusable="false">
+  <circle cx="48" cy="48" r="45" class="seal-face"/>
+  <circle cx="48" cy="48" r="45" class="seal-ring" fill="none" stroke-width="2.5"/>
+  <circle cx="48" cy="48" r="37" class="seal-dots" fill="none" stroke-width="1" stroke-dasharray="1.5 3.5"/>
+  <g transform="translate(41 13) scale(0.6)" class="seal-glyph" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">{glyph}</g>
+  <text x="48" y="{51 if len(mono) <= 2 else 50}" text-anchor="middle" class="seal-mono" font-size="{size}">{mono}</text>
+  <text x="48" y="63" text-anchor="middle" class="seal-top" font-size="{top_size}">{s["top"]}</text>
+  <text x="48" y="73" text-anchor="middle" class="seal-sub" font-size="7">{s["sub"]}</text>
+</svg>'''
