@@ -131,16 +131,16 @@ get_header();
     <div class="site-visual">
       <div class="grid-2">
         <div class="stat-tile">
-          <div class="stat-tile-label">Savings on a single senior role</div>
-          <div class="stat-tile-value">Up to $157K/yr</div>
+          <div class="stat-tile-label">Savings on a single senior role, up to</div>
+          <div class="stat-tile-value">$157K/yr</div>
         </div>
         <div class="stat-tile">
-          <div class="stat-tile-label">Savings on a 5&ndash;10 person team</div>
-          <div class="stat-tile-value">Up to $450K/yr</div>
+          <div class="stat-tile-label">Savings on a 5&ndash;10 person team, up to</div>
+          <div class="stat-tile-value">$450K/yr</div>
         </div>
         <div class="stat-tile">
-          <div class="stat-tile-label">Fully loaded cost reduction</div>
-          <div class="stat-tile-value">Up to 80%</div>
+          <div class="stat-tile-label">Fully loaded cost reduction, up to</div>
+          <div class="stat-tile-value">80%</div>
         </div>
         <div class="stat-tile">
           <div class="stat-tile-label">Typical time to start date</div>

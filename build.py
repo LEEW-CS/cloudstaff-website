@@ -50,6 +50,7 @@ def sub_common(text):
 
 def sub_static(text, current_slug):
     text = sub_common(text)
+    text = re.sub(r"\{\{ASSET:([a-z0-9.-]+)\}\}", lambda m: "assets/" + m.group(1), text)
     def url(m):
         slug = m.group(1)
         return "index.html" if slug == "index" else f"{slug}.html"
@@ -62,6 +63,7 @@ def sub_static(text, current_slug):
 
 def sub_wp(text):
     text = sub_common(text)
+    text = re.sub(r"\{\{ASSET:([a-z0-9.-]+)\}\}", lambda m: "<?php echo esc_url( get_template_directory_uri() . '/" + m.group(1) + "' ); ?>", text)
     def url(m):
         slug = m.group(1)
         path = "/" if slug == "index" else f"/{slug}/"
@@ -100,6 +102,7 @@ STATIC_SHELL = """<!doctype html>
 def build_static():
     os.makedirs(os.path.join(DOCS, "assets"), exist_ok=True)
     shutil.copyfile(os.path.join(SRC, "site.css"), os.path.join(DOCS, "assets", "site.css"))
+    shutil.copyfile(os.path.join(SRC, "teambuilder.js"), os.path.join(DOCS, "assets", "teambuilder.js"))
     open(os.path.join(DOCS, ".nojekyll"), "w").close()
     for slug, p in pages.items():
         body = read(SRC, "partials", f"{slug}.html")
@@ -173,6 +176,7 @@ def build_wp():
     open(os.path.join(THEME, "footer.php"), "w", encoding="utf-8").write(wp_footer)
     # copy custom css into theme
     shutil.copyfile(os.path.join(SRC, "site.css"), os.path.join(THEME, "site.css"))
+    shutil.copyfile(os.path.join(SRC, "teambuilder.js"), os.path.join(THEME, "teambuilder.js"))
     # slug -> meta description map used by functions.php
     descriptions = {slug: p["description"] for slug, p in pages.items()}
     with open(os.path.join(THEME, "page-meta.json"), "w", encoding="utf-8") as f:

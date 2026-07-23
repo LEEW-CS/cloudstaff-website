@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Team Builder: Build Your Offshore Team &amp; See the Savings | Cloudstaff</title>
+<meta name="description" content="Browse 600+ roles across 36 categories, build your dream offshore team, and see your all-in monthly price and savings vs. onshore hiring — instantly.">
+<link rel="stylesheet" href="https://style.cloudstaff.com/v2.38.0/fonts/fonts.css">
+<link rel="stylesheet" href="https://style.cloudstaff.com/v2.38.0/css/ui.min.css">
+<link rel="stylesheet" href="assets/site.css">
+<script src="https://style.cloudstaff.com/v2.38.0/css/ui.min.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header">
+  <a href="index.html" class="site-header-brand" aria-label="Cloudstaff — home"><span class="site-logo"><svg class="site-logo-emblem" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><circle cx="24" cy="24" r="24" class="site-logo-disc"/><path class="site-logo-cloud-shape" d="M12.2 30.2c-2.3-.6-3.4-3.2-2.1-5.2.8-1.2 2.2-1.8 3.6-1.5.2-2.4 2.2-4.3 4.7-4.3 1.5 0 2.9.7 3.8 1.9 1.3-2.9 4.2-4.8 7.5-4.8 4.6 0 8.3 3.7 8.3 8.3 0 1.5-.4 3-1.2 4.2-.3.4-.8.7-1.3.7-3.6.3-7.2-.7-10.8-1-4.2-.4-8.4 2.6-12.5 1.7z"/></svg><span class="site-logo-word">Cloudstaff<sup>&reg;</sup></span></span></a>
+  <nav class="site-nav" aria-label="Main navigation">
+    <a href="what-is-remote-staffing.html" >What Is Remote Staffing?</a>
+    <a href="how-it-works.html" >How It Works</a>
+    <a href="pricing.html" >Pricing &amp; Savings</a>
+    <a href="team-builder.html" aria-current="page">Team Builder</a>
+    <a href="roles.html" >Roles &amp; Industries</a>
+    <a href="security.html" >Security</a>
+    <a href="why-cloudstaff.html" >Why Cloudstaff</a>
+    <a href="cfo-guide.html" >CFO Guide</a>
+  </nav>
+  <div class="site-header-cta">
+    <a href="contact.html" class="button">Talk to an Expert</a>
+  </div>
+</header>
+
+<main class="site-main" id="main-content">
+<section class="site-hero site-hero-photo" style="--hero-image: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=2000&q=70')" title="Team joining hands">
+  <div class="site-band-inner">
+    <div class="site-hero-copy">
+    <span class="eyebrow">Proof of concept &mdash; placeholder pricing</span>
+    <h1>Build your team</h1>
+    <p>Browse all <strong><span id="tb-role-count">600</span>+ roles</strong> Cloudstaff can staff, add the ones you need, set quantities, and watch your all-in monthly price and savings build in real time. Hover any role for a snapshot job description.</p>
+    </div>
+  </div>
+</section>
+
+<section class="site-band tb-band">
+  <div class="site-band-inner">
+    <div class="tb-controls card">
+      <div class="tb-control">
+        <span class="tb-control-label">Where will your team work?</span>
+        <div class="tb-seg" id="tb-mode" role="group" aria-label="Workplace mode"></div>
+      </div>
+      <div class="tb-control">
+        <span class="tb-control-label">Service country</span>
+        <div class="tb-seg" id="tb-country" role="group" aria-label="Service country"></div>
+      </div>
+      <div class="tb-control tb-control-search">
+        <label class="tb-control-label" for="tb-search">Find a role</label>
+        <input class="input" id="tb-search" type="search" placeholder="Search 600+ roles&hellip; e.g. accountant, React, paralegal">
+      </div>
+    </div>
+
+    <div class="tb-layout">
+      <div class="tb-catalog" id="tb-catalog" aria-label="Role catalog"></div>
+
+      <aside class="tb-panel" aria-label="Your team">
+        <div class="card tb-panel-card">
+          <h3>Your team</h3>
+          <p id="tb-empty">No roles yet &mdash; hit <strong>Add</strong> next to any role to start building.</p>
+          <div id="tb-team"></div>
+          <div id="tb-totals" hidden>
+            <hr class="tb-rule">
+            <div class="tb-total-row"><span id="tb-total-seats">0 team members</span></div>
+            <div class="tb-total-row tb-total-main">
+              <span>Total monthly cost</span>
+              <strong id="tb-total-cost">$0/mo</strong>
+            </div>
+            <div class="tb-total-row tb-total-saved">
+              <span>Saved vs. onshore hiring</span>
+              <strong id="tb-total-saved">$0/mo</strong>
+            </div>
+            <a href="contact.html" class="button tb-cta">Get my real quote</a>
+            <p class="tb-disclaimer">Proof of concept. All prices are placeholders for illustration &mdash; your actual quote depends on role, seniority, and location.</p>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<div id="tb-tip" class="tb-tip" hidden aria-hidden="true"></div>
+
+<section class="site-cta">
+  <div class="site-band-inner">
+    <h2>Like what your team could look like?</h2>
+    <p>Send us your draft team and we'll come back with real numbers, candidate profiles, and a deployment plan.</p>
+    <a href="contact.html" class="button button-inverse button-lg">Talk to an Expert</a>
+  </div>
+</section>
+<script src="assets/teambuilder.js" defer></script>
+
+</main>
+<footer class="site-footer">
+  <div class="site-footer-main">
+    <div class="site-footer-brand">
+      <span class="site-logo site-logo-light"><svg class="site-logo-emblem" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><circle cx="24" cy="24" r="24" class="site-logo-disc"/><path class="site-logo-cloud-shape" d="M12.2 30.2c-2.3-.6-3.4-3.2-2.1-5.2.8-1.2 2.2-1.8 3.6-1.5.2-2.4 2.2-4.3 4.7-4.3 1.5 0 2.9.7 3.8 1.9 1.3-2.9 4.2-4.8 7.5-4.8 4.6 0 8.3 3.7 8.3 8.3 0 1.5-.4 3-1.2 4.2-.3.4-.8.7-1.3.7-3.6.3-7.2-.7-10.8-1-4.2-.4-8.4 2.6-12.5 1.7z"/></svg><span class="site-logo-word">Cloudstaff<sup>&reg;</sup></span></span>
+      <p>Since 2005, Cloudstaff has helped more than 1,200 businesses worldwide build reliable, high-performing offshore teams that operate as a true extension of their organization.</p>
+    </div>
+    <div>
+      <h3>Learn</h3>
+      <ul>
+        <li><a href="what-is-remote-staffing.html">What is remote staffing?</a></li>
+        <li><a href="how-it-works.html">How it works</a></li>
+        <li><a href="pricing.html">Pricing &amp; savings</a></li>
+        <li><a href="cfo-guide.html">The CFO guide</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Explore</h3>
+      <ul>
+        <li><a href="roles.html">Roles &amp; industries</a></li>
+        <li><a href="team-builder.html">Team Builder</a></li>
+        <li><a href="security.html">Security &amp; compliance</a></li>
+        <li><a href="why-cloudstaff.html">Why Cloudstaff</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Talk to us</h3>
+      <ul>
+        <li><a href="tel:+18007308615">US +1 800 730 8615</a></li>
+        <li>Charlotte, NC &middot; Houston, TX &middot; Dallas, TX</li>
+        <li>Sydney &middot; Brisbane &middot; London</li>
+        <li>Manila &middot; Bangalore &middot; Bogot&aacute;</li>
+      </ul>
+    </div>
+  </div>
+  <div class="site-footer-certs">
+    <span class="badge">ISO/IEC 27001:2022</span>
+    <span class="badge">ISO 9001:2015</span>
+    <span class="badge">SOC 2</span>
+    <span class="badge">HIPAA-aligned</span>
+    <span class="badge">GDPR-aligned</span>
+    <span class="badge">PCI DSS-aligned</span>
+    <span class="badge badge-success">SecurityScorecard 99.9</span>
+  </div>
+  <div class="site-footer-legal">
+    <p>&copy; 2026 Cloudstaff. All rights reserved. Company statistics current as of July 2026.</p>
+  </div>
+</footer>
+
+</body>
+</html>

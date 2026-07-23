@@ -17,6 +17,7 @@
       <h3>Explore</h3>
       <ul>
         <li><a href="<?php echo esc_url( home_url( '/roles/' ) ); ?>">Roles &amp; industries</a></li>
+        <li><a href="<?php echo esc_url( home_url( '/team-builder/' ) ); ?>">Team Builder</a></li>
         <li><a href="<?php echo esc_url( home_url( '/security/' ) ); ?>">Security &amp; compliance</a></li>
         <li><a href="<?php echo esc_url( home_url( '/why-cloudstaff/' ) ); ?>">Why Cloudstaff</a></li>
         <li><a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>">Contact us</a></li>
