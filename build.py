@@ -71,7 +71,7 @@ STATIC_SHELL = """<!doctype html>
 </head>
 <body>
 {header}
-<main class="lander" id="main-content">
+<main class="site-main" id="main-content">
 {body}
 </main>
 {footer}
@@ -111,7 +111,7 @@ WP_TEMPLATE = """<?php
 
 get_header();
 ?>
-<main class="lander" id="main-content">
+<main class="site-main" id="main-content">
 {body}
 </main>
 <?php

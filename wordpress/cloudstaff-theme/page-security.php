@@ -11,9 +11,9 @@
 
 get_header();
 ?>
-<main class="lander" id="main-content">
-<section class="lander-hero">
-  <div class="lander-content">
+<main class="site-main" id="main-content">
+<section class="site-hero">
+  <div class="site-band-inner">
     <span class="eyebrow">Secure by design</span>
     <h1>Enterprise-grade security and compliance</h1>
     <p>Remote staffing must meet the same security and governance standards as any internal operation. Cloudstaff has built security into every layer of its operating model &mdash; from recruitment and background screening through hardware, network infrastructure, and physical site controls. Oversight remains with you; infrastructure and safeguards are managed by us.</p>
@@ -21,8 +21,8 @@ get_header();
   </div>
 </section>
 
-<section class="lander-tile-row-section">
-  <div class="lander-content">
+<section class="site-band">
+  <div class="site-band-inner">
     <div class="grid-3">
       <div class="feature-tile">
         <div class="feature-tile-icon"><i class="fa-light fa-certificate" aria-hidden="true"></i></div>
@@ -43,8 +43,8 @@ get_header();
   </div>
 </section>
 
-<section class="lander-section">
-  <div class="lander-content">
+<section class="site-band">
+  <div class="site-band-inner">
     <div>
       <span class="eyebrow">Risk reduction</span>
       <h2>The four questions finance leaders ask first</h2>
@@ -70,8 +70,8 @@ get_header();
   </div>
 </section>
 
-<section class="lander-section lander-section-tinted">
-  <div class="lander-content">
+<section class="site-band site-band-tinted">
+  <div class="site-band-inner">
     <div>
       <span class="eyebrow">Above industry standard, everywhere your team works</span>
       <h2>Home or office &mdash; the same security bar</h2>
@@ -103,15 +103,15 @@ get_header();
   </div>
 </section>
 
-<section class="lander-section">
-  <div class="lander-content">
+<section class="site-band">
+  <div class="site-band-inner">
     <div>
       <span class="eyebrow">Managed PCs and 24x7 support</span>
       <h2>Purpose-built devices, always-on support</h2>
       <p>Cloudstaff's Managed PCs are purpose-built, enterprise-grade systems designed specifically for remote and hybrid work. Every device arrives pre-configured to your operational and security standards, fully loaded with approved software, productivity tools, and monitoring utilities. Automatic updates, advanced encryption, and strict access controls protect sensitive data from day one.</p>
       <p>With 24x7 assistance across our delivery locations, dedicated engineers troubleshoot issues remotely or on site and arrange prompt hardware replacement when required &mdash; minimizing downtime so your team stays focused on delivering results.</p>
     </div>
-    <div class="lander-section-image">
+    <div class="site-visual">
       <div class="stack-lg">
         <div class="stat-tile stat-tile-illustrated is-success">
           <div class="stat-tile-icon"><i class="fa-light fa-laptop-binary" aria-hidden="true"></i></div>
@@ -139,15 +139,15 @@ get_header();
   </div>
 </section>
 
-<section class="lander-section lander-section-tinted lander-section-image-left">
-  <div class="lander-content">
+<section class="site-band site-band-tinted site-band-reverse">
+  <div class="site-band-inner">
     <div>
       <span class="eyebrow">Compliance, security, and trust</span>
       <h2>Compliance is only the starting point</h2>
       <p>Cloudstaff is certified to ISO/IEC 27001:2022 and ISO 9001:2015, with policies, systems, and controls designed to support applicable GDPR, HIPAA, and PCI DSS requirements. Beyond certification, we apply rigorous internal standards across endpoint protection, network security, hardware management, application security, physical access, user controls, and managed devices.</p>
       <p>Security is customizable to match your internal compliance requirements and audit standards. In short: protection of client data, funds, and intellectual property is engineered into the service from day one.</p>
     </div>
-    <div class="lander-section-image">
+    <div class="site-visual">
       <div class="card">
         <h3>Certifications &amp; frameworks</h3>
         <div class="cluster">
@@ -166,8 +166,8 @@ get_header();
   </div>
 </section>
 
-<section class="lander-cta lander-cta-brand">
-  <div class="lander-content">
+<section class="site-cta">
+  <div class="site-band-inner">
     <h2>Put our security team in front of yours</h2>
     <p>We support client audits and due diligence &mdash; bring your IT and compliance stakeholders to the conversation.</p>
     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-inverse button-lg">Book a security review</a>

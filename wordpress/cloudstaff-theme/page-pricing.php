@@ -11,9 +11,9 @@
 
 get_header();
 ?>
-<main class="lander" id="main-content">
-<section class="lander-hero">
-  <div class="lander-content">
+<main class="site-main" id="main-content">
+<section class="site-hero">
+  <div class="site-band-inner">
     <span class="eyebrow">No hidden fees. No surprises.</span>
     <h1>Transparent pricing, real savings</h1>
     <p>Cloudstaff's pricing separates your workforce costs into three clear components, giving you greater visibility, more predictable budgeting, and clearer control over your workforce investment. Here's exactly what remote staffing costs &mdash; and what it saves.</p>
@@ -21,8 +21,8 @@ get_header();
   </div>
 </section>
 
-<section class="lander-tile-row-section">
-  <div class="lander-content">
+<section class="site-band">
+  <div class="site-band-inner">
     <div class="grid-3">
       <div class="feature-tile">
         <div class="feature-tile-icon"><i class="fa-light fa-building" aria-hidden="true"></i></div>
@@ -43,15 +43,15 @@ get_header();
   </div>
 </section>
 
-<section class="lander-section">
-  <div class="lander-content">
+<section class="site-band">
+  <div class="site-band-inner">
     <div>
       <span class="eyebrow">A worked example</span>
       <h2>Senior Accountant: US hire vs. Cloudstaff hire</h2>
       <p>Depending on the role and location, businesses may reduce fully loaded employment costs by up to 80%. The value extends beyond salary differences &mdash; benefits, technology, infrastructure, and overheads are all substantially reduced through a global staffing model. Even a single role can create meaningful savings and improve EBITDA without disrupting day-to-day operations.</p>
       <p class="cost-bar-savings">Hiring a Senior Accountant through Cloudstaff can save up to 80% compared with hiring onshore &mdash; up to US$157,536 per staff member per year, without sacrificing quality.</p>
     </div>
-    <div class="lander-section-image">
+    <div class="site-visual">
       <div class="grid-2">
         <div class="card">
           <h3>Fully loaded US-based hire</h3>
@@ -84,8 +84,8 @@ get_header();
   </div>
 </section>
 
-<section class="lander-section lander-section-tinted">
-  <div class="lander-content">
+<section class="site-band site-band-tinted">
+  <div class="site-band-inner">
     <div>
       <span class="eyebrow">Quality staff at a fraction of the cost</span>
       <h2>Typical monthly cost by role: US vs. Cloudstaff</h2>
@@ -118,15 +118,15 @@ get_header();
   </div>
 </section>
 
-<section class="lander-section">
-  <div class="lander-content">
+<section class="site-band">
+  <div class="site-band-inner">
     <div>
       <span class="eyebrow">Beyond the savings</span>
       <h2>Clients come for the cost. They stay for the capability.</h2>
       <p>While clients often start with cost savings in mind, they consistently find the biggest long-term benefit is the ability to access and retain high-quality, reliable staff. A well-structured remote team extends the capacity of existing departments, fills hard-to-hire roles, reduces pressure on local teams, and improves continuity across critical functions.</p>
       <p>Headcount becomes elastic: capacity scales up or down in line with demand cycles, and SG&amp;A becomes more predictable.</p>
     </div>
-    <div class="lander-section-image">
+    <div class="site-visual">
       <div class="grid-2">
         <div class="stat-tile">
           <div class="stat-tile-label">Savings on a single senior role</div>
@@ -149,8 +149,8 @@ get_header();
   </div>
 </section>
 
-<section class="lander-cta lander-cta-brand">
-  <div class="lander-content">
+<section class="site-cta">
+  <div class="site-band-inner">
     <h2>Get your tailored cost comparison</h2>
     <p>Tell us the roles you're hiring for and we'll show you the fully loaded numbers, side by side.</p>
     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-inverse button-lg">Get a tailored quote</a>

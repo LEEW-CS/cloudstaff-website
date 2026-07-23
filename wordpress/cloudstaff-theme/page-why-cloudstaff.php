@@ -11,9 +11,9 @@
 
 get_header();
 ?>
-<main class="lander" id="main-content">
-<section class="lander-hero lander-hero-dark">
-  <div class="lander-content">
+<main class="site-main" id="main-content">
+<section class="site-hero site-hero-dark">
+  <div class="site-band-inner">
     <span class="eyebrow">Experience counts</span>
     <h1>Two decades of building teams that stay</h1>
     <p>For more than 20 years, Cloudstaff has helped global businesses build reliable, high-performing offshore teams that operate as a true extension of their organization. When margin, compliance, and accountability are critical, experience is not optional &mdash; it's essential.</p>
@@ -21,8 +21,8 @@ get_header();
   </div>
 </section>
 
-<section class="lander-tile-row-section">
-  <div class="lander-content">
+<section class="site-band">
+  <div class="site-band-inner">
     <div class="grid-3">
       <div class="feature-tile">
         <div class="feature-tile-icon"><i class="fa-light fa-award" aria-hidden="true"></i></div>
@@ -43,8 +43,8 @@ get_header();
   </div>
 </section>
 
-<section class="lander-section">
-  <div class="lander-content">
+<section class="site-band">
+  <div class="site-band-inner">
     <div>
       <span class="eyebrow">Our story</span>
       <h2>Pioneering global remote staffing since 2005</h2>
@@ -55,7 +55,7 @@ get_header();
         <figcaption><strong>Lloyd Ernst</strong> &mdash; Founder, Cloudstaff</figcaption>
       </figure>
     </div>
-    <div class="lander-section-image">
+    <div class="site-visual">
       <div class="grid-2">
         <div class="stat-tile">
           <div class="stat-tile-label">Founded</div>
@@ -86,8 +86,8 @@ get_header();
   </div>
 </section>
 
-<section class="lander-section lander-section-tinted lander-section-image-left">
-  <div class="lander-content">
+<section class="site-band site-band-tinted site-band-reverse">
+  <div class="site-band-inner">
     <div>
       <span class="eyebrow">Culture is a competitive advantage</span>
       <h2>Why our people stay &mdash; and why that matters to you</h2>
@@ -95,7 +95,7 @@ get_header();
       <p>The result for you: industry-leading retention, greater team stability, reduced turnover, and stronger long-term performance. With a 98% retention rate, the person you train this year is still on your team next year &mdash; and the year after.</p>
       <p>We also invest heavily in continuous learning, career development, and practical AI education, so your team keeps getting more capable over time.</p>
     </div>
-    <div class="lander-section-image">
+    <div class="site-visual">
       <div class="stack-lg">
         <div class="card">
           <h3><i class="fa-light fa-trophy" aria-hidden="true"></i> Recognized workplace</h3>
@@ -114,8 +114,8 @@ get_header();
   </div>
 </section>
 
-<section class="lander-section">
-  <div class="lander-content">
+<section class="site-band">
+  <div class="site-band-inner">
     <div>
       <span class="eyebrow">Cloudstaff in-house infrastructure</span>
       <h2>Everything your team needs, under one roof</h2>
@@ -136,8 +136,8 @@ get_header();
   </div>
 </section>
 
-<section class="lander-section lander-section-tinted">
-  <div class="lander-content">
+<section class="site-band site-band-tinted">
+  <div class="site-band-inner">
     <div>
       <span class="eyebrow">In their words</span>
       <h2>Trusted by leaders across the US, Australia, and beyond</h2>
@@ -171,8 +171,8 @@ get_header();
   </div>
 </section>
 
-<section class="lander-cta lander-cta-brand">
-  <div class="lander-content">
+<section class="site-cta">
+  <div class="site-band-inner">
     <h2>Partner with the market leader</h2>
     <p>Security, scale, stability, and long-term performance &mdash; these aren't marketing claims, they're operational results.</p>
     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-inverse button-lg">Talk to an Expert</a>

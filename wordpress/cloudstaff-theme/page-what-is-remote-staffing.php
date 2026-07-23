@@ -11,9 +11,9 @@
 
 get_header();
 ?>
-<main class="lander" id="main-content">
-<section class="lander-hero">
-  <div class="lander-content">
+<main class="site-main" id="main-content">
+<section class="site-hero">
+  <div class="site-band-inner">
     <span class="eyebrow">Plain-English guide</span>
     <h1>What is remote staffing?</h1>
     <p>If you've never outsourced before, the terminology alone can be a barrier. This page explains what remote staffing actually is, how it's different from the models you may have heard of, and what the facts say about the most common concerns.</p>
@@ -21,8 +21,8 @@ get_header();
   </div>
 </section>
 
-<section class="lander-tile-row-section">
-  <div class="lander-content">
+<section class="site-band">
+  <div class="site-band-inner">
     <div class="grid-3">
       <div class="feature-tile">
         <div class="feature-tile-icon"><i class="fa-light fa-user-check" aria-hidden="true"></i></div>
@@ -43,15 +43,15 @@ get_header();
   </div>
 </section>
 
-<section class="lander-section">
-  <div class="lander-content">
+<section class="site-band">
+  <div class="site-band-inner">
     <div>
       <span class="eyebrow">The basics</span>
       <h2>Full-time global talent, working as part of your team</h2>
       <p>Remote staffing combines global talent access with significant cost arbitrage. You hire full-time roles sourced globally &mdash; for example from the Philippines, Latin America, and India &mdash; through a partner like Cloudstaff. Your team members work seamlessly as part of your organization, aligned to your hours, your tools, and your workflows.</p>
       <p>It solves four problems at once: it reduces fully loaded labor costs by up to 80%, addresses talent shortages by opening deep global talent pools, improves scalability with flexible ramp-up and ramp-down, and frees your onshore team to focus on higher-value, billable work.</p>
     </div>
-    <div class="lander-section-image">
+    <div class="site-visual">
       <div class="stack-lg">
         <div class="card card-brand">
           <h3>Who employs the staff?</h3>
@@ -70,8 +70,8 @@ get_header();
   </div>
 </section>
 
-<section class="lander-section lander-section-tinted">
-  <div class="lander-content">
+<section class="site-band site-band-tinted">
+  <div class="site-band-inner">
     <div>
       <span class="eyebrow">Know your options</span>
       <h2>How remote staffing compares to the alternatives</h2>
@@ -137,8 +137,8 @@ get_header();
   </div>
 </section>
 
-<section class="lander-section">
-  <div class="lander-content">
+<section class="site-band">
+  <div class="site-band-inner">
     <div>
       <span class="eyebrow">Addressing the misconceptions</span>
       <h2>What the evidence actually shows</h2>
@@ -184,8 +184,8 @@ get_header();
   </div>
 </section>
 
-<section class="lander-section lander-section-tinted">
-  <div class="lander-content">
+<section class="site-band site-band-tinted">
+  <div class="site-band-inner">
     <div>
       <span class="eyebrow">Common questions</span>
       <h2>Frequently asked questions</h2>
@@ -219,8 +219,8 @@ get_header();
   </div>
 </section>
 
-<section class="lander-cta lander-cta-brand">
-  <div class="lander-content">
+<section class="site-cta">
+  <div class="site-band-inner">
     <h2>See the model in action</h2>
     <p>Next step: a step-by-step look at how a Cloudstaff engagement actually runs &mdash; who does what, and when.</p>
     <a href="<?php echo esc_url( home_url( '/how-it-works/' ) ); ?>" class="button button-inverse button-lg">How it works</a>

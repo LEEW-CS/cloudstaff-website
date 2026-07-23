@@ -11,9 +11,9 @@
 
 get_header();
 ?>
-<main class="lander" id="main-content">
-<section class="lander-hero">
-  <div class="lander-content">
+<main class="site-main" id="main-content">
+<section class="site-hero">
+  <div class="site-band-inner">
     <span class="eyebrow">For finance leaders</span>
     <h1>The CFO's guide to remote staffing</h1>
     <p>Remote staffing is not just a cost decision. It is a strategic workforce model designed to improve financial performance, increase resilience, and expand operational capacity without increasing fixed overhead. The question is not whether it works &mdash; it's how to structure it properly, manage risk, and ensure measurable return.</p>
@@ -21,8 +21,8 @@ get_header();
   </div>
 </section>
 
-<section class="lander-tile-row-section">
-  <div class="lander-content">
+<section class="site-band">
+  <div class="site-band-inner">
     <div class="grid-3">
       <div class="feature-tile">
         <div class="feature-tile-icon"><i class="fa-light fa-route" aria-hidden="true"></i></div>
@@ -43,8 +43,8 @@ get_header();
   </div>
 </section>
 
-<section class="lander-section">
-  <div class="lander-content">
+<section class="site-band">
+  <div class="site-band-inner">
     <div>
       <span class="eyebrow">Outsourcing for scale</span>
       <h2>Six proven archetypes for scaling</h2>
@@ -86,8 +86,8 @@ get_header();
   </div>
 </section>
 
-<section class="lander-section lander-section-tinted">
-  <div class="lander-content">
+<section class="site-band site-band-tinted">
+  <div class="site-band-inner">
     <div>
       <span class="eyebrow">Not every position scales the same way</span>
       <h2>The role-fit framework: standardization vs. complexity</h2>
@@ -118,8 +118,8 @@ get_header();
   </div>
 </section>
 
-<section class="lander-section">
-  <div class="lander-content">
+<section class="site-band">
+  <div class="site-band-inner">
     <div>
       <span class="eyebrow">The journey starts here</span>
       <h2>From hundreds of roles to one clear business case</h2>
@@ -162,8 +162,8 @@ get_header();
   </div>
 </section>
 
-<section class="lander-section lander-section-tinted lander-section-image-left">
-  <div class="lander-content">
+<section class="site-band site-band-tinted site-band-reverse">
+  <div class="site-band-inner">
     <div>
       <span class="eyebrow">Best practices from 1,200+ engagements</span>
       <h2>The first 30&ndash;60 days determine long-term success</h2>
@@ -202,8 +202,8 @@ get_header();
   </div>
 </section>
 
-<section class="lander-cta lander-cta-brand">
-  <div class="lander-content">
+<section class="site-cta">
+  <div class="site-band-inner">
     <h2>Build your business case with us</h2>
     <p>Bring one role. We'll bring the fully loaded numbers, the controls framework, and a 12-month deployment plan.</p>
     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-inverse button-lg">Discuss your business case</a>

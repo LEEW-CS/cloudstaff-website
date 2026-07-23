@@ -1,147 +1,384 @@
 /* ==========================================================================
    Cloudstaff marketing site — custom layer on top of the design system.
-   Tokens only — no raw hex, no raw px where a token exists.
+
+   The design system provides tokens + components (buttons, cards, tiles,
+   tables, badges, forms, topbar). This file OWNS the page scaffolding
+   (hero bands, sections, splits, grids, footer) so layout is deterministic.
+   Tokens only — no raw hex.
    ========================================================================== */
 
 /* --- Accessibility ----------------------------------------------------- */
 .skip-link {
   position: absolute;
-  left: var(--space-md);
-  top: calc(-1 * var(--space-5xl));
-  z-index: var(--z-index-toast);
-  background: var(--color-surface-page);
-  color: var(--color-foreground-primary);
-  padding: var(--space-sm) var(--space-lg);
-  border-radius: var(--radius-sm);
-  box-shadow: var(--shadow-md);
-  transition: top var(--duration-fast);
+  left: var(--space-md, 0.75rem);
+  top: calc(-1 * var(--space-5xl, 4rem) - 2rem);
+  z-index: var(--z-index-toast, 1100);
+  background: var(--color-surface-page, #fff);
+  color: var(--color-foreground-primary, #111);
+  padding: var(--space-sm, 0.5rem) var(--space-lg, 1rem);
+  border-radius: var(--radius-sm, 0.5rem);
+  box-shadow: var(--shadow-md, 0 4px 12px rgba(0, 0, 0, 0.15));
+  transition: top var(--duration-fast, 150ms);
 }
-.skip-link:focus { top: var(--space-md); }
+.skip-link:focus { top: var(--space-md, 0.75rem); }
 
-/* --- Topbar tweaks for a marketing site -------------------------------- */
-.topbar-website { position: sticky; top: 0; z-index: var(--z-index-topbar); }
+/* --- Topbar ------------------------------------------------------------- */
+.topbar-website {
+  position: sticky;
+  top: 0;
+  z-index: var(--z-index-topbar, 200);
+}
+.topbar-website .topbar-nav {
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .topbar-nav a[aria-current="page"] {
-  color: var(--color-brand-primary-strong);
-  font-weight: var(--font-weight-semibold);
+  color: var(--color-brand-primary-strong, var(--color-brand-primary));
+  font-weight: var(--font-weight-semibold, 600);
+}
+@media (max-width: 1024px) {
+  .topbar-website { position: static; }
+}
+@media (max-width: 900px) {
+  .topbar-website {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm, 0.5rem);
+    align-items: center;
+    padding-block: var(--space-md, 0.75rem);
+  }
+  .topbar-website .topbar-nav {
+    justify-content: center;
+    row-gap: var(--space-xs, 0.25rem);
+  }
 }
 
-/* Fallback text logo in case the sprite is unavailable */
-.logo-text-fallback {
-  font-family: var(--font-family-heading);
-  font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-xl);
-  color: var(--color-brand-primary-strong);
-  letter-spacing: -0.02em;
+/* --- Page scaffolding ---------------------------------------------------
+   .site-main            page wrapper
+   .site-hero            opening band (+.site-hero-dark)
+   .site-band            full-width section band (+.site-band-tinted)
+   .site-band-inner      centered content column (max 72rem)
+   .site-visual          the "illustration" block of a split section
+   .site-band-reverse    swap text/visual columns visually
+   .site-cta             closing call-to-action band
+   ------------------------------------------------------------------------ */
+.site-main {
+  display: block;
+  background: var(--color-surface-page, #fff);
+  color: var(--color-foreground-primary, #16233b);
 }
-.logo-text-fallback sup { font-size: var(--font-size-xs); }
+.site-main > * { margin: 0; }
 
-/* --- Eyebrow labels ----------------------------------------------------- */
+.site-band-inner,
+.site-hero > .site-band-inner,
+.site-cta > .site-band-inner {
+  max-width: 72rem;
+  margin-inline: auto;
+  padding-inline: var(--space-xl, 1.5rem);
+}
+
+/* Hero */
+.site-hero {
+  padding-block: clamp(3rem, 8vw, 5.5rem);
+  background: var(--color-surface-canvas, #f6f8fb);
+}
+.site-hero h1 {
+  max-width: 46rem;
+  margin-block: var(--space-sm, 0.5rem) var(--space-lg, 1rem);
+  line-height: var(--line-height-tight, 1.15);
+}
+.site-hero p {
+  max-width: 44rem;
+  font-size: var(--font-size-lg, 1.125rem);
+  margin-block: 0 var(--space-xl, 1.5rem);
+}
+.site-hero p:last-child { margin-block-end: 0; }
+.site-hero-dark {
+  background:
+    linear-gradient(
+      135deg,
+      color-mix(in oklch, var(--color-brand-primary, #007aff), black 72%),
+      color-mix(in oklch, var(--color-brand-primary, #007aff), black 45%)
+    );
+  color: #ffffff;
+}
+.site-hero-dark .eyebrow { color: #ffffff; opacity: 0.85; }
+.site-hero-dark a.button-link { color: #ffffff; text-decoration: underline; }
+
+/* Section bands */
+.site-band {
+  padding-block: clamp(2.5rem, 6vw, 4.5rem);
+}
+.site-band-tinted {
+  background: var(--color-surface-canvas, #f6f8fb);
+}
+.site-band h2 {
+  max-width: 46rem;
+  margin-block: var(--space-sm, 0.5rem) var(--space-lg, 1rem);
+  line-height: var(--line-height-tight, 1.15);
+}
+.site-band-inner > div > p,
+.site-band-inner > p {
+  max-width: 52rem;
+}
+
+/* Split (text + visual) — only activates when a .site-visual is present */
+.site-band-inner:has(> .site-visual) {
+  display: grid;
+  grid-template-columns: minmax(0, 6fr) minmax(0, 5fr);
+  gap: clamp(1.5rem, 4vw, 3.5rem);
+  align-items: center;
+}
+.site-band-reverse .site-band-inner:has(> .site-visual) > .site-visual {
+  order: -1;
+}
+@media (max-width: 860px) {
+  .site-band-inner:has(> .site-visual) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  /* visual above text on mobile, standard reading order */
+  .site-band-inner:has(> .site-visual) > .site-visual { order: -1; }
+}
+
+/* Closing CTA */
+.site-cta {
+  padding-block: clamp(2.5rem, 6vw, 4rem);
+  background:
+    linear-gradient(
+      135deg,
+      var(--color-brand-primary-strong, var(--color-brand-primary, #007aff)),
+      color-mix(in oklch, var(--color-brand-primary, #007aff), black 30%)
+    );
+  color: #ffffff;
+  text-align: center;
+}
+.site-cta h2 { margin-block: 0 var(--space-md, 0.75rem); }
+.site-cta p {
+  max-width: 40rem;
+  margin: 0 auto var(--space-xl, 1.5rem);
+  font-size: var(--font-size-lg, 1.125rem);
+}
+
+/* --- Grids (owned here so column behavior is deterministic) ------------- */
+.grid-2, .grid-3, .grid-4 {
+  display: grid;
+  gap: var(--space-lg, 1rem);
+  grid-template-columns: minmax(0, 1fr);
+  align-items: stretch;
+  margin-block: var(--space-xl, 1.5rem);
+}
+@media (min-width: 640px) {
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (min-width: 1024px) {
+  .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+/* Tight grids inside a visual column stay 2-up at most */
+.site-visual .grid-2 { margin-block: 0; }
+.stack-lg {
+  display: grid;
+  gap: var(--space-lg, 1rem);
+  margin-block: 0;
+}
+.cluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm, 0.5rem);
+  align-items: center;
+}
+
+/* Cards/tiles fill their grid cell without squeezing */
+.grid-2 > *, .grid-3 > *, .grid-4 > *, .stack-lg > * { min-width: 0; }
+
+/* --- Eyebrow labels ------------------------------------------------------ */
 .eyebrow {
   display: inline-block;
-  font-family: var(--font-family-body);
-  font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-sm, 0.875rem);
+  font-weight: var(--font-weight-semibold, 600);
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--color-brand-primary-strong);
-  margin-block-end: var(--space-sm);
+  color: var(--color-brand-primary-strong, var(--color-brand-primary, #007aff));
+  margin-block-end: var(--space-sm, 0.5rem);
 }
-.lander-cta .eyebrow, .lander-hero-dark .eyebrow { color: inherit; opacity: 0.85; }
+.site-cta .eyebrow { color: inherit; opacity: 0.85; }
 
-/* --- Cost comparison bar chart ------------------------------------------ */
-.cost-compare { display: grid; gap: var(--space-xl); }
-.cost-bar-row { display: grid; gap: var(--space-xs); }
+/* --- Tables -------------------------------------------------------------- */
+.table-scroll {
+  overflow-x: auto;
+  margin-block: var(--space-xl, 1.5rem);
+}
+.table-scroll .table { min-width: 40rem; width: 100%; }
+.table-scroll .table-compact { min-width: 0; }
+.site-visual .table-scroll { margin-block: 0; }
+
+/* --- Cost comparison bar chart ------------------------------------------- */
+.cost-compare { display: grid; gap: var(--space-xl, 1.5rem); }
+.cost-bar-row { display: grid; gap: var(--space-xs, 0.25rem); }
 .cost-bar-label {
   display: flex;
   justify-content: space-between;
-  gap: var(--space-lg);
-  font-size: var(--font-size-sm);
-  color: var(--color-foreground-muted);
+  gap: var(--space-lg, 1rem);
+  font-size: var(--font-size-sm, 0.875rem);
+  color: var(--color-foreground-muted, #5b6576);
 }
 .cost-bar-label strong {
-  color: var(--color-foreground-primary);
-  font-family: var(--font-family-mono);
+  color: var(--color-foreground-primary, #16233b);
+  font-family: var(--font-family-mono, monospace);
+  white-space: nowrap;
 }
 .cost-bar-track {
-  background: var(--color-surface-secondary);
-  border-radius: var(--radius-pill);
+  background: var(--color-surface-secondary, #e8edf4);
+  border-radius: var(--radius-pill, 999px);
   overflow: hidden;
 }
 .cost-bar-fill {
-  height: var(--space-xl);
-  border-radius: var(--radius-pill);
+  height: var(--space-xl, 1.5rem);
+  border-radius: var(--radius-pill, 999px);
   width: var(--bar, 50%);
-  background: var(--color-utility-muted);
-  transition: width var(--duration-slow) var(--ease-emphasis);
 }
-.cost-bar-fill.is-cloudstaff { background: var(--color-brand-primary); }
-.cost-bar-fill.is-local { background: var(--color-utility-muted); }
+.cost-bar-fill.is-cloudstaff { background: var(--color-brand-primary, #007aff); }
+.cost-bar-fill.is-local { background: var(--color-utility-muted, #99a1b3); }
 .cost-bar-savings {
-  font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-semibold);
-  color: var(--color-feedback-success);
+  font-size: var(--font-size-sm, 0.875rem);
+  font-weight: var(--font-weight-semibold, 600);
+  color: var(--color-feedback-success, #00ab9c);
 }
 
-/* --- Misconception / reality pairs -------------------------------------- */
-.myth-card .badge { margin-block-end: var(--space-sm); }
+/* --- Misconception / reality pairs --------------------------------------- */
+.myth-card .badge { margin-block-end: var(--space-sm, 0.5rem); }
 .myth-card p:first-of-type {
-  font-family: var(--font-family-heading);
-  font-weight: var(--font-weight-semibold);
+  font-family: var(--font-family-heading, inherit);
+  font-weight: var(--font-weight-semibold, 600);
 }
 
-/* --- Numbered journey steps --------------------------------------------- */
+/* --- Numbered journey steps ----------------------------------------------- */
 .step-number {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  inline-size: var(--space-4xl);
-  block-size: var(--space-4xl);
-  border-radius: var(--radius-pill);
-  background: color-mix(in oklch, var(--color-brand-primary), white 85%);
-  color: var(--color-brand-primary-strong);
-  font-family: var(--font-family-heading);
-  font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-lg);
-  margin-block-end: var(--space-md);
+  inline-size: 3rem;
+  block-size: 3rem;
+  border-radius: var(--radius-pill, 999px);
+  background: color-mix(in oklch, var(--color-brand-primary, #007aff), white 85%);
+  color: var(--color-brand-primary-strong, var(--color-brand-primary, #007aff));
+  font-family: var(--font-family-heading, inherit);
+  font-weight: var(--font-weight-bold, 700);
+  font-size: var(--font-size-lg, 1.125rem);
+  margin-block-end: var(--space-md, 0.75rem);
 }
 html[data-theme="dark"] .step-number {
-  background: color-mix(in oklch, var(--color-brand-primary), black 60%);
-  color: var(--color-surface-page);
+  background: color-mix(in oklch, var(--color-brand-primary, #007aff), black 60%);
+  color: var(--color-surface-page, #fff);
 }
 
-/* --- Simple FAQ styling on native <details> ------------------------------ */
-.faq { display: grid; gap: var(--space-sm); }
+/* --- FAQ on native <details> ---------------------------------------------- */
+.faq { display: grid; gap: var(--space-sm, 0.5rem); margin-block: var(--space-xl, 1.5rem); }
 .faq details {
-  background: var(--color-surface-canvas);
-  border: 1px solid var(--color-border-muted, var(--color-surface-secondary));
-  border-radius: var(--radius-lg);
-  padding: var(--component-card-padding, var(--space-xl));
+  background: var(--color-surface-page, #fff);
+  border: 1px solid var(--color-surface-secondary, #e2e8f0);
+  border-radius: var(--radius-lg, 0.75rem);
+  padding: var(--space-xl, 1.5rem);
+}
+.site-band:not(.site-band-tinted) .faq details {
+  background: var(--color-surface-canvas, #f6f8fb);
 }
 .faq summary {
   cursor: pointer;
-  font-family: var(--font-family-heading);
-  font-weight: var(--font-weight-semibold);
-  font-size: var(--font-size-lg);
+  font-family: var(--font-family-heading, inherit);
+  font-weight: var(--font-weight-semibold, 600);
+  font-size: var(--font-size-lg, 1.125rem);
 }
-.faq details[open] summary { margin-block-end: var(--space-md); }
-.faq details p + p { margin-block-start: var(--space-sm); }
+.faq details[open] summary { margin-block-end: var(--space-md, 0.75rem); }
+.faq details p + p { margin-block-start: var(--space-sm, 0.5rem); }
 
-/* --- Quote attribution --------------------------------------------------- */
+/* --- Testimonials ---------------------------------------------------------- */
+.testimonial { margin: 0; }
 .testimonial blockquote {
-  font-size: var(--font-size-lg);
-  line-height: var(--line-height-normal);
+  margin: 0;
+  font-size: var(--font-size-lg, 1.125rem);
+  line-height: var(--line-height-normal, 1.5);
 }
 .testimonial figcaption {
-  margin-block-start: var(--space-md);
-  font-size: var(--font-size-sm);
-  color: var(--color-foreground-muted);
+  margin-block-start: var(--space-md, 0.75rem);
+  font-size: var(--font-size-sm, 0.875rem);
+  color: var(--color-foreground-muted, #5b6576);
 }
-.testimonial figcaption strong { color: var(--color-foreground-primary); }
+.testimonial figcaption strong { color: var(--color-foreground-primary, #16233b); }
 
-/* --- Section spacing safety net (if lander classes evolve) --------------- */
-.lander-section, .lander-tile-row-section { scroll-margin-top: var(--space-5xl); }
+/* --- Long values in stat tiles wrap gracefully ----------------------------- */
+.stat-tile-value { overflow-wrap: break-word; }
+.stat-tile-value-text { font-size: var(--font-size-xl, 1.25rem); }
 
-/* --- Print -------------------------------------------------------------- */
+/* --- Footer (layout owned here) -------------------------------------------- */
+.site-footer {
+  background: color-mix(in oklch, var(--color-brand-primary, #007aff), black 80%);
+  color: rgba(255, 255, 255, 0.85);
+  padding-block: clamp(2.5rem, 5vw, 3.5rem) var(--space-xl, 1.5rem);
+}
+.site-footer a { color: #ffffff; text-decoration: none; }
+.site-footer a:hover { text-decoration: underline; }
+.site-footer-main {
+  max-width: 72rem;
+  margin-inline: auto;
+  padding-inline: var(--space-xl, 1.5rem);
+  display: grid;
+  gap: var(--space-2xl, 2rem);
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1.4fr);
+}
+@media (max-width: 900px) {
+  .site-footer-main { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 560px) {
+  .site-footer-main { grid-template-columns: minmax(0, 1fr); }
+}
+.site-footer h3 {
+  color: #ffffff;
+  font-size: var(--font-size-md, 1rem);
+  margin-block: 0 var(--space-md, 0.75rem);
+}
+.site-footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-sm, 0.5rem);
+  font-size: var(--font-size-sm, 0.875rem);
+}
+.site-footer-brand p {
+  font-size: var(--font-size-sm, 0.875rem);
+  max-width: 26rem;
+}
+.site-footer-certs {
+  max-width: 72rem;
+  margin: var(--space-2xl, 2rem) auto 0;
+  padding-inline: var(--space-xl, 1.5rem);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm, 0.5rem);
+}
+.site-footer-certs .badge {
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+}
+.site-footer-legal {
+  max-width: 72rem;
+  margin: var(--space-xl, 1.5rem) auto 0;
+  padding-inline: var(--space-xl, 1.5rem);
+  font-size: var(--font-size-xs, 0.75rem);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* --- Logo fallback ---------------------------------------------------------- */
+.logo-text-fallback {
+  font-family: var(--font-family-heading, inherit);
+  font-weight: var(--font-weight-bold, 700);
+  font-size: var(--font-size-xl, 1.25rem);
+  color: var(--color-brand-primary-strong, var(--color-brand-primary, #007aff));
+  letter-spacing: -0.02em;
+}
+
+/* --- Print ------------------------------------------------------------------ */
 @media print {
-  .topbar-website, .lander-cta, .footer-certs { display: none; }
+  .topbar-website, .site-cta, .site-footer-certs { display: none; }
 }

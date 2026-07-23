@@ -10,9 +10,9 @@
 
 get_header();
 ?>
-<main class="lander" id="main-content">
-<section class="lander-hero lander-hero-dark">
-  <div class="lander-content">
+<main class="site-main" id="main-content">
+<section class="site-hero site-hero-dark">
+  <div class="site-band-inner">
     <span class="eyebrow">Remote staffing for US businesses</span>
     <h1>Build a world-class team without world-class overhead</h1>
     <p>Cloudstaff helps US businesses hire full-time, dedicated professionals offshore &mdash; fully recruited, employed, equipped, and secured by us, managed day-to-day by you. Cut fully loaded labor costs by up to 80% while adding capacity your local market can't supply.</p>
@@ -21,8 +21,8 @@ get_header();
   </div>
 </section>
 
-<section class="lander-tile-row-section">
-  <div class="lander-content">
+<section class="site-band">
+  <div class="site-band-inner">
     <div class="grid-3">
       <div class="feature-tile">
         <div class="feature-tile-icon"><i class="fa-light fa-graduation-cap" aria-hidden="true"></i></div>
@@ -46,15 +46,15 @@ get_header();
   </div>
 </section>
 
-<section class="lander-section">
-  <div class="lander-content">
+<section class="site-band">
+  <div class="site-band-inner">
     <div>
       <span class="eyebrow">The numbers tell a clear story</span>
       <h2>The proven leader in remote staffing</h2>
       <p>When you choose Cloudstaff, you're not just engaging remote talent. You're partnering with a proven global organization built on security, scale, stability, and long-term performance. These aren't marketing claims &mdash; they're operational results.</p>
       <p><a href="<?php echo esc_url( home_url( '/why-cloudstaff/' ) ); ?>" class="button-link">Why 1,200+ businesses choose Cloudstaff &rarr;</a></p>
     </div>
-    <div class="lander-section-image">
+    <div class="site-visual">
       <div class="grid-2">
         <div class="stat-tile">
           <div class="stat-tile-label">Global clients since 2005</div>
@@ -85,8 +85,8 @@ get_header();
   </div>
 </section>
 
-<section class="lander-section lander-section-tinted lander-section-image-left">
-  <div class="lander-content">
+<section class="site-band site-band-tinted site-band-reverse">
+  <div class="site-band-inner">
     <div>
       <span class="eyebrow">New to outsourcing?</span>
       <h2>We'll walk you through it, step by step</h2>
@@ -94,7 +94,7 @@ get_header();
       <p>Remote staffing is not just a cost decision. It's a strategic workforce model designed to improve financial performance, increase resilience, and expand operational capacity without increasing fixed overhead.</p>
       <a href="<?php echo esc_url( home_url( '/how-it-works/' ) ); ?>" class="button button-secondary">See how it works</a>
     </div>
-    <div class="lander-section-image">
+    <div class="site-visual">
       <div class="stack-lg">
         <div class="card">
           <div class="step-number">1</div>
@@ -116,8 +116,8 @@ get_header();
   </div>
 </section>
 
-<section class="lander-section">
-  <div class="lander-content">
+<section class="site-band">
+  <div class="site-band-inner">
     <div>
       <span class="eyebrow">A repeatable value-creation lever</span>
       <h2>Skilled roles at a fraction of the fully loaded local cost</h2>
@@ -125,7 +125,7 @@ get_header();
       <p>The value extends beyond salary. Employment costs, benefits, technology, infrastructure, and overheads are all substantially reduced &mdash; turning fixed SG&amp;A into a predictable, scalable operating expense.</p>
       <a href="<?php echo esc_url( home_url( '/pricing/' ) ); ?>" class="button button-secondary">See the full cost breakdown</a>
     </div>
-    <div class="lander-section-image">
+    <div class="site-visual">
       <div class="card">
         <h3>Senior Accountant &mdash; fully loaded monthly cost</h3>
         <div class="cost-compare">
@@ -144,8 +144,8 @@ get_header();
   </div>
 </section>
 
-<section class="lander-section lander-section-tinted">
-  <div class="lander-content">
+<section class="site-band site-band-tinted">
+  <div class="site-band-inner">
     <div>
       <span class="eyebrow">Not just support roles</span>
       <h2>High-skill talent, US business hours, enterprise security</h2>
@@ -176,8 +176,8 @@ get_header();
   </div>
 </section>
 
-<section class="lander-section">
-  <div class="lander-content">
+<section class="site-band">
+  <div class="site-band-inner">
     <div>
       <span class="eyebrow">Trusted by finance, operations, and growth leaders</span>
       <h2>What our clients say</h2>
@@ -199,8 +199,8 @@ get_header();
   </div>
 </section>
 
-<section class="lander-cta lander-cta-brand">
-  <div class="lander-content">
+<section class="site-cta">
+  <div class="site-band-inner">
     <h2>Ready to explore what a Cloudstaff team could do for you?</h2>
     <p>Talk to a US-based expert. No pressure, no jargon &mdash; just a clear look at the roles, costs, and controls that fit your business.</p>
     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-inverse button-lg">Talk to an Expert</a>

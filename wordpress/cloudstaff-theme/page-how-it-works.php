@@ -11,9 +11,9 @@
 
 get_header();
 ?>
-<main class="lander" id="main-content">
-<section class="lander-hero">
-  <div class="lander-content">
+<main class="site-main" id="main-content">
+<section class="site-hero">
+  <div class="site-band-inner">
     <span class="eyebrow">A structured program, not a leap of faith</span>
     <h1>How it works: from first call to high-performing team</h1>
     <p>Bringing offshore professionals into your team should feel controlled, not complicated. Define the roles. Clarify expectations. Assign an owner. We take care of everything else &mdash; and your dedicated Success Manager partners with you at every stage.</p>
@@ -21,8 +21,8 @@ get_header();
   </div>
 </section>
 
-<section class="lander-tile-row-section">
-  <div class="lander-content">
+<section class="site-band">
+  <div class="site-band-inner">
     <div class="grid-3">
       <div class="feature-tile">
         <div class="feature-tile-icon"><i class="fa-light fa-scale-balanced" aria-hidden="true"></i></div>
@@ -43,14 +43,14 @@ get_header();
   </div>
 </section>
 
-<section class="lander-section">
-  <div class="lander-content">
+<section class="site-band">
+  <div class="site-band-inner">
     <div>
       <span class="eyebrow">Clear division of responsibilities</span>
       <h2>You focus on outcomes. We handle operations.</h2>
       <p>Successful remote staffing depends on clarity. When responsibilities are clearly defined, performance improves, risk is reduced, and accountability remains intact. Your remote team members operate as part of your organization, aligned to your culture, standards, and KPIs &mdash; while we manage the employment, infrastructure, and support framework behind them.</p>
     </div>
-    <div class="lander-section-image">
+    <div class="site-visual">
       <div class="grid-2">
         <div class="card card-brand">
           <h3>Your role</h3>
@@ -75,8 +75,8 @@ get_header();
   </div>
 </section>
 
-<section class="lander-section lander-section-tinted">
-  <div class="lander-content">
+<section class="site-band site-band-tinted">
+  <div class="site-band-inner">
     <div>
       <span class="eyebrow">Talent recruitment process</span>
       <h2>Recruitment engineered for certainty</h2>
@@ -117,8 +117,8 @@ get_header();
   </div>
 </section>
 
-<section class="lander-section">
-  <div class="lander-content">
+<section class="site-band">
+  <div class="site-band-inner">
     <div>
       <span class="eyebrow">Getting started takes about a day of your time</span>
       <h2>Four things we'll ask you to prepare</h2>
@@ -148,8 +148,8 @@ get_header();
   </div>
 </section>
 
-<section class="lander-section lander-section-tinted">
-  <div class="lander-content">
+<section class="site-band site-band-tinted">
+  <div class="site-band-inner">
     <div>
       <span class="eyebrow">Deployment timeline</span>
       <h2>A phased approach designed for controlled growth</h2>
@@ -196,15 +196,15 @@ get_header();
   </div>
 </section>
 
-<section class="lander-section">
-  <div class="lander-content">
+<section class="site-band">
+  <div class="site-band-inner">
     <div>
       <span class="eyebrow">Full visibility and control</span>
       <h2>Manage your team from a single dashboard</h2>
       <p>Instead of scattered emails, spreadsheets, and manual updates, the Cloudstaff platform gives you real-time visibility into productivity and attendance, structured governance and KPI tracking, and predictable cost structures with transparent reporting. Cloudstaff Mobile keeps your team close wherever you are &mdash; approvals, team status, and updates from your phone.</p>
       <p>The first 30&ndash;60 days determine long-term success. Your Success Manager helps you establish clear ownership, disciplined communication routines, measurable KPIs, and structured feedback &mdash; the practices that build stable, accountable, high-performing remote teams.</p>
     </div>
-    <div class="lander-section-image">
+    <div class="site-visual">
       <div class="grid-2">
         <div class="stat-tile stat-tile-illustrated is-brand">
           <div class="stat-tile-icon"><i class="fa-light fa-gauge-high" aria-hidden="true"></i></div>
@@ -239,8 +239,8 @@ get_header();
   </div>
 </section>
 
-<section class="lander-cta lander-cta-brand">
-  <div class="lander-content">
+<section class="site-cta">
+  <div class="site-band-inner">
     <h2>Your team is closer than you think</h2>
     <p>Typical timeline from first call to your new team member's first day: 15&ndash;25 days.</p>
     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-inverse button-lg">Book your kickoff call</a>
