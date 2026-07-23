@@ -54,7 +54,7 @@ get_header();
       <p>Our experience spans multiple industries, regulatory environments, and growth stages &mdash; from mid-market companies scaling support functions to enterprise teams expanding revenue operations. We understand that outsourcing is a financial decision as much as an operational one.</p>
       <figure class="testimonial">
         <blockquote>&ldquo;Cloudstaff isn't just a service provider &mdash; we're your success partner.&rdquo;</blockquote>
-        <figcaption><strong>Lloyd Ernst</strong> &mdash; Founder, Cloudstaff</figcaption>
+        <figcaption><span class="avatar-initials">LE</span><span><strong>Lloyd Ernst</strong> &mdash; Founder, Cloudstaff</span></figcaption>
       </figure>
     </div>
     <div class="site-visual">
@@ -146,27 +146,27 @@ get_header();
       <div class="grid-3">
         <figure class="testimonial card">
           <blockquote>&ldquo;The staff we have hired have hit the ground running and have exceeded our expectations.&rdquo;</blockquote>
-          <figcaption><strong>Sarah Harris</strong> &mdash; IT Smart Solutions</figcaption>
+          <figcaption><span class="avatar-initials">SH</span><span><strong>Sarah Harris</strong> &mdash; IT Smart Solutions</span></figcaption>
         </figure>
         <figure class="testimonial card">
           <blockquote>&ldquo;We couldn't have grown and we couldn't do the things that we do without our Cloudstaff team. I love the fact that we are one team, even if we are remote.&rdquo;</blockquote>
-          <figcaption><strong>Kylie Davis</strong> &mdash; CEO, Proptech Guru</figcaption>
+          <figcaption><span class="avatar-initials">KD</span><span><strong>Kylie Davis</strong> &mdash; CEO, Proptech Guru</span></figcaption>
         </figure>
         <figure class="testimonial card">
           <blockquote>&ldquo;We chose Cloudstaff because our values and commitment to looking after our people aligned so well.&rdquo;</blockquote>
-          <figcaption><strong>Brock Fisher</strong> &mdash; Little Real Estate</figcaption>
+          <figcaption><span class="avatar-initials">BF</span><span><strong>Brock Fisher</strong> &mdash; Little Real Estate</span></figcaption>
         </figure>
         <figure class="testimonial card">
           <blockquote>&ldquo;From the beginning, we have utilized outsourcing to hire the most talented resources at an affordable price.&rdquo;</blockquote>
-          <figcaption><strong>Tyler Jones</strong> &mdash; One Inc</figcaption>
+          <figcaption><span class="avatar-initials">TJ</span><span><strong>Tyler Jones</strong> &mdash; One Inc</span></figcaption>
         </figure>
         <figure class="testimonial card">
           <blockquote>&ldquo;Our dedicated team at Cloudstaff deliver a high quality level of customer service that always exceeds our own customers' expectations.&rdquo;</blockquote>
-          <figcaption><strong>Robert Nad</strong> &mdash; OZHosting</figcaption>
+          <figcaption><span class="avatar-initials">RN</span><span><strong>Robert Nad</strong> &mdash; OZHosting</span></figcaption>
         </figure>
         <figure class="testimonial card">
           <blockquote>&ldquo;I've been a Cloudstaff customer since 2013. Their expertise and professionalism has been invaluable to my company.&rdquo;</blockquote>
-          <figcaption><strong>Wayne Bucklar</strong> &mdash; Vertical Internet Media</figcaption>
+          <figcaption><span class="avatar-initials">WB</span><span><strong>Wayne Bucklar</strong> &mdash; Vertical Internet Media</span></figcaption>
         </figure>
       </div>
     </div>

@@ -186,15 +186,15 @@ get_header();
       <div class="grid-3">
         <figure class="testimonial card">
           <blockquote>&ldquo;For us, outsourcing isn't just about saving money. Cloudstaff has become a vital part of our growth strategy.&rdquo;</blockquote>
-          <figcaption><strong>Chris Rolls</strong> &mdash; PieLAB</figcaption>
+          <figcaption><span class="avatar-initials">CR</span><span><strong>Chris Rolls</strong> &mdash; PieLAB</span></figcaption>
         </figure>
         <figure class="testimonial card">
           <blockquote>&ldquo;The experience has been phenomenal. The team here is outstanding and very hard working.&rdquo;</blockquote>
-          <figcaption><strong>Jessica Barnas</strong> &mdash; Wipfli, Accountants &amp; CPAs</figcaption>
+          <figcaption><span class="avatar-initials">JB</span><span><strong>Jessica Barnas</strong> &mdash; Wipfli, Accountants &amp; CPAs</span></figcaption>
         </figure>
         <figure class="testimonial card">
           <blockquote>&ldquo;Our partnership with Cloudstaff is instrumental to the way we operate our business and has dramatically changed our operating rhythm.&rdquo;</blockquote>
-          <figcaption><strong>Tyler Mason</strong> &mdash; Craveable Brands</figcaption>
+          <figcaption><span class="avatar-initials">TM</span><span><strong>Tyler Mason</strong> &mdash; Craveable Brands</span></figcaption>
         </figure>
       </div>
     </div>

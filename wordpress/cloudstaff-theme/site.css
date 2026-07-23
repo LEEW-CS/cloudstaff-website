@@ -83,19 +83,19 @@
 .site-logo {
   display: inline-flex;
   align-items: center;
-  gap: 0.45rem;
-  color: var(--color-brand-primary, #007aff);
+  gap: 0.55rem;
 }
-.site-logo-cloud { width: 2rem; height: 2rem; flex: none; }
+.site-logo-emblem { width: 2.25rem; height: 2.25rem; flex: none; }
+.site-logo-disc { fill: var(--color-brand-primary, #007aff); }
+.site-logo-cloud-shape { fill: #ffffff; }
 .site-logo-word {
   font-family: var(--font-family-heading, inherit);
   font-weight: var(--font-weight-bold, 700);
-  font-size: 1.35rem;
-  letter-spacing: -0.02em;
+  font-size: 1.4rem;
+  letter-spacing: -0.015em;
   color: var(--color-foreground-primary, #16233b);
 }
-.site-logo-word sup { font-size: 0.55em; font-weight: var(--font-weight-regular, 400); }
-.site-logo-light { color: #ffffff; }
+.site-logo-word sup { font-size: 0.5em; font-weight: var(--font-weight-semibold, 600); }
 .site-logo-light .site-logo-word { color: #ffffff; }
 
 /* --- Inline SVG icons ------------------------------------------------------ */
@@ -114,15 +114,22 @@ h3 > .icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  inline-size: 3rem;
-  block-size: 3rem;
+  inline-size: 3.5rem;
+  block-size: 3.5rem;
   border-radius: var(--radius-lg, 0.75rem);
   background: color-mix(in oklch, var(--color-brand-primary, #007aff), white 88%);
   color: var(--color-brand-primary-strong, var(--color-brand-primary, #007aff));
   margin-block-end: var(--space-md, 0.75rem);
 }
 .feature-tile-icon .icon,
-.stat-tile-icon .icon { width: 1.5rem; height: 1.5rem; vertical-align: 0; }
+.stat-tile-icon .icon { width: 1.85rem; height: 1.85rem; vertical-align: 0; }
+.card h3,
+.feature-tile h3 {
+  font-size: 1.2rem;
+  line-height: 1.35;
+  text-wrap: balance;
+  margin-block: 0 var(--space-sm, 0.5rem);
+}
 .stat-tile-illustrated { display: flex; gap: var(--space-md, 0.75rem); align-items: center; }
 .stat-tile-illustrated .stat-tile-icon { margin-block-end: 0; }
 .stat-tile-illustrated.is-success .stat-tile-icon {
@@ -210,12 +217,15 @@ h3 > .icon {
   width: 100%;
 }
 .site-hero-photo .site-band-inner { width: 100%; }
+.site-hero-copy .button { margin-block: var(--space-md, 0.75rem) var(--space-xs, 0.25rem); }
+.site-hero-copy > p:last-child { margin-block-start: var(--space-md, 0.75rem); }
 .site-hero-photo h1,
 .site-hero-photo p { color: #ffffff; }
 .site-hero-photo .eyebrow { color: #ffffff; opacity: 0.85; }
 .site-hero-photo a.button-link { color: #ffffff; text-decoration: underline; }
 .site-hero h1 {
-  max-width: 46rem;
+  text-wrap: balance;
+  max-width: 48rem;
   margin-block: var(--space-sm, 0.5rem) var(--space-lg, 1rem);
   line-height: var(--line-height-tight, 1.15);
 }
@@ -241,11 +251,16 @@ h3 > .icon {
 .site-band {
   padding-block: clamp(2.5rem, 6vw, 4.5rem);
 }
+/* breathing room before buttons that follow copy */
+.site-main p + .button,
+.site-main .button + .button-link,
+.site-band-inner div > a.button { margin-block-start: var(--space-lg, 1rem); }
 .site-band-tinted {
   background: var(--color-surface-canvas, #f6f8fb);
 }
 .site-band h2 {
-  max-width: 46rem;
+  text-wrap: balance;
+  max-width: 52rem;
   margin-block: var(--space-sm, 0.5rem) var(--space-lg, 1rem);
   line-height: var(--line-height-tight, 1.15);
 }
@@ -401,6 +416,20 @@ h3 > .icon {
 }
 .table-scroll .table { min-width: 40rem; width: 100%; }
 .table-scroll .table-compact { min-width: 0; }
+.compare-table th:last-child,
+.compare-table td:last-child {
+  background: color-mix(in oklch, var(--color-brand-primary, #007aff), white 91%);
+  border-inline-start: 3px solid var(--color-brand-primary, #007aff);
+}
+.compare-table thead th:last-child {
+  background: var(--color-brand-primary, #007aff);
+  color: #ffffff;
+}
+.compare-table thead th:last-child .badge {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  margin-block-end: 0.3rem;
+}
 .site-visual .table-scroll { margin-block: 0; }
 
 /* --- Cost comparison bar chart ------------------------------------------- */
@@ -437,7 +466,15 @@ h3 > .icon {
 }
 
 /* --- Misconception / reality pairs --------------------------------------- */
-.myth-card .badge { margin-block-end: var(--space-sm, 0.5rem); }
+.myth-card .badge {
+  display: inline-block;
+  margin-block-end: var(--space-sm, 0.5rem);
+  font-size: var(--font-size-sm, 0.875rem);
+  font-weight: var(--font-weight-semibold, 600);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.35rem 0.9rem;
+}
 .myth-card p:first-of-type {
   font-family: var(--font-family-heading, inherit);
   font-weight: var(--font-weight-semibold, 600);
@@ -458,6 +495,7 @@ h3 > .icon {
   font-size: var(--font-size-lg, 1.125rem);
   margin-block-end: var(--space-md, 0.75rem);
 }
+.step-number .icon { width: 1.4rem; height: 1.4rem; vertical-align: 0; }
 html[data-theme="dark"] .step-number {
   background: color-mix(in oklch, var(--color-brand-primary, #007aff), black 60%);
   color: var(--color-surface-page, #fff);
@@ -496,10 +534,34 @@ html[data-theme="dark"] .step-number {
   color: var(--color-foreground-muted, #5b6576);
 }
 .testimonial figcaption strong { color: var(--color-foreground-primary, #16233b); }
+.testimonial figcaption {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md, 0.75rem);
+}
+.avatar-initials {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  inline-size: 2.75rem;
+  block-size: 2.75rem;
+  flex: none;
+  border-radius: var(--radius-pill, 999px);
+  background: color-mix(in oklch, var(--color-brand-primary, #007aff), white 82%);
+  color: var(--color-brand-primary-strong, var(--color-brand-primary, #007aff));
+  font-family: var(--font-family-heading, inherit);
+  font-weight: var(--font-weight-bold, 700);
+  font-size: 0.95rem;
+}
 
 /* --- Long values in stat tiles wrap gracefully ----------------------------- */
 .stat-tile-value { overflow-wrap: break-word; }
-.stat-tile-value-text { font-size: var(--font-size-xl, 1.25rem); }
+.stat-tile .stat-tile-value-text {
+  font-size: 1.1rem;
+  line-height: 1.35;
+  font-weight: var(--font-weight-semibold, 600);
+  overflow-wrap: normal;
+}
 
 /* --- Footer (layout owned here) -------------------------------------------- */
 .site-footer {

@@ -155,6 +155,20 @@ def hero_art(glyph):
 
 
 # --- Logo --------------------------------------------------------------------
+# Faithful recreation of the Cloudstaff lockup: brand-blue circle emblem with
+# the white two-bump cloud (wavy base), plus the "Cloudstaff" wordmark in the
+# brand heading font. Wordmark color flips for dark surfaces via CSS.
+_CLOUD_EMBLEM = (
+    '<circle cx="24" cy="24" r="24" class="site-logo-disc"/>'
+    '<path class="site-logo-cloud-shape" d="M12.2 30.2c-2.3-.6-3.4-3.2-2.1-5.2'
+    '.8-1.2 2.2-1.8 3.6-1.5.2-2.4 2.2-4.3 4.7-4.3 1.5 0 2.9.7 3.8 1.9 1.3-2.9'
+    ' 4.2-4.8 7.5-4.8 4.6 0 8.3 3.7 8.3 8.3 0 1.5-.4 3-1.2 4.2-.3.4-.8.7-1.3.7'
+    '-3.6.3-7.2-.7-10.8-1-4.2-.4-8.4 2.6-12.5 1.7z"/>')
+
+
 def logo(variant="default"):
     cls = "site-logo site-logo-light" if variant == "light" else "site-logo"
-    return f'''<span class="{cls}"><svg class="site-logo-cloud" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M7.2 18.5a4.7 4.7 0 0 1-.6-9.36 6.2 6.2 0 0 1 11.9 1.6A4.15 4.15 0 0 1 17.9 18.5z"/></svg><span class="site-logo-word">cloudstaff<sup>&reg;</sup></span></span>'''
+    return (f'<span class="{cls}">'
+            f'<svg class="site-logo-emblem" viewBox="0 0 48 48" aria-hidden="true" '
+            f'focusable="false">{_CLOUD_EMBLEM}</svg>'
+            f'<span class="site-logo-word">Cloudstaff<sup>&reg;</sup></span></span>')

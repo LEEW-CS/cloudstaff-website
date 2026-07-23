@@ -51,8 +51,6 @@ get_header();
       <span class="eyebrow">Clear division of responsibilities</span>
       <h2>You focus on outcomes. We handle operations.</h2>
       <p>Successful remote staffing depends on clarity. When responsibilities are clearly defined, performance improves, risk is reduced, and accountability remains intact. Your remote team members operate as part of your organization, aligned to your culture, standards, and KPIs &mdash; while we manage the employment, infrastructure, and support framework behind them.</p>
-    </div>
-    <div class="site-visual">
       <div class="grid-2">
         <div class="card card-brand">
           <h3>Your role</h3>
@@ -110,6 +108,7 @@ get_header();
           <p>We onboard your new team member, provision secure equipment, and ensure systems are ready from day one.</p>
         </div>
         <div class="card card-brand">
+          <div class="step-number"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
           <h3>Typical timeline</h3>
           <p><strong>15&ndash;25 days</strong> from initial call to start date.</p>
           <p>Every step is deliberate, measurable, and professionally managed.</p>
@@ -212,28 +211,28 @@ get_header();
           <div class="stat-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 14 3.5-3.5"/><path d="M20.3 18a9 9 0 1 0-16.6 0"/></svg></div>
           <div class="stat-tile-body">
             <div class="stat-tile-label">Real-time</div>
-            <div class="stat-tile-value">Productivity &amp; attendance</div>
+            <div class="stat-tile-value stat-tile-value-text">Productivity &amp; attendance</div>
           </div>
         </div>
         <div class="stat-tile stat-tile-illustrated is-success">
           <div class="stat-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m3 17 2 2 4-4"/><path d="m3 7 2 2 4-4"/><path d="M13 6h8"/><path d="M13 12h8"/><path d="M13 18h8"/></svg></div>
           <div class="stat-tile-body">
             <div class="stat-tile-label">Structured</div>
-            <div class="stat-tile-value">KPI tracking</div>
+            <div class="stat-tile-value stat-tile-value-text">KPI tracking</div>
           </div>
         </div>
         <div class="stat-tile stat-tile-illustrated is-info">
           <div class="stat-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></div>
           <div class="stat-tile-body">
             <div class="stat-tile-label">Anywhere</div>
-            <div class="stat-tile-value">Cloudstaff Mobile</div>
+            <div class="stat-tile-value stat-tile-value-text">Cloudstaff Mobile</div>
           </div>
         </div>
         <div class="stat-tile stat-tile-illustrated is-warning">
           <div class="stat-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/><path d="M6 12h.01"/><path d="M18 12h.01"/></svg></div>
           <div class="stat-tile-body">
             <div class="stat-tile-label">Transparent</div>
-            <div class="stat-tile-value">Cost reporting</div>
+            <div class="stat-tile-value stat-tile-value-text">Cost reporting</div>
           </div>
         </div>
       </div>
